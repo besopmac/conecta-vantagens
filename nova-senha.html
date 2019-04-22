@@ -22,20 +22,27 @@
 
         <section class="grid grid-form">
             <main class="col-10-12 main-area">
-                <div class="login-form">
-                    <h2 class="titulo">Esqueceu a senha?</h2>
+                <div class="login-form new-password">
+                    <h2 class="titulo">Nova Senha</h2>
                     
                     <div class="input-group">
-                        <label>Insira seu CPF/CNPJ</label>
-                        <input type="text" maxlength="14" placeholder="123.456.789-10" />
+                        <label>Digite nova senha</label>
+                        <input type="password" minlength="12" />
                         <p class="tip">
-                            <span>Você receberá um e-mail com as<br>instruções de redefinição de senha.</span>
+                            <span>Dica: a senha deve ter pelo menos doze caracteres para torná-la mais forte. Use letras maiúsculas e minúsculas, números e símbolos como !*?$%&1.</span>
+                        </p>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Confirmar a senha</label>
+                        <input type="password" minlength="12" />
+                        <p class="message">
+                            <span>Senha Incorreta</span>
                         </p>
                     </div>
 
                     <div class="buttons-group">
-                        <a href="#" class="button">Cancelar</a>
-                        <a href="#" class="button button-primary">Entrar</a>
+                        <a href="#" class="button button-primary">Redefinir Senha</a>
                     </div>
                 </div>
                 <div class="disclaimer">

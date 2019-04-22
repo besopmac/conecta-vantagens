@@ -22,6 +22,7 @@
     --sub-titulo:       300 1.875rem 'Roboto', sans-serif;
     --button:           400 0.75rem 'Roboto', sans-serif;
     --label:            400 0.75rem 'Roboto', sans-serif;
+    --text:             400 0.75rem/2 'Roboto', sans-serif;
 
     /* buttons */
     --button-default: {
@@ -199,10 +200,14 @@ input:-moz-placeholder {
 /* Login: Form */
 .login-form {
     display: flex;
-    max-width: 300px;   
+    max-width: 320px;   
     flex-direction: column;
     box-sizing: content-box;
-    padding: 60px 0 60px 100px;
+    padding: 60px 0 40px 100px;
+}
+
+.login-form.full-height {
+    height: 300px;
 }
 
 .login-form .titulo {
@@ -210,6 +215,17 @@ input:-moz-placeholder {
     letter-spacing: -1px;
     font: var(--sub-titulo);
     color: var(--wild-watermelon);  
+}
+
+.login-form .icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 40px;
+}
+
+.login-form .text {
+    font: var(--text);
+    color: var(--rock-blue);
 }
 
 .login-form .input-group {
@@ -221,19 +237,33 @@ input:-moz-placeholder {
     color: var(--rock-blue);
 }
 
-.login-form .input-group:last-child {
-    margin: 10px 0 0;
-}
-
 .login-form .buttons-group {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: start;
 }
 
 .login-form .buttons-group a:not(:last-child) {
     margin-right: 10px;
 }
+
+.login-form.new-password {
+    max-width: 420px;
+}
+
+.login-form.new-password .input-group {
+    margin-bottom: 5px;
+}
+
+.login-form.new-password .input-group input {
+    max-width: 360px;
+}
+
+.login-form.new-password .buttons-group {
+    margin-top: 0;
+}
+
+
 
 
 /* Login: Disclaimer */
