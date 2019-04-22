@@ -1,0 +1,233 @@
+/* CSS Variables */
+:root {
+    /* colors */
+    --red:             #F00;
+    --white:           #FFF;
+    --light:           #F5F8FC;
+    --solitude:        #EDF2F9;
+    --spindle:         #BACDDC;
+    --rock-blue:       #8A9BB0;
+    --bright-grey:     #4F5965;
+    --summer-sky:      #3894DF;
+    --wild-watermelon: #FB5B76;
+
+    /* fonts */
+    font-size:          16px;
+    --texto-pequeno:    300 0.875rem 'Roboto', sans-serif;
+    --notificacoes:     400 0.875rem 'Roboto', sans-serif;
+    --texto-menu:       500 0.875rem 'Roboto', sans-serif;
+    --disclaimer:       300 0.75rem 'Roboto', sans-serif;
+    --dashboard:        500 0.625rem 'Roboto', sans-serif;
+    --titulo:           300 4.375rem 'Roboto', sans-serif;
+    --sub-titulo:       300 1.875rem 'Roboto', sans-serif;
+    --button:           400 0.75rem 'Roboto', sans-serif;
+    --label:            400 0.75rem 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--bright-grey);
+}
+
+body {
+    line-height: 1.4;
+    background: var(--white);
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    position: relative;
+    background: var(--light);
+}
+
+.button {
+    display: table;
+    line-height: 2;
+    padding: 12px 32px;
+    font: var(--button);
+    color: var(--white);
+    border-radius: 25px;
+    text-decoration: none;
+    background: var(--summer-sky);
+}
+
+
+/* Default Forms */
+label {
+    margin-bottom: 2px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--bright-grey);
+    border: 1px solid var(--spindle);
+}
+
+.input-group .message {
+    width: 100%;
+    display: flex;
+    margin: 3px 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group .message .small-link {
+    font: var(--label);
+    color: var(--rock-blue);
+    text-decoration: none;
+}
+
+.input-group .message span {
+    opacity: 0;
+}
+
+.input-group.error label {
+    color: var(--red);
+}
+
+.input-group.error .message span {
+    opacity: 1;
+    color: var(--red);
+}
+
+.input-group.error input {
+    border: 1px solid var(--red);
+}
+
+
+/* Login: Header */
+.grid-header {
+    z-index: 2;
+    position: relative;
+    transform: translateY(50px);
+}
+
+.brand {
+    border: none;
+    text-decoration: none;
+}
+
+.brand-conecta {
+    max-width: 240px;
+    margin-left: 30px;
+}
+
+.brand-essilor {
+    bottom: 0;
+    max-width: 50px;
+    margin-left: 60px;
+    position: absolute;
+    transform: translateY(-50px);
+}
+
+
+/* Login: Main */
+.grid-form {
+    z-index: 1;
+    padding-top: 20px;
+    position: relative;
+}
+
+.grid-form::after {
+    right: 0;
+    z-index: 3;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+    transform: translate(-110px, -20px);
+    background: url('../assets/images/dest-homem.png') no-repeat;
+    background-size: cover;
+}
+
+.main-area {
+    padding: 0;
+    background: #fff;
+}
+
+
+/* Login: Form */
+.login-form {
+    display: flex;
+    max-width: 300px;   
+    flex-direction: column;
+    box-sizing: content-box;
+    padding: 60px 0 60px 100px;
+}
+
+.login-form .titulo {
+    margin-bottom: 30px; 
+    letter-spacing: -1px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);  
+}
+
+.login-form .input-group {
+    width: 100%;
+    display: flex;
+    font: var(--label);
+    align-items: start;
+    flex-direction: column;
+    color: var(--rock-blue);
+}
+
+.login-form .input-group:last-child {
+    margin: 10px 0 0;
+}
+
+
+/* Login: Disclaimer */
+.disclaimer {
+    padding: 40px 100px;
+    letter-spacing: -1px;
+    background: var(--solitude);
+}
+
+.disclaimer .titulo {
+    font: var(--sub-titulo);
+    color: var(--rock-blue);
+    
+}
+
+.disclaimer .link-text {
+    text-decoration: none;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+
+/* Footer */
+.logos {
+    display: flex;
+    padding: 30px 0;
+    list-style: none;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--spindle);
+}
+
+.logos li img {
+    width: 100%;
+    max-width: 125px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+    font: var(--texto-pequeno);
+}
