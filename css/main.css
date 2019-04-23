@@ -141,13 +141,16 @@ input:-moz-placeholder {
     padding: 0;
     background: #fff;
 }
-.main-area .hero {
+.main-area.full-height {
+    min-height: 500px;
+}
+
+/* Hero Default */
+.hero {
     max-width: 560px;
     padding: 60px 100px;
     box-sizing: content-box;
 }
-
-/* Hero Default */
 .hero .categoria {
     margin: 0;
     color: var(--summer-sky);
