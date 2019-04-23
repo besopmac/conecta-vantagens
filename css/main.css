@@ -13,27 +13,16 @@
 
     /* fonts */
     font-size:          16px;
-    --texto-pequeno:    300 0.875rem 'Roboto', sans-serif;
+    --texto-pequeno:    300 0.875rem/2 'Roboto', sans-serif;
     --notificacoes:     400 0.875rem 'Roboto', sans-serif;
     --texto-menu:       500 0.875rem 'Roboto', sans-serif;
     --disclaimer:       300 0.75rem 'Roboto', sans-serif;
     --dashboard:        500 0.625rem 'Roboto', sans-serif;
-    --titulo:           300 4.375rem 'Roboto', sans-serif;
+    --titulo:           300 4.375rem/1.1 'Roboto', sans-serif;
     --sub-titulo:       300 1.875rem 'Roboto', sans-serif;
     --button:           400 0.75rem 'Roboto', sans-serif;
     --label:            400 0.75rem 'Roboto', sans-serif;
     --text:             400 0.75rem/2 'Roboto', sans-serif;
-
-    /* buttons */
-    --button-default: {
-        display: table;
-        line-height: 2;
-        padding: 12px 32px;
-        font: var(--button);
-        color: var(--white);
-        border-radius: 25px;
-        text-decoration: none;
-    }
 }
 
 * {
@@ -151,6 +140,27 @@ input:-moz-placeholder {
 .main-area {
     padding: 0;
     background: #fff;
+}
+.main-area .hero {
+    max-width: 560px;
+    padding: 60px 100px;
+    box-sizing: content-box;
+}
+
+/* Hero Default */
+.hero .categoria {
+    margin: 0;
+    color: var(--summer-sky);
+}
+.hero .titulo {
+    margin: 0;
+    font: var(--titulo);
+    letter-spacing: -4px;
+    color: var(--wild-watermelon);
+}
+.hero .text {
+    margin: 15px 0 30px;
+    font: var(--texto-pequeno);
 }
 
 
