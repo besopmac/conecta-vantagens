@@ -376,11 +376,14 @@ footer {
 }
 
 .tab-label {
-    width: 100%;
-    padding: 20px 0;
-    cursor: pointer;
+    margin: 0 0 -1px;
+    font-weight: 600;
     font: var(--tabs);
+    padding: 15px 25px;
     color: var(--spindle);
+    display: inline-block;
+    border: 1px solid transparent;
+    
 }
 
 .tab-label:hover {
