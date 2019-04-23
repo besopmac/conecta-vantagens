@@ -364,6 +364,11 @@ footer {
 
 /* Tabs */
 .tabs {
+    display: grid;
+    grid-template-areas:
+        "tab-a tab-b tab-c tab-d tab-e"
+        "content content content content content";
+    padding: 20px 100px 40px;
     border-top: 1px solid var(--spindle);
 }
 
@@ -372,18 +377,43 @@ footer {
 }
 
 .tab-label {
+    display: flex;
+    align-items: center;
     font: var(--tabs);
     color: var(--spindle);
-    display: inline-block;
+}
+
+.tab-label span {
+    width: 24px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid var(--spindle);
 }
 
 .tab-panel {
     display: none;
-    border: 1px solid black;
+    grid-area: content;
+    padding-top: 30px;
 }
 
 .tab-input:checked + .tab-label {
     color: var(--wild-watermelon);
+}
+
+.tab-input:checked + .tab-label span {
+    border: 2px solid var(--wild-watermelon);
+}
+
+#tab-1 {
+    grid-area: tab-a;
+}
+
+#tab-2 {
+    grid-area: tab-b;
 }
 
 #tab-1:checked ~ #content-1,
