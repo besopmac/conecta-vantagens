@@ -93,6 +93,7 @@ input[type=password] {
     color: var(--bright-grey);
     border: 1px solid var(--spindle);
 }
+
 input::-webkit-input-placeholder {
     color: var(--spindle);
 }
@@ -146,7 +147,14 @@ input:-moz-placeholder {
 }
 
 
-/* Login: Header */
+/* Main Default */
+.main-area {
+    padding: 0;
+    background: #fff;
+}
+
+
+/* Header: Login */
 .grid-header {
     z-index: 2;
     position: relative;
@@ -171,8 +179,24 @@ input:-moz-placeholder {
     transform: translateY(-50px);
 }
 
+/* Header: Cadastro */
+.grid-header-cadastro {
+    z-index: 2;
+    position: relative;
+    transform: translateY(50px);
+}
 
-/* Login: Main */
+.grid-header-cadastro .brand-essilor {
+    right: 0;
+    bottom: 0;
+    max-width: 50px;
+    margin-left: 60px;
+    position: absolute;
+    transform: translateY(-30px);
+}
+
+
+/* Main: Login */
 .grid-form {
     z-index: 1;
     padding-top: 20px;
@@ -191,13 +215,17 @@ input:-moz-placeholder {
     background-size: cover;
 }
 
-.main-area {
-    padding: 0;
-    background: #fff;
+
+/* Main: Cadastro */
+.grid-cadastro {
+    z-index: 1;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 
-/* Login: Form */
+/* Form: Login */
 .login-form {
     display: flex;
     max-width: 320px;   
@@ -262,8 +290,6 @@ input:-moz-placeholder {
 .login-form.new-password .buttons-group {
     margin-top: 0;
 }
-
-
 
 
 /* Login: Disclaimer */
