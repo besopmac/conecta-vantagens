@@ -162,8 +162,11 @@ input:-moz-placeholder {
     color: var(--wild-watermelon);
 }
 .hero .text {
-    margin: 15px 0 30px;
+    margin: 15px 0;
     font: var(--texto-pequeno);
+}
+.hero .text a {
+    color: var(--bright-grey);
 }
 
 
