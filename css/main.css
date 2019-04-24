@@ -183,12 +183,16 @@ input:-moz-placeholder {
     margin: 15px;
     height: 400px;
     padding: 20px;
-    font-size: .8rem;
     line-height: 1.5;
     overflow: hidden;
     overflow-y: auto;
+    font-size: .75rem;
     color: var(--bright-grey);
     border: 1px solid var(--spindle);
+}
+
+.review-text p {
+    margin-bottom: 10px;
 }
 
 /* Main Default */
@@ -490,5 +494,10 @@ footer {
 .tab-panel.active {
     display: block;
     box-sizing: border-box;
-}  
+}
+
+.tab-panel .titulo {
+    color: var(--spindle);
+    font: var(--sub-titulo);
+}
   
