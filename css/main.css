@@ -542,7 +542,7 @@ footer {
 }
 
 
-/* Header */
+/* Header Dashboard */
 .header-full {
     width: 100%;
     display: flex;
@@ -661,6 +661,7 @@ footer {
     position: relative;
     border-radius: 50%;
     color: var(--white);
+    text-align: center;
     transform: translate(10px, 10px);
     background: var(--wild-watermelon);
 }
@@ -716,4 +717,102 @@ footer {
     letter-spacing: 1px;
     font: var(--dashboard);
     color: var(--rock-blue);
+}
+
+
+/* Banner Hero: Default */
+.hero-default {
+    background: url('../assets/images/bg-hero-default.png') no-repeat center top;
+    background-size: cover;
+    max-height: 300px;
+}
+
+
+/* Banner Hero: Home */
+.hero-programa {
+    z-index: 2;
+    position: relative;
+    background: url('../assets/images/banner-programa.png') no-repeat center top;
+    background-size: cover;
+    max-height: 500px;
+}
+
+.hero-programa .featured {
+    max-width: 400px;
+    box-sizing: content-box;
+    padding: 40px 80px 100px 80px;
+}
+
+.hero-programa .featured .categoria {
+    margin: 0;
+    color: var(--summer-sky);
+}
+
+.hero-programa .featured .titulo {
+    margin: 0;
+    font: var(--titulo);
+    color: var(--wild-watermelon);
+    letter-spacing: -4px;
+}
+
+.hero-programa .featured .text {
+    margin: 20px 0 0;
+    font: var(--texto-pequeno);
+    line-height: 1.5;
+}
+
+/* Master Menu */
+.header-menu {
+    z-index: 5;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: var(--light);
+}
+
+.header-menu .button-home {
+    flex: 0 0 50px;
+    background-color: var(--spindle);
+}
+
+.header-menu .sub-nav {
+    display: flex;
+    flex: 0 0 320px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.header-menu .sub-nav li {
+    position: relative;
+    background-color: #AABECE;
+}
+
+.header-menu .sub-nav li:nth-child(odd) {
+    background-color: var(--spindle);
+}
+
+.header-menu .sub-nav li .menu-badge {
+    z-index: 3;
+    display: block;
+    line-height: 1.5;
+    font-size: 0.5rem;
+    position: relative;
+    border-radius: 50%;
+    
+    text-align: center;
+    background: var(--light);
+    color: var(--wild-watermelon);
+}
+
+
+/* Default Content */
+.content {
+    position: relative;
+}
+
+.content .grid-content {
+    z-index: 3;
+    position: relative;
+    transform: translateY(-50px);
+    background-color: var(--light);
 }
