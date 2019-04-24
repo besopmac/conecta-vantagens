@@ -727,6 +727,20 @@ footer {
     max-height: 300px;
 }
 
+.hero-default .featured {
+    display: flex;
+    padding: 70px 0 120px;
+    justify-content: center;
+}
+
+.hero-default .featured .titulo {
+    margin: 0;
+    font: var(--titulo);
+    font-size: 3.25rem;
+    letter-spacing: -2px;
+    color: var(--wild-watermelon);
+}
+
 
 /* Banner Hero: Home */
 .hero-programa {
@@ -771,19 +785,56 @@ footer {
 }
 
 .header-menu .button-home {
+    width: 50px;
+    height: 50px;
+    display: flex;
     flex: 0 0 50px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--spindle);
+}
+
+.header-menu .default-nav {
+    flex: 1;
+    display: flex;
+    list-style: none;
+}
+
+.header-menu .default-nav li {
+    display: flex;
+    align-items: stretch;
+}
+
+.header-menu .default-nav li a,
+.header-menu .default-nav li a:hover {
+    display: flex;
+    padding: 0 20px;
+    font: var(--menu);
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-menu .default-nav li a.active {
+    color: var(--white);
+    background-color: var(--wild-watermelon);
 }
 
 .header-menu .sub-nav {
     display: flex;
     flex: 0 0 320px;
     list-style: none;
+    max-width: 320px;
     justify-content: flex-end;
 }
 
 .header-menu .sub-nav li {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex: 0 0 50px;
     position: relative;
+    align-items: center;
+    justify-content: center;
     background-color: #AABECE;
 }
 
@@ -793,10 +844,10 @@ footer {
 
 .header-menu .sub-nav li .menu-badge {
     z-index: 3;
-    display: block;
+    display: none;
     line-height: 1.5;
     font-size: 0.5rem;
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     
     text-align: center;
@@ -815,4 +866,13 @@ footer {
     position: relative;
     transform: translateY(-50px);
     background-color: var(--light);
+}
+
+.content .grid-content .review {
+    margin: 50px 125px;
+    font: var(--text);
+}
+
+.content .grid-content .review p.title {
+    margin-bottom: 30px;
 }
