@@ -175,18 +175,52 @@ input:-moz-placeholder {
 
 .form-buttons {
     display: flex;
+    margin-top: 20px;
     justify-content: space-between;
 }
 
+
+/* Custom Radio */
+.input-radio input[type=radio] {
+    display: none;
+}
+.input-radio label {
+    display: flex;
+    margin: 0 0 10px;
+    line-height: 1.5;
+    align-items: center;
+    font: var(--texto-menu);
+}
+.input-radio label div {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.1s ease-in;
+    border: 4px solid #E1E8EE;
+    background-color: #E1E8EE;
+}
+.input-radio input:checked + label div {
+    border: 4px solid #B7C72C;
+    background-color: #fff;
+}
+
+
+/* Regulamento */
 .review-text {
     width: 97.5%;
-    margin: 15px;
     height: 400px;
     padding: 20px;
     line-height: 1.5;
     overflow: hidden;
     overflow-y: auto;
     font-size: .75rem;
+    margin: 15px 15px 20px;
     color: var(--bright-grey);
     border: 1px solid var(--spindle);
 }
@@ -194,6 +228,7 @@ input:-moz-placeholder {
 .review-text p {
     margin-bottom: 10px;
 }
+
 
 /* Main Default */
 .main-area {
