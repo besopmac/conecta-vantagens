@@ -3,6 +3,9 @@
     /* colors */
     --red:             #F00;
     --white:           #FFF;
+    --gold:            #EDB726;
+    --silver:          #A6ABAF;
+    --diamond:         #4AB2CA;
     --light:           #F5F8FC;
     --solitude:        #EDF2F9;
     --spindle:         #BACDDC;
@@ -71,6 +74,36 @@ img {
 
 .button-primary {
     background: var(--summer-sky);
+}
+
+.button-outlined,
+.button-outlined:hover {
+    font: var(--menu);
+    align-items: center;
+    display: inline-flex;
+    color: var(--rock-blue);
+    background: transparent;
+    border: 1px solid var(--rock-blue);
+}
+
+.button-outlined .icon {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.button-silver {
+    color: var(--silver);
+    border: 1px solid var(--silver);
+}
+
+.button-gold {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.button-diamond {
+    color: var(--diamond);
+    border: 1px solid var(--diamond);
 }
 
 
@@ -875,4 +908,93 @@ footer {
 
 .content .grid-content .review p.title {
     margin-bottom: 30px;
+}
+
+.content .grid-content .instructions {
+    padding: 50px;
+    text-align: center;
+}
+
+.content .grid-content .instructions .titulo {
+    margin: 0 0 30px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+    letter-spacing: -1px;
+}
+
+.content .grid-content .instructions p {
+    font: var(--texto-pequeno);
+    line-height: 1.5;
+}
+
+.nav-tabela {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.group-cards {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.group-cards .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.group-cards .wrapper-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group-cards .wrapper-cards .card {
+    display: flex;
+    flex: 0 0 20%;
+    margin: 10px 18px;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0 0 .75em rgba(0, 0, 0, 0.2);
+}
+
+.group-cards .wrapper-cards .card .card-header {
+    padding: 15px;
+}
+
+.group-cards .wrapper-cards .card .card-header h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.group-cards .wrapper-cards .card .card-header p {
+    max-width: 80%;
+    font-size: .75rem;
+}
+
+.group-cards .wrapper-cards .card .card-footer {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--silver);
+}
+
+.group-cards .wrapper-cards .card .card-footer.is-gold {
+    background-color: var(--gold);
+}
+
+.group-cards .wrapper-cards .card .card-footer.is-diamond {
+    background-color: var(--diamond);
+}
+
+.observacao {
+    margin: auto;
+    max-width: 800px;
+    font: var(--text);
+    padding: 0 20px 50px;
+    line-height: 1.5;
 }
