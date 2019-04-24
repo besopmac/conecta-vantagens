@@ -22,7 +22,7 @@
         </header>
 
         <section class="grid grid-cadastro">
-            <main class="col-1-1 main-area">
+            <main class="main-area">
                 <div class="hero">
                     <small class="categoria">Cadastro</small>
                     <h2 class="titulo">Vantagem é ter<br>você com a gente!</h2>
@@ -35,7 +35,7 @@
                         <label for="tab-1" class="tab-label"><span>1</span>Informações Pessoais</label>
                         
                         <input name="tabs" type="radio" id="tab-2" class="tab-input" />
-                        <label for="tab-2" class="tab-label"><span>2</span>Endereço</label>
+                        <label for="tab-2" class="tab-label complete"><span>2</span>Endereço</label>
                         
                         <input name="tabs" type="radio" id="tab-3" class="tab-input" />
                         <label for="tab-3" class="tab-label"><span>3</span>Dados Comerciais</label>
@@ -47,7 +47,8 @@
                         <label for="tab-5" class="tab-label"><span>5</span>Regulamento</label>
                     </nav>
                     
-                    <div id="content-1" class="tab-panel active">
+                    <!-- 1. Informações Pessoais -->
+                    <div id="content-1" class="tab-panel">
                         <div class="row">
                             <div class="col-md-3">
                                 <img src="assets/images/upload-foto.png" class="input-image-upload" alt="">
@@ -59,7 +60,7 @@
                                             <label>CPF (Somente Números)*</label>
                                             <input type="text" maxlength="14" required />
                                             <p class="message">
-                                                <span>Lorem, ipsum dolor.</span>
+                                                <span>Campo Obrigatório</span>
                                             </p>
                                         </div>
                                     </div>
@@ -68,7 +69,7 @@
                                             <label>RG*</label>
                                             <input type="text" maxlength="" required />
                                             <p class="message">
-                                                <span>Lorem, ipsum dolor.</span>
+                                                <span>Campo Obrigatório</span>
                                             </p>
                                         </div>
                                     </div>
@@ -79,71 +80,610 @@
                                             <label>E-mail*</label>
                                             <input type="email" required />
                                             <p class="message">
-                                                <span>Lorem, ipsum dolor.</span>
+                                                <span>Campo Obrigatório</span>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="grid">
-                            <div class="col-3-12">
-                                <img src="assets/images/upload-foto.png" class="input-image-upload" alt="">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <label>Nome e Sobrenome*</label>
+                                    <input type="text" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-9-12">
-                                <div class="form-row">
-                                    <div class="input-group half-size">
-                                        <label>CPF (Somente Números)*</label>
-                                        <input type="text" maxlength="14" required />
-                                        <p class="message">
-                                            <span>Lorem, ipsum dolor.</span>
-                                        </p>
-                                    </div>
-                                    <div class="input-group half-size">
-                                        <label>RG*</label>
-                                        <input type="text" maxlength="" required />
-                                        <p class="message">
-                                            <span>Lorem, ipsum dolor.</span>
-                                        </p>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <label>Sexo*</label>
+                                    <select name="sexo">
+                                        <option disabled selected>---</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                    </select>
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Data de Nascimento</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Data de Nascimento</label>
+                                    <select name="sexo">
+                                        <option disabled selected>---</option>
+                                    </select>
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group input-phone">
+                                    <label>Telefone*</label>
+                                    <input type="text" maxlength="9" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group input-phone">
+                                    <label>Telefone*</label>
+                                    <input type="text" maxlength="9" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <a href="#" class="button">Voltar para o Login</a>
+                            <a href="#" class="button button-primary">Avançar</a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Endereço -->
+                    <div id="content-2" class="tab-panel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>CEP (Somente Números)*</label>
+                                    <input type="text" maxlength="9" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Logradouro*</label>
+                                    <input type="text" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Número*</label>
+                                    <input type="text" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Complemento</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Bairro*</label>
+                                    <input type="text" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Cidade*</label>
+                                    <input type="text" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Estado*</label>
+                                    <input type="text" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Ponto de Referência</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="form-message">*Campos Obrigatórios</p>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <a href="#" class="button">Voltar para o Login</a>
+                            <a href="#" class="button button-primary">Avançar</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. Dados Comerciais -->
+                    <div id="content-3" class="tab-panel">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <label>Insira o CNPJ da Ótica</label>
+                                    <input type="text" maxlength="" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group input-button">
+                                    <a href="#" class="button button-primary">Buscar Ótica</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <label>CNPJ</label>
+                                    <input type="text" maxlength="" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <label>Razão Social</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="col-1-1">
-                                <div class="form-row">
-                                    <div class="input-group half-size">
-                                        <label>CPF (Somente Números)*</label>
-                                        <input type="text" maxlength="14" required />
-                                        <p class="message">
-                                            <span>Lorem, ipsum dolor.</span>
-                                        </p>
-                                    </div>
-                                    <div class="input-group half-size">
-                                        <label>RG*</label>
-                                        <input type="text" maxlength="" required />
-                                        <p class="message">
-                                            <span>Lorem, ipsum dolor.</span>
-                                        </p>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <label>Nome Fantasia</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Logradouro</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Número</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Complemento</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Bairro</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Cidade</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Estado</label>
+                                    <select name="estado">
+                                        <option disabled selected>---</option>
+                                        <option value="acre">Acre</option>
+                                    </select>
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group">
+                                    <label>Ponto de Referência</label>
+                                    <input type="text" />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="form-message">*Campos Obrigatórios</p>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <a href="#" class="button">Voltar para o Login</a>
+                            <a href="#" class="button button-primary">Avançar</a>
+                        </div>
                     </div>
                     
-                    <div id="content-2" class="tab-panel">
-                        [ Endereço ]
-                    </div>
-                    
-                    <div id="content-3" class="tab-panel">
-                        [ Dados Comerciais ]
-                    </div>
-                    
+                    <!-- 4. Senha -->
                     <div id="content-4" class="tab-panel">
-                        [ Senha ]
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Nova Senha*</label>
+                                    <input type="password" maxlength="" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <label>Confirmar Nova Senha*</label>
+                                    <input type="password" maxlength="" required />
+                                    <p class="message">
+                                        <span>Campo Obrigatório</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <a href="#" class="button button-primary">Avançar</a>
+                        </div>
                     </div>
                     
-                    <div id="content-5" class="tab-panel">
-                        [ Regulamento ]
+                    <!-- 5. Regulamento -->
+                    <div id="content-5" class="tab-panel active">
+                        <h3 class="titulo">Regulamento</h3>
+                        <div class="row">
+                            <div class="col-md-12 review-text">
+                                    DADOS DA EMPRESA PROMOTORA
+                                    Razão Social: Multi-Óptica Distribuidora Ltda. (“ESSILOR”)
+                                    Endereço: Rua do Alho, 1125 – Penha Circular
+                                    Cidade/UF: Rio de Janeiro - RJ
+                                    CEP: 21011-000
+                                    CNPJ nº: 30.260.871/0001-05
+                                    
+                                    
+                                    REGULAMENTO DO PROGRAMA CLUBE DE PRÊMIOS ESSILOR
+                                    O Clube de Prêmios é um programa de relacionamento, vantagens e premiação para o mercado óptico, firmado entre entre o GRUPO ESSILOR, as ópticas e os profissionais de vendas do setor óptico. O programa tem a finalidade de resgate de prêmios pelo acúmulo de pontos após a inserção de códigos que constam nos certificados de garantia que acompanham os blocos e as lentes oftálmicas do grupo ESSILOR no site www.proessilor.com.br/clubedepremios.
+                                    
+                                    
+                                    1. DEFINIÇÕES:
+                                    
+                                    PROFISSIONAL DE VENDA: É o funcionário/vendedor, da óptica que oferta  e comercializa produtos do grupo Essilor.
+                                    
+                                    ÓPTICAS: Estabelecimento comercial onde são comercializadas as lentes do grupo Essilor .
+                                    
+                                    LABORATÓRIOS ALLIANCE: Laboratório autorizado a produzir e distribuir as  lentes e blocos do gupo Essilor para as ópticas de sua carteira.
+                                    
+                                    CERTIFICADO DE GARANTIA DAS LENTES E BLOCOS: Comprovante de autenticidade das lentes e blocos do grupo Essilor. As lentes e blocos que possuem o modelo de fabricação através da surfaçagem tradicional, seguem com certificados de papel e não são personalizados; já as lentes que possuem o processo de fabricação através da surfaçagem digital, possuem certificados de cartão e são personalizados para o consumidor final.  
+                                    
+                                    CÓDIGOS DE BARRAS DE PONTUAÇÃO: São combinações de números em códigos de barras que seguem através de certificados de garantias das lentes e blocos.  Os códigos estão associados às lentes e blocos, às pontuações equivalentes e á validade destes pontos. 
+                                    
+                                    TABELA DE PONTOS: Tabela que fica disponível no site www.proessilor.com.br/clubedepremios onde é indicada a pontuação que os produtos participantes do Clube de Prêmios possuem. Exemplo: Varilux Comfort vale 50 pontos Programa Clube de Prêmios.
+                                    
+                                    INSERÇÃO DE PONTOS: Ação, do profissional de vendas, de cadastrar os números dos códigos de barras no site ou aplicativo do programa, ao cadastrá-los começa a acumular pontos.
+                                    
+                                    RESGATE DE PONTOS: Ação, do profissional de vendas ou Labóratórios Alliance, de trocar seus pontos por premiações, que podem ser produtos físicos, vales presentes, servições, entre outros de fornecedores externos.
+                                    
+                                    PONTO CARONA: Crédito de pontos disponibilizados para os laboratórios Alliance que participam do programa Clube de Prêmios. Os laboratórios Alliance utilizam os pontos carona para realizarem ações promocionais e promoções para suas carteiras de ópticas para incentivarem as vendas os produtos do grupo Essilor.  
+                                    
+                                    
+                                    2. MECÂNICA:
+                                    
+                                    2.1 CADASTRO:
+                                    
+                                    a) Para participar do programa Clube de Prêmios, o profissional de vendas deve fazer seu cadastro no site proessilor.com.br/clubedepremios. A principal identificação do profissional de vendas é o seu CPF.
+                                    
+                                    b) Todo profissional de vendas deve estar associado a uma óptica (CNPJ) e as informações da óptica estarão sujeitas à aprovação da Essilor. O prazo de aprovação de cadastro é de até 30 (trinta) dias úteis. Cadastros sem associação de ópticas ativos no programa serão bloqueados para inserção e resgates de pontos e deverão estar associados a uma óptica para voltar a realizar transações no programa. A referida associação passará pela aprovação da Essilor.
+                                    
+                                    c) Só será permitida uma única conta por profissional de vendas, sendo que, em caso de duplicidade, uma das contas será cancelada a critério da Essilor e o seu saldo de pontos transferido para a conta que permanecer ativa.
+                                    
+                                    d) Os pontos acumulados no programa Clube de Prêmios são pessoais e intransferíveis para CPF diferente. Em caso de falecimento do participante os pontos correspondentes serão cancelados a partir do comunicado do óbito.
+                                    
+                                    e) Alterações cadastrais podem ser realizadas através do site e aplicativo do programa. Mudança realizadas nos dados da óptica associada ao profissional de vendas estarão sujeitas à aprovação da Essilor.
+                                    
+                                    f) O programa Clube de Prêmios, a critério da Essilor, poderá solicitar o recadastramento do profissional de vendas a qualquer momento, sem prévio aviso.
+                                    
+                                    
+                                    2.2   ACÚMULO DE PONTOS:
+                                    
+                                    a) O acúmulo de pontos poderá ser realizado através da inserções dos números dos códigos de barras nos certificados de garantia, através do site proessilor.com.br/clubedepremios e aplicativo do programa. Cada lente e bloco possuem uma pontuação específica. O participante deve verificar as respectivas pontuações para cada lente e bloco na tabela de pontos, presente no site e aplicativo do programa.
+                                    
+                                    a.1) A Essilor declara que a Apple Inc. não está envolvida em nenhum aspecto em premiações associadas ao Programa Clube de Prêmios Essilor.
+                                    
+                                    b) As lentes e blocos com processo de fabricação tradicional, possuem certificado de garantia de papel. Estes possuem os códigos de barras em abas/tickets destacavéis. O profissional de vendas deve destacar o ticket e entregar o certificado de garantia para o consumidor final. No ticket, também, segue a data de vencimento para a inserção dos códigos de barras que devem ser inseridos manualmente no site ou através do leitor de códigos de barras no aplicativo do programa Clube de Prêmios. 
+                                    
+                                    c) As lentes com processo de fabricação digital, possuem certificado de garantia de cartão, estes possuem os códigos de barras no próprio cartão. Antes de entregar o certificado para o consumidor final, o participante deve inserir os códigos imediatamente através do leitor de códigos de barras do aplicativo ou anotar os números dos códigos de barras para inserir manualmente no site ou aplicativo do programa, posteriormente.
+                                    
+                                    d) Os números dos códigos de barras inseridos via site ou aplicativo do programa serão processados e o saldo de pontos do participante será atualizado automaticamente.
+                                    
+                                    e) Em caso de suspeita de fraude, o acúmulo dos pontos pelo participante ficará suspenso em todos os canais do programa Clube de Prêmios até que a suspeita seja esclarecida juntos a força de vendas da Essilor ou laboratórios alliance ou parceiros Caso a fraude seja comprovada, o participante será classificado como inativo e bloqueado por fraude no sistema do programa.  
+                                    
+                                     f) Possíveis bonificações ou restrições no acumulo de pontos serão realizadas conforme as regras de participação do programa, campanhas e promoções extras e podem ser realizadas com ou sem prévio aviso.
+                                    
+                                    g) A Essilor se reserva o direito de, a seu exclusivo critério, alterar os pontos de cada produto, bem como incluir ou excluir famílias de produtos, a qualquer momento, garantindo aos participantes o envio de uma comunicação sobre a eventual alteração.
+                                    
+                                    
+                                    2.3 RESGATE DE PONTOS:
+                                    
+                                    a) O resgate de pontos é de total responsabilidade do participante e deste deve ter a pontuação suficiente para realizá-lo e resgatar produtos nas lojas ou serviços disponíveis. Os resgates podem ser realizados através do site proessilor.com.br/clubedepremios ou do aplicativo do programa.
+                                    
+                                    b) O participante deve resgatar seus pontos acumulados a qualquer momento dentro do prazo de vigência dos pontos.  
+                                    
+                                    c) A consulta dos resgates realizados, o tracking das entregas dos pedidos realizados e o pagamento das contas devem ser acompanhados através do site proessilor.com.br/clubedepremios ou aplicativo do programa.
+                                    
+                                    d) Os prazos de entregas, créditos e pagamentos variam de acordo com os produtos, lojas e serviços e são determinados pelos fornecedores de premiações. A Essilor não possui qualquer ingerência sobre o prazo de entrega, créditos e pagamentos estipulado pelos fornecedores de premiações, porém realiza a cobrança para que os mesmos sejam cumpridos como estabelecido.
+                                    
+                                    e) Os fornecedores de premiações são escolhidos e avaliados pela Essilor, a seu critério, e a referida contratação observa as políticas estabalecidas pelas áreas de Compras e Jurídica.
+                                    
+                                    f) A Essilor não se responsabiliza por entregas de produtos, assim como pela violação, defeitos ou avarias e incorreções nos produtos entregues. Estes e outros incidentes devem ser comunicados para a Central de Atendimento do Clube de Prêmios, imediatamente após a entrega dos produtos, para que a situação seja analisada juntos com aos fornecedores de premiações e de acordo com as políticas de troca.
+                                    
+                                    g) A Essilor não se responsabiliza pelo não pagamento de contas, devido a, não somente, não repasse do valor para a instituição credora ou problemas de processamente de instituições bancárias. Estes e outros incidentes devem ser comunicados para a Central de Atendimento do Clube de Prêmios, imediatamente após o não pagamento da conta para que a situação seja analisada juntos com aos fornecedores de premiações e de acordo com as de ressarcimento ou estorno. 
+                                    
+                                    h) O limite de pagamento permitido para este tipo de transação é de R$ 1.000,00 por boleto.
+                                    
+                                    i) É total responsabilidade do participante a correta digitação de códigos de barra no resgate ‘Pague Contas’, a Essilor não se responsabiliza por erros desta natureza e eventual não pagamento de contas, pagamento de contas indevidas ou com valores ou vencimento incorretos.
+                                    
+                                    j) A Essilor não se responsabiliza pelo não crédito de recargas online, devido a, não somente, problemas junto à operadoras de telefonia, problemas com o telefone celular, configurações do aparelho telefônico, problemas com a rede da empresa de telefonia. Estes e outros incidentes devem ser comunicados para a Central de Atendimento do Clube de Prêmios, imediatamente após verifcação de que a recarga não foi efetuada para que a situação seja analisada juntos com aos fornecedores de premiações e de acordo com as de ressarcimento ou estorno. 
+                                    
+                                    k) É total responsabilidade do participante a correta digitação do DDD, telefone, valor e operadora de telefonia no resgate ‘Recarga Online’, a Essilor não se responsabiliza por erros desta natureza e eventual créditos em números de telefone indevidas ou com valores incorretos.
+                                    
+                                    l) A Essilor não se responsabiliza por extravios, roubos de cargas, recebimentos indevidos por terceiros não autorizados, mudanças de endereço de entrega não comunicados e atrasos de entregas devido a greve de correios ou greves de sindicatos de classes. Estas e outras ocorrências dessa natureza serão analisadas e tratadas pelos fornecedores de premiação por intermédio da Central de Atendimento do Clube de Prêmios em busca de soluções para o participante.
+                                    
+                                    m) Campanhas e promoções envolvendo condições dos resgates e premiações ou a concessão de prêmios extras ou “surpresa” poderão ser concedidos aos participantes no decorrer do programa Clube de Prêmios, a critério da Essilor, com ou sem prévio aviso.
+                                    
+                                    
+                                    2.4 VIGÊNCIA E VENCIMENTO DE PONTOS:
+                                    
+                                    a) O programa Clube de Prêmios possui dois tipos de vigências e vencimentos de pontos, recorrentes:
+                                    
+                                    - vigência de 12 (doze) meses móveis com vencimentos mensais para as lentes com processo de fabricação digital, e
+                                    
+                                    - vigências de até 18 (dezoito) meses com vencimentos semestrais para as lentes com processo de fabricação tradicional e lentes prontas.  
+                                    
+                                    A vigência dos pontos determina o prazo para inserções e resgates dos pontos. 
+                                    
+                                    b) Vencimentos mensais: vencimento referente aos pontos das lentes que possuem processo de fabricação digital. Estes pontos possuem vigência de 12 (doze) meses móveis após a impressão do certificado de garantia (cartão), ou seja, mensalmente há vencimentos das lentes digitais que foram produzidas nos últimos 12 (doze) meses móveis.
+                                    
+                                    b.1 O vencimento mensal acontece sempre no último dia do mês. Exemplo: Se o certificado de garantia da lente foi impresso em maio de 2015, o vencimento da pontuação desta lente será em 31 de maio de 2016, ou seja, 12 (doze) meses móveis após a emissão do certificado de cartão.
+                                    
+                                    b.2 A data de emissão dos certificados das lentes digitais, o mês e ano, seguem impressos no verso dos cartões.
+                                    
+                                    b.3 O participante deve inserir e resgatar seus pontos dentro da vigência de 12 (doze) meses móveis, ou seja: inserindo os códigos de barras no último dia de vigência dos pontos, o mesmo terá que resgatar seus pontos neste mesmo dia. 
+                                    
+                                    c) Vencimentos semestrais: vencimento referente aos pontos das lentes que possuem processo de fabricação tradicional. Estes pontos possuem vigência de até 18 (dezoito) meses fixos após a impressão do certificado de garantia (papel) e acontrecem duas vezes ao ano, ou seja, semestralmente há vencimentos das lentes tradicionais que possuem certificados impressos de até 18 (dezoito) meses.
+                                    
+                                    c.1 O vencimento semenstral acontece sempre no último dia dos meses de junho e dezembro, ou seja, nos dias dia 30 de junho e 31 de dezembro.
+                                    
+                                    Exemplo: Se o certificado de garantia da lente foi impresso no primeiro semestre de 2015, o vencimento da pontuação desta lente será em 31 de junho de 2016, ou seja, aproximadamente 18 (dezoito) meses após emissão do certificado de papel.
+                                    
+                                    c.2 A data de vencimento dos pontos das lentes tradicionais (dia, mês e ano) segue impressa no ticket do certificado de papel.
+                                    
+                                    c.3 O participante deve inserir e resgatar seus pontos dentro da vigência de até 18 (dezoito) meses, ou seja, inserindo os códigos de barras no último dia de vigência dos pontos, o mesmo terá que resgatar seus seus pontos neste mesmo dia.
+                                    
+                                    d) Vencimentos Extras de Bonificações: O programa Clube de Prêmios pode promover promoções e campanhas concedendo pontos extras ou bonificações para os participantes do programa, de modo a participação na promoção ou campanha ficará a critério da mecânica e regulamento da promoção vigente no momento. Os pontos extras e bonificação podem ter vencimentos nas mesmas datas dos vencimentos mensais e semestrais ou vencimentos extras em paralelo.
+                                    
+                                    d.1 Os vencimentos extras e as comunicações sobre os mesmos serão realizados conforme regulamento da promoção vigente no momento e divulgados para os participantes. 
+                                    
+                                    Para não perder o prazo para inserções dos pontos, o participante deve verificar as datas de emissão impressa no certificado das lentes digitais e a data de vencimento impressa no ticket do certificado das lentes tracidionais.
+                                    
+                                    Para não perder o prazo para realizar os resgates, o participante deve acessar o “histórico de vencimentos” no site ou aplicativo do programa, onde acompanhará as datas dos vencimentos mensais, semestrais ou vencimentos extras de campanhas e promoções.
+                                    
+                                    Após as datas de vencimento, os pontos que perdem suas vigências e expiram são subtraídos do saldo de pontos do participante e não podem ser utilizados em futuros resgates de premiações.
+                                    
+                                    A Essilor se responsabiliza em disponibilizar a área “histórico de vencimentos” no site e aplicativo do programa, principal canal de comunicação sobre as vingências dos pontos para que o participante possa acompanhar as vigências de seus pontos.
+                                    
+                                    A Essilor pode utilizar outros meios de comunicação, como emails, sms, whatsapp, facebook, flyers, entre outros, para comunicar sobre as datas de vencimentos, porém não é uma regra ou obrigação realizar o disparo destes informativos previamente para todos os vencimentos. Tendo em vista que a empresa disponibiliza no site e aplicativo do programa uma área para acompanhamento, área de “histórico de vencimentos ”, e os vencimentos possuem datas fixas.
+                                    
+                                     O participante é responsável por acompanhar as datas de vigências dos pontos, através da área de “histórico de vencimentos” no site e aplicativo do pregrama, permitindo que o mesmo que possa resgatar seus pontos antes das datas de vencimentos.
+                                    
+                                    
+                                    3. MECÂNICA PARA LABORATÓRIOS ALLIANCE:
+                                    
+                                    a) O Laboratório Alliance está apto a participar do programa Clube de Prêmios como parceiro e participante do programa Clube de Prêmios, segundo os termos do Contrato de Adesão do Programa Alliance.
+                                    
+                                    b) Como participante do programa Clube de Prêmios, o Laboratório pode participar comprando pontos carona, com o objetivo de realizar ações promocionais, através do programa, para incentivar vendas dos produtos do grupo Essilor e premiar sua carteira de clientes.
+                                    
+                                    c) O laboratório que adquirir Pontos Carona, tem o direito de utilizar a mecânica e plataforma do programa Clube de Prêmios para premiar e bonificar seus clientes, através dos Pontos Carona adquiridos.
+                                    
+                                    d) Ao adquirir os pontos carona, o laboratório também poderá ser beneficiado em sua classificação Alliance, conforme critérios de Contrato de Adesão ao Programa Alliance.
+                                    
+                                    3.1 Como funcionam os PONTOS CARONA:
+                                    
+                                    a) Os Pontos Carona adquiridos devem ser utilizados como bonificação adicional aos pontos já oferecidos nas lentes Essilor aos profissionais de venda e proprietários das Ópticas participantes do Programa “Clube de Prêmios”.
+                                    
+                                    b) Ou os Pontos Carona podem ser resgatados pelo Laboratório na forma de prêmios, cartões e vouchers a serem distribuídos em ações promocionais que visem o incremento das vendas de produtos Essilor.
+                                    
+                                    c) Ao aderir ao programa Clube de Prêmios, o Laboratório, automaticamente aceitará pagar o valor por ponto extra adquirido - denominado Pontos Carona - com o objetivo de incrementar suas vendas junto às ópticas, acrescidos dos impostos vigentes ou que vier a vigorar, para cada ponto oferecido aos balconistas e proprietários das Ópticas e/ou resgatado, com base nos produtos comprados pela óptica.
+                                    
+                                    d) Os Pontos Carona serão creditados na conta do Laboratório no programa Clube de Prêmios.
+                                    
+                                    e) O Laboratório declara estar ciente de que parte do valor cobrado pelo Ponto Carona também se destina a cobrir despesas relativas à manutenção do Clube de Prêmios, dentre outros.
+                                    
+                                    f) Se, durante a vigência do contrato, forem criados novos tributos ou modificadas as alíquotas dos atuais, de modo a majorar ou diminuir o custo da Essilor, o valor do ponto do Laboratório será revisto a fim de ser ajustado a essas modificações.
+                                    
+                                    g) A Essilor efetuará a cada 120 (cento e vinte) dias a cobrança do valor do ponto adquirido pelo Laboratório através de emissão de Nota Fiscal/Fatura, com base na quantidade de pontos creditados pela Essilor ao Laboratório. A Nota Fiscal/Fatura poderá ser quitada pelo Laboratório em até 4 (quatro) parcelas mensais após a sua emissão.
+                                    
+                                    h) O Laboratório tem o direito de solicitar cotas extras de Pontos Carona, independentes do quadrimestre. Neste caso os valores sobre pontos e impressão incorrerão conforme itens supracitados.
+                                    
+                                    i) Em caso de rescisão do contrato Alliance, o Laboratório obriga-se a informar aos seus clientes que os pontos distribuídos na forma de crédito ou tickets impressos deverão ser enviados para troca em prazo máximo de até 30 (trinta) dias, sob pena de perda da validade dos referidos pontos.
+                                    
+                                    3.2 Como Resgatar:
+                                    
+                                    a) Para realizar o resgate, o Laboratório precisa ser cadastrado no Clube de Prêmios e ter saldo de pontos válidos na modalidade crédito no Clube de Prêmios.
+                                    
+                                    b) O resgate deverá ser feito pelo responsável do Laboratório, na modalidade crédito de pontos, e que poderá ser feito através do site proessilor.com.br/clubedepremios com a confirmação do login (CNPJ) e senha.
+                                    
+                                    c) O resgate pode ser feito a qualquer momento dentro da validade dos pontos carona.
+                                    
+                                    3.3 Validade dos Pontos Carona:
+                                    
+                                    a) No Programa Clube de Prêmios, a validade dos pontos carona (tickets impressos e/ou crédito) para resgate é de até 18 (dezoito) meses a partir da data de crédito no Clube de Prêmios. Caso estes pontos não sejam resgatados neste período, serão cancelados e o valor correspondente não será devolvido.
+                                    
+                                    b) A Essilor não se compromete e nem se obriga a fazer aviso prévio do vencimento dos Pontos Carona uma vez que as datas de vencimento estão disponíveis para consulta no site Clube de Prêmios.
+                                    
+                                    
+                                    4. CONFIDENCIALIDADE:
+                                    
+                                    4.1 Os Participantes reconhecem que, em razão da celebração da aceitação do presente regulamento, poderão ter acesso, voluntária ou involuntariamente, a informações exclusivas ou confidenciais da Essilor. Por essa razão, os Participantes se comprometem a manter total sigilo e confidencialidade em relação a todos os termos e condições deste Contrato, bem como em relação a todos e quaisquer dados, informações, correspondências e documentos que venham a ser fornecidos pela Essilor, os quais somente poderão ser divulgados para terceiros se assim requisitado pela legislação ou mediante ordem de autoridade oficial competente ou se previamente autorizado por escrito pela Essilor.
+                                    
+                                    
+                                    5. VIGÊNCIA:
+                                    
+                                    5.1 Este regulamento vigorará por prazo indeterminado a contar da data de sua adesão pelo participante.
+                                    
+                                    5.2 Serão excluídos como participantes do Programa Clube de Prêmios:
+                                    
+                                    a) os profissionais de vendas no momento da extinção do contrato de trabalho com a ótica ou em caso de falecimento.
+                                    
+                                    b) as óticas em caso de encerramento das suas atividades.
+                                    
+                                    c) os Laboratórios Alliance em caso de inadimplência no pagamento dos Pontos Carona adquiridos. Caso seja verificada a inadimplência do Laboratório, a Essilor notificará o Laboratório, por escrito, concendo-lhe o prazo de 5 (cinco) dias corridos para regularização do pagamento, sob pena de ter os pontos cancelados e a participação encerrada.
+                                    
+                                    5.3 A rescisão por qualquer das Partes não isenta a outra parte das obrigações assumidas anteriormente à rescisão (entre outras, a obrigação de fazer todo e qualquer pagamento devido por força do presente Contrato), nem de obrigações que, por sua natureza ou termos, subsistem à rescisão.
+                                    
+                                    
+                                    6. INDEPENDÊNCIA DAS PARTES:
+                                    
+                                    6.1 As Partes reconhecem que a adesão ao presente regulamento não constitui nem poderá ser interpretada como se constituísse relação de mandato, sociedade,  joint venture, associação, agência, representação comercial, vínculo de emprego ou qualquer outra relação de dependência entre as Partes, seus sócios, administradores, empregados, prepostos e contratados.
+                                    
+                                    6.2 Nenhuma Parte terá autoridade para criar ou assumir quaisquer obrigações de qualquer espécie (sejam elas expressas ou implícitas) em nome uma da outra.
+                                    
+                                    
+                                    7. SINAIS DISTINTIVOS E MARCAS:
+                                    
+                                    7.1 As partes não poderão utilizar quaisquer sinais distintivos, marcas ou nome da outra Parte a que título for, salvo mediante prévia autorização da outra Parte e por escrito. A comprovação da indevida da utilização nos termos desta cláusula caracterizará motivo de rescisão contratual e aplicação de multa.
+                                    
+                                    7.1.1 Em caso de utilização indevida por parte das ópticas, ficarão obrigados ao pagamento de multa no valor total dos pontos adquiridos no programa no ano calendário.
+                                    
+                                    7.1.2 Em caso de utilização indevida por parte dos laboratórios, as mesmas ficarão obrigadas ao pagamento de multa no valor total dos pontos adquiridos no referido ano calendário.
+                                    
+                                    7.1.3 Em caso de utilização indevida por parte da Essilor, a mesma ficará obrigada ao pagamento de multa no  valor total dos pontos adquiridos pelos participantes no ano calendário.
+                                    
+                                    7.2 Caso a infração cometida enseje o término contratual antes de findo o ano calendário, a multa será contabilizada proporcionalmente pela quantidade de meses percorridos.
+                                    
+                                    
+                                    8. MULTA:
+                                    
+                                    8.1 Em caso de inadimplência ao presente regulamento por qualquer das Partes, a parte culpada deverá pagar à parte inocente o valor total dos pontos adquiridos no ano calendário no prazo de 5 (cinco) dias, a partir da data de recebimento de notificação a ser enviada pela parte inocente.                                    
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                [ radios ]
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <a href="#" class="button">Voltar para o Login</a>
+                            <a href="#" class="button button-primary">Ok</a>
+                        </div>
                     </div>
                 </div>
             </main>
