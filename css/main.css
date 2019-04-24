@@ -91,6 +91,7 @@ input[type=password] {
     color: var(--bright-grey);
     border: 1px solid var(--spindle);
 }
+
 select {
     padding: 9.5px;
 }
@@ -184,6 +185,7 @@ input:-moz-placeholder {
 .input-radio input[type=radio] {
     display: none;
 }
+
 .input-radio label {
     display: flex;
     margin: 0 0 10px;
@@ -191,6 +193,7 @@ input:-moz-placeholder {
     align-items: center;
     font: var(--texto-menu);
 }
+
 .input-radio label div {
     width: 20px;
     height: 20px;
@@ -205,6 +208,7 @@ input:-moz-placeholder {
     border: 4px solid #E1E8EE;
     background-color: #E1E8EE;
 }
+
 .input-radio input:checked + label div {
     border: 4px solid #B7C72C;
     background-color: #fff;
@@ -469,6 +473,7 @@ footer {
     justify-content: space-between;
     border-top: 1px solid var(--spindle);
 }
+
 .tabs .navigation:before {
     left: 0;
     width: 100%;
@@ -535,4 +540,180 @@ footer {
     color: var(--spindle);
     font: var(--sub-titulo);
 }
-  
+
+
+/* Header */
+.header-full {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    max-height: 160px;
+    position: relative;
+    background: url('../assets/images/bg-full-header-azul.png') no-repeat;
+    background-position: -40px 0;
+    background-size: cover;
+}
+
+@media (max-width: 1280px) {
+    .header-full {
+        background-position: -130px 0;
+    }
+}
+
+.grid-conecta {
+    display: flex;
+    align-items: center;
+}
+
+.grid-conecta .brand {
+    width: 200px;
+    height: auto;
+}
+
+.user-control {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 50px 0 150px;
+}
+
+.user-control .user-avatar {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    position: relative;
+}
+
+.user-control .user-avatar img {
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    position: relative;
+}
+
+.user-control .user-avatar .user-progress {
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 75px;
+    height: 75px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: var(--wild-watermelon);
+}
+
+.user-control .user-avatar .status-badge {
+    z-index: 3;
+    padding: 3px;
+    display: block;
+    line-height: 2.65;
+    font-size: 0.55rem;
+    position: absolute;
+    border-radius: 50%;
+    color: var(--white);
+    transform: translate(-5px, -5px);
+    background: var(--wild-watermelon);
+}
+
+.user-control .user-info {
+    padding-left: 10px;
+}
+
+.user-control .user-info .greetings {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: -1px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.user-control .user-info .local {
+    margin: 0;
+    position: relative;
+    color: var(--rock-blue);
+}
+
+.user-control .user-info .links {
+    display: flex;
+    padding-top: 8px;
+    justify-content: space-between;
+}
+
+.user-control .user-info .links a,
+.user-control .user-info .links a:hover {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--rock-blue);
+}
+
+.user-control .shop-cart {
+    padding-left: 15px;
+}
+
+.user-control .shop-cart .cart-badge {
+    z-index: 3;
+    padding: 3px;
+    display: block;
+    line-height: 1.45;
+    font-size: 0.5rem;
+    position: relative;
+    border-radius: 50%;
+    color: var(--white);
+    transform: translate(10px, 10px);
+    background: var(--wild-watermelon);
+}
+
+
+/* User Category */
+.user-category {
+    display: flex;
+}
+
+.user-category .icon-category {
+    flex: 0 auto;
+}
+
+.user-category .status-category {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: -1px;
+    padding: 0 30px 0 5px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.user-category .status-category span {
+    display: block;
+    margin: 0 0 -4px;
+    letter-spacing: 1px;
+    font: var(--dashboard);
+    color: var(--rock-blue);
+}
+
+
+/* User Points */
+.user-points,
+.expires-points {
+    display: flex;
+    margin: 15px 0 0 30px;
+    flex-direction: column;
+}
+
+.user-points .title-number,
+.expires-points .title-number {
+    color: var(--wild-watermelon);
+    font: var(--sub-titulo);
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.user-points small,
+.expires-points small {
+    margin: 0;
+    letter-spacing: 1px;
+    font: var(--dashboard);
+    color: var(--rock-blue);
+}
