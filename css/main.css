@@ -129,6 +129,21 @@ img {
     color: var(--wild-watermelon);
 }
 
+.button-full-circle {
+    top: 0;
+    left: 50%;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    transform: translate(-50%, -25px);
+    box-shadow: 0 0 .5em 0 rgba(0, 0, 0, 0.2);
+}
+
 
 /* Default Forms */
 label {
@@ -1058,6 +1073,7 @@ footer.footer-login .logos {
     line-height: 1.5;
 }
 
+/* Programa */
 .validade-pontos {
     display: flex;
     padding: 50px 100px;
@@ -1066,16 +1082,39 @@ footer.footer-login .logos {
     justify-content: center;
 }
 
-.resgate-pontos {
+.resgate-pontos,
+.aculular-pontos {
     display: flex;
-    padding: 50px 200px;
+    padding: 60px 220px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background: var(--solitude);
 }
 
+.certificados {
+    padding: 60px 90px;
+    position: relative;
+}
+
+.certificados .row [class^=col-] {
+    display: flex;
+    padding: 0 90px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px dashed green;
+}
+
+.certificados .row [class^=col-] .card-feature {
+    margin: 50px 0;
+}
+
+.certificados .row [class^=col-] .list-certificado {
+    border: 1px solid red;
+}
+
 .resgate-pontos p,
+.aculular-pontos p,
 .validade-pontos p {
     line-height: 1.65;
     font-size: .875rem;
@@ -1085,6 +1124,7 @@ footer.footer-login .logos {
 }
 
 .resgate-pontos .titulo,
+.aculular-pontos .titulo,
 .validade-pontos .titulo {
     font-size: 2rem;
     font-weight: 300;
@@ -1095,15 +1135,22 @@ footer.footer-login .logos {
 .seus-pontos {
     background: url('../assets/images/bg-glasses.jpg') no-repeat;
     background-size: cover;
-    max-height: 480px;
-    padding: 100px;
+    padding: 120px;
 }
 
 .seus-pontos .info {
-    padding: 50px;
+    padding: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.75);
+}
+
+.seus-pontos .info h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto 25px;
+    color: var(--bright-grey);
 }
