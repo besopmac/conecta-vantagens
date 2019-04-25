@@ -939,6 +939,7 @@ footer.footer-login .logos {
     height: 50px;
     display: flex;
     flex: 0 0 50px;
+    cursor: pointer;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -969,13 +970,14 @@ footer.footer-login .logos {
 .header-menu .sub-nav li .label-text {
     display: none;
     font-weight: 500;
-    padding-left: 15px;
+    padding-left: 10px;
     color: var(--white);
 }
 
 .header-menu .sub-nav li.active {
     flex: 1;
-    padding-left: 15px;
+    cursor: default;
+    padding-left: 10px;
     color: var(--white);
     justify-content: flex-start;
     background-color: var(--wild-watermelon);
@@ -983,12 +985,12 @@ footer.footer-login .logos {
 
 .header-menu .sub-nav li.active .menu-badge {
     top: 50%;
-    right: 5px;
+    right: 10px;
     transform: translateY(-50%);
 }
 
 .header-menu .sub-nav li.active .label-text {
-
+    display: inline-table;
 }
 
 .header-menu .box-notification {
@@ -1018,12 +1020,14 @@ footer.footer-login .logos {
 
 .header-menu .box-notification .item .mensagem {
     flex: 1;
-    line-height: 1;
-    padding-left: 10px;
+    font-size: .8rem;
+    line-height: 1.15;
+    padding-left: 20px;
 }
 .header-menu .box-notification .item .mensagem a,
 .header-menu .box-notification .item .mensagem a:hover {
     color: var(--wild-watermelon);
+    text-decoration: underline;
 }
 .header-menu .box-notification .item .mensagem small {
     font: var(--text);
@@ -1171,7 +1175,7 @@ footer.footer-login .logos {
 }
 
 .certificados {
-    padding: 60px 0;
+    padding: 60px 120px;
     position: relative;
 }
 
@@ -1183,11 +1187,13 @@ footer.footer-login .logos {
     flex-direction: column;
 }
 
+.validade-pontos .row [class^=col-] {
+    padding: 0 50px;
+}
+
 .certificados .row [class^=col-] .card-feature {
     margin: 50px 0;
 }
-
-.certificados .row [class^=col-] .list-certificado {}
 
 .validade-pontos .row [class^=col-] .button-outlined {
     margin-bottom: 30px;
@@ -1265,7 +1271,11 @@ footer.footer-login .logos {
     content: counter(my-counter) "";
 }
 
+.lista-certificado {
+    max-width: 300px;
+}
+
 /* Promoções */
 .promo-cards {
-    border: 1px solid red;
+    
 }
