@@ -966,18 +966,78 @@ footer.footer-login .logos {
     color: var(--wild-watermelon);
 }
 
+.header-menu .sub-nav li .label-text {
+    display: none;
+    font-weight: 500;
+    padding-left: 15px;
+    color: var(--white);
+}
+
 .header-menu .sub-nav li.active {
     flex: 1;
+    padding-left: 15px;
     color: var(--white);
+    justify-content: flex-start;
     background-color: var(--wild-watermelon);
 }
 
-.header-menu .box-notification {
+.header-menu .sub-nav li.active .menu-badge {
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.header-menu .sub-nav li.active .label-text {
 
 }
 
-.header-menu .box-notification.active {
+.header-menu .box-notification {
+    right: 0;
+    width: 320px;
+    display: none;
+    background-color: var(--white);
+    box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, 0.1);
+}
 
+.header-menu .box-notification .item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--rock-blue);
+    font: var(--texto-pequeno);
+    background-color: var(--white);
+}
+.header-menu .box-notification .item.new {
+    color: var(--bright-grey);
+    background-color: var(--light);
+}
+
+.header-menu .box-notification .item .avatar {
+    flex: 0 auto;
+}
+
+.header-menu .box-notification .item .mensagem {
+    flex: 1;
+    line-height: 1;
+    padding-left: 10px;
+}
+.header-menu .box-notification .item .mensagem a,
+.header-menu .box-notification .item .mensagem a:hover {
+    color: var(--wild-watermelon);
+}
+.header-menu .box-notification .item .mensagem small {
+    font: var(--text);
+    font-weight: bold;
+    color: var(--wild-watermelon);
+}
+
+.header-menu .box-notification.active {
+    right: 0;
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(50px);
 }
 
 
