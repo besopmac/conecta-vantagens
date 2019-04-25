@@ -1037,7 +1037,7 @@ footer.footer-login .logos {
 
 .header-menu .box-notification.active {
     right: 0;
-    z-index: 3;
+    z-index: 9;
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -1051,7 +1051,7 @@ footer.footer-login .logos {
 }
 
 .content .grid-content {
-    z-index: 3;
+    z-index: 2;
     position: relative;
     transform: translateY(-50px);
     background-color: var(--light);
