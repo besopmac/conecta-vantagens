@@ -1,32 +1,32 @@
 /* CSS Variables */
 :root {
     /* colors */
-    --red:             #F00;
-    --white:           #FFF;
-    --gold:            #EDB726;
-    --silver:          #A6ABAF;
-    --diamond:         #4AB2CA;
-    --light:           #F5F8FC;
-    --solitude:        #EDF2F9;
-    --spindle:         #BACDDC;
-    --rock-blue:       #8A9BB0;
-    --bright-grey:     #4F5965;
-    --summer-sky:      #3894DF;
+    --red: #F00;
+    --white: #FFF;
+    --gold: #EDB726;
+    --silver: #A6ABAF;
+    --diamond: #4AB2CA;
+    --light: #F5F8FC;
+    --solitude: #EDF2F9;
+    --spindle: #BACDDC;
+    --rock-blue: #8A9BB0;
+    --bright-grey: #4F5965;
+    --summer-sky: #3894DF;
     --wild-watermelon: #FB5B76;
 
     /* fonts */
-    font-size:          16px;
-    --texto-pequeno:    300 0.875rem/2 'Roboto', sans-serif;
-    --notificacoes:     400 0.875rem 'Roboto', sans-serif;
-    --texto-menu:       500 0.875rem 'Roboto', sans-serif;
-    --disclaimer:       300 0.75rem 'Roboto', sans-serif;
-    --dashboard:        500 0.625rem 'Roboto', sans-serif;
-    --titulo:           300 4.375rem/1.1 'Roboto', sans-serif;
-    --sub-titulo:       300 1.875rem 'Roboto', sans-serif;
-    --button:           400 0.75rem 'Roboto', sans-serif;
-    --label:            400 0.75rem 'Roboto', sans-serif;
-    --text:             400 0.75rem/2 'Roboto', sans-serif;
-    --tabs:             400 0.875rem 'Roboto', sans-serif;
+    font-size: 16px;
+    --texto-pequeno: 300 0.875rem/2 'Roboto', sans-serif;
+    --notificacoes: 400 0.875rem 'Roboto', sans-serif;
+    --texto-menu: 500 0.875rem 'Roboto', sans-serif;
+    --disclaimer: 300 0.75rem 'Roboto', sans-serif;
+    --dashboard: 500 0.625rem 'Roboto', sans-serif;
+    --titulo: 300 4.375rem/1.1 'Roboto', sans-serif;
+    --sub-titulo: 300 1.875rem 'Roboto', sans-serif;
+    --button: 400 0.75rem 'Roboto', sans-serif;
+    --label: 400 0.75rem 'Roboto', sans-serif;
+    --text: 400 0.75rem/2 'Roboto', sans-serif;
+    --tabs: 400 0.875rem 'Roboto', sans-serif;
 }
 
 * {
@@ -280,7 +280,7 @@ input:-moz-placeholder {
     background-color: #E1E8EE;
 }
 
-.input-radio input:checked + label div {
+.input-radio input:checked+label div {
     border: 4px solid #B7C72C;
     background-color: #fff;
 }
@@ -424,7 +424,7 @@ input:-moz-placeholder {
 /* Form: Login */
 .login-form {
     display: flex;
-    max-width: 320px;   
+    max-width: 320px;
     flex-direction: column;
     box-sizing: content-box;
     padding: 60px 0 40px 100px;
@@ -435,10 +435,10 @@ input:-moz-placeholder {
 }
 
 .login-form .titulo {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     letter-spacing: -1px;
     font: var(--sub-titulo);
-    color: var(--wild-watermelon);  
+    color: var(--wild-watermelon);
 }
 
 .login-form .icon {
@@ -498,7 +498,7 @@ input:-moz-placeholder {
 .disclaimer .titulo {
     font: var(--sub-titulo);
     color: var(--rock-blue);
-    
+
 }
 
 .disclaimer .link-text {
@@ -542,7 +542,7 @@ footer .brand-menu .menu-footer {
     display: flex;
     list-style: none;
     align-items: center;
-}   
+}
 
 footer .brand-menu .menu-footer li:not(:first-child) {
     margin-left: 20px;
@@ -624,12 +624,12 @@ footer.footer-login .logos {
     border: 1px solid var(--summer-sky);
 }
 
-.tab-input:checked + .tab-label {
+.tab-input:checked+.tab-label {
     color: var(--wild-watermelon);
     border-bottom: 4px solid var(--wild-watermelon);
 }
 
-.tab-input:checked + .tab-label span {
+.tab-input:checked+.tab-label span {
     border: 1px solid var(--wild-watermelon);
 }
 
@@ -956,7 +956,7 @@ footer.footer-login .logos {
     font-size: 0.5rem;
     position: absolute;
     border-radius: 50%;
-    
+
     text-align: center;
     background: var(--light);
     color: var(--wild-watermelon);
@@ -1097,21 +1097,25 @@ footer.footer-login .logos {
     position: relative;
 }
 
-.certificados .row [class^=col-] {
+.certificados .row [class^=col-],
+.validade-pontos .row [class^=col-] {
     display: flex;
     padding: 0 90px;
     align-items: center;
     flex-direction: column;
-    border: 1px dashed green;
 }
 
 .certificados .row [class^=col-] .card-feature {
     margin: 50px 0;
 }
 
-.certificados .row [class^=col-] .list-certificado {
-    border: 1px solid red;
+.certificados .row [class^=col-] .list-certificado {}
+
+.validade-pontos .row [class^=col-] .button-outlined {
+    margin-bottom: 30px;
 }
+
+
 
 .resgate-pontos p,
 .aculular-pontos p,
@@ -1153,4 +1157,32 @@ footer.footer-login .logos {
     text-align: center;
     margin: 0 auto 25px;
     color: var(--bright-grey);
+}
+
+/* Ordered List */
+.lista {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+.lista li {
+    padding: 0 0 30px 50px;
+    position: relative;
+    counter-increment: my-counter;
+}
+
+.lista li::before {
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    color: var(--wild-watermelon);
+    justify-content: center;
+    border: 2px solid var(--wild-watermelon);
+    transform: translate(0, 0);
+    content: counter(my-counter) "";
 }
