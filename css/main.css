@@ -1171,14 +1171,14 @@ footer.footer-login .logos {
 }
 
 .certificados {
-    padding: 60px 90px;
+    padding: 60px 0;
     position: relative;
 }
 
 .certificados .row [class^=col-],
 .validade-pontos .row [class^=col-] {
+    padding: 0;
     display: flex;
-    padding: 0 90px;
     align-items: center;
     flex-direction: column;
 }
