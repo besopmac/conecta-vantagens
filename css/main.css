@@ -507,6 +507,7 @@ input:-moz-placeholder {
     max-width: 125px;
 }
 
+
 footer {
     text-align: center;
     margin-bottom: 50px;
@@ -537,6 +538,17 @@ footer .brand-menu .menu-footer li a:hover {
     font: var(--menu);
     text-decoration: none;
     color: var(--rock-blue);
+}
+
+/* Footer Login */
+footer.footer-login .logos {
+    display: flex;
+    padding: 30px 0;
+    list-style: none;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--spindle);
 }
 
 
