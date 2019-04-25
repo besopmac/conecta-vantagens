@@ -91,6 +91,11 @@ img {
     margin-right: 10px;
 }
 
+.button-outlined-danger {
+    color: var(--wild-watermelon);
+    border: 1px solid var(--wild-watermelon);
+}
+
 .button-silver {
     color: var(--silver);
     border: 1px solid var(--silver);
@@ -104,6 +109,24 @@ img {
 .button-diamond {
     color: var(--diamond);
     border: 1px solid var(--diamond);
+}
+
+.button-text,
+.button-text:hover {
+    padding: 12px 0;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: var(--rock-blue);
+    background-color: transparent;
+}
+
+.button-text img {
+    margin-left: 10px;
+}
+
+.button-text-danger,
+.button-text-danger:hover {
+    color: var(--wild-watermelon);
 }
 
 
@@ -1021,4 +1044,28 @@ footer .brand-menu .menu-footer li a:hover {
     font: var(--text);
     padding: 0 20px 50px;
     line-height: 1.5;
+}
+
+.resgate-pontos {
+    display: flex;
+    padding: 50px 200px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--solitude);
+}
+
+.resgate-pontos p {
+    line-height: 1.65;
+    font-size: .875rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--bright-grey);
+}
+
+.resgate-pontos .titulo {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px auto;
+    color: var(--wild-watermelon);
 }
