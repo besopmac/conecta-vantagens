@@ -950,16 +950,34 @@ footer.footer-login .logos {
 }
 
 .header-menu .sub-nav li .menu-badge {
+    top: 3px;
+    right: 3px;
     z-index: 3;
-    display: none;
-    line-height: 1.5;
-    font-size: 0.5rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: .8rem;
+    font-weight: bold;
     position: absolute;
     border-radius: 50%;
-
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     background: var(--light);
     color: var(--wild-watermelon);
+}
+
+.header-menu .sub-nav li.active {
+    flex: 1;
+    color: var(--white);
+    background-color: var(--wild-watermelon);
+}
+
+.header-menu .box-notification {
+
+}
+
+.header-menu .box-notification.active {
+
 }
 
 
