@@ -1046,6 +1046,14 @@ footer .brand-menu .menu-footer li a:hover {
     line-height: 1.5;
 }
 
+.validade-pontos {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .resgate-pontos {
     display: flex;
     padding: 50px 200px;
@@ -1055,7 +1063,8 @@ footer .brand-menu .menu-footer li a:hover {
     background: var(--solitude);
 }
 
-.resgate-pontos p {
+.resgate-pontos p,
+.validade-pontos p {
     line-height: 1.65;
     font-size: .875rem;
     text-align: center;
@@ -1063,9 +1072,26 @@ footer .brand-menu .menu-footer li a:hover {
     color: var(--bright-grey);
 }
 
-.resgate-pontos .titulo {
+.resgate-pontos .titulo,
+.validade-pontos .titulo {
     font-size: 2rem;
     font-weight: 300;
     margin: 20px auto;
     color: var(--wild-watermelon);
+}
+
+.seus-pontos {
+    background: url('../assets/images/bg-glasses.jpg') no-repeat;
+    background-size: cover;
+    max-height: 480px;
+    padding: 100px;
+}
+
+.seus-pontos .info {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.75);
 }
