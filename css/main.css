@@ -1186,3 +1186,8 @@ footer.footer-login .logos {
     transform: translate(0, 0);
     content: counter(my-counter) "";
 }
+
+/* Promoções */
+.promo-cards {
+    border: 1px solid red;
+}
