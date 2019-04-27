@@ -850,6 +850,8 @@ footer.footer-login .logos {
 
 
 /* Banner Hero: Home */
+.hero-missoes,
+.hero-academy,
 .hero-programa {
     z-index: 2;
     position: relative;
@@ -858,17 +860,45 @@ footer.footer-login .logos {
     max-height: 500px;
 }
 
+.hero-missoes {
+    background: url('../assets/images/banner-missoes.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.hero-academy {
+    background: url('../assets/images/banner-academy.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.hero-missoes .featured,
+.hero-academy .featured,
 .hero-programa .featured {
     max-width: 400px;
     box-sizing: content-box;
     padding: 40px 80px 100px 80px;
 }
 
+.hero-academy .featured.centered {
+    display: flex;
+    max-width: 100%;
+    max-height: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 100px;
+}
+
+.hero-academy .featured.centered .logo-academy {
+    width: 420px;
+    height: auto;
+}
+
+.hero-missoes .featured .categoria,
 .hero-programa .featured .categoria {
     margin: 0;
     color: var(--summer-sky);
 }
 
+.hero-missoes .featured .titulo,
 .hero-programa .featured .titulo {
     margin: 0;
     font: var(--titulo);
@@ -876,11 +906,18 @@ footer.footer-login .logos {
     letter-spacing: -4px;
 }
 
+.hero-missoes .featured .text,
 .hero-programa .featured .text {
     margin: 20px 0 0;
     font: var(--texto-pequeno);
     line-height: 1.5;
 }
+
+.hero-missoes .featured .text {
+    width: 80%;
+}
+
+
 
 /* Master Menu */
 .header-menu {
@@ -916,12 +953,14 @@ footer.footer-login .logos {
 .header-menu .default-nav li a:hover {
     display: flex;
     padding: 0 20px;
-    font: var(--menu);
+    font-size: 0.875rem;
     align-items: center;
     text-decoration: none;
+    color: var(--rock-blue);
 }
 
 .header-menu .default-nav li a.active {
+    font-weight: bold;
     color: var(--white);
     background-color: var(--wild-watermelon);
 }
@@ -1319,4 +1358,22 @@ footer.footer-login .logos {
     font: var(--texto-menu);
     margin-bottom: 10px; 
     font-weight: 300;
+}
+
+
+/* Fale Conosco */
+.fale-conosco-form {
+    max-width: 820px;
+    margin: 50px auto;
+}
+
+.fale-conosco-form .titulo {
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.fale-conosco-form .text {
+    color: var(--rock-blue);
 }
