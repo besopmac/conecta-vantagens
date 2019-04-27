@@ -953,10 +953,16 @@ footer.footer-login .logos {
 .header-menu .default-nav li a:hover {
     display: flex;
     padding: 0 20px;
+    font-weight: 500;
     font-size: 0.875rem;
     align-items: center;
     text-decoration: none;
     color: var(--rock-blue);
+    border-bottom: 4px solid transparent;
+}
+
+.header-menu .default-nav li a:hover {
+    border-bottom: 4px solid var(--wild-watermelon);
 }
 
 .header-menu .default-nav li a.active {
