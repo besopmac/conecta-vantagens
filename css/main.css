@@ -858,12 +858,10 @@ footer.footer-login .logos {
 .slides {
     padding: 0;
     position: relative;
-    border: 1px solid red;
 }
 .slides .slide {
     height: 400px;
     position: relative;
-    border: 2px dashed orange;
 }
 
 .slides .slide .content {
@@ -1466,4 +1464,53 @@ footer.footer-login .logos {
 
 .fale-conosco-form .text {
     color: var(--rock-blue);
+}
+
+
+/* Home */
+.home-main-menu {
+    /* padding: 40px; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-main-menu .item {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+.home-main-menu .item .icon-badge {
+    flex: 0;
+    border: 1px solid red;
+}
+
+.home-main-menu .item .group-text {
+    flex: 1;
+    border: 1px solid green;
+}
+
+.home-main-menu .item h2 {
+    font-weight: 300;
+    color: var(--wild-watermelon);
+}
+
+.home-main-menu .item .badge {
+    z-index: 3;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    font-size: .8rem;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--wild-watermelon);
+    color: var(--white);
+}
+
+.wrapper-blocks {
+    padding: 20px;
+    border: 1px dashed red;
 }
