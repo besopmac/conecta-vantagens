@@ -1179,7 +1179,6 @@ footer.footer-login .logos {
 
 .content .grid-content {
     z-index: 2;
-    overflow: unset;
     position: relative;
     transform: translateY(-50px);
     background-color: var(--light);
@@ -1469,6 +1468,15 @@ footer.footer-login .logos {
 
 
 /* Home */
+.content .grid-home {
+    z-index: 2;
+    overflow: unset;
+    position: relative;
+    transform: translateY(-50px);
+    background-color: var(--light);
+}
+
+
 .home-main-menu {
     display: flex;
     position: relative;
@@ -1566,6 +1574,76 @@ footer.footer-login .logos {
     display: flex;
 }
 
+.wrapper-blocks .two-cols-block .left-col, 
+.wrapper-blocks .two-cols-block .right-col {
+    border: 1px dashed black;
+}
+
 .wrapper-blocks .two-cols-block .left-col {
     flex: 0 0 360px;
+    margin-right: 20px;
+}
+
+.wrapper-blocks .two-cols-block .right-col {
+    flex: 1;
+}
+
+
+/* Performance */
+.performance {
+    margin-bottom: 20px;
+    background-color: var(--white);
+}
+
+.performance .accordeon-title {
+    height: 40px;
+    display: flex;
+    padding: 0 20px;
+    color: var(--white);
+    background-color: var(--wild-watermelon);
+}
+
+.performance .accordeon-title .info {
+    display: flex;
+    flex: 0 0 300px;
+    min-width: 300px;
+    align-items: center;
+    padding-right: 15px;
+    position: relative;
+}
+
+.performance .accordeon-title .info h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.performance .accordeon-title .info .icon-performance {
+    margin-right: 10px;
+}
+
+.performance .accordeon-title .info .icon-expandir {
+    right: 15px;
+    position: absolute;
+    transform: rotate(-180deg);
+;}
+
+.performance .accordeon-title .navigation {
+    flex: 1;
+    display: flex;
+    list-style: none;
+    border: 1px solid black;
+}
+
+.performance .accordeon-title .navigation li {
+    
+}
+
+.performance .accordeon-content {
+    padding: 20px;
+}
+
+
+/* Timeline */
+.timeline {
+    
 }
