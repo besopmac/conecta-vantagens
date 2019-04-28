@@ -96,6 +96,11 @@ img {
     border: 1px solid var(--wild-watermelon);
 }
 
+.button-outlined-info {
+    color: var(--summer-sky);
+    border: 1px solid var(--summer-sky);
+}
+
 .button-silver {
     color: var(--silver);
     border: 1px solid var(--silver);
@@ -849,7 +854,72 @@ footer.footer-login .logos {
 }
 
 
-/* Banner Hero: Home */
+/* Slider */
+.slides {
+    padding: 0;
+    position: relative;
+    border: 1px solid red;
+}
+.slides .slide {
+    height: 400px;
+    position: relative;
+    border: 2px dashed orange;
+}
+
+.slides .slide .content {
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%, 30px);
+}
+
+.slides .slide .content .titulo {
+    margin: 0;
+    max-width: 280px;
+    font: var(--titulo);
+    font-size: 3.25rem;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: var(--wild-watermelon);
+}
+
+.slides .slide .content .text {
+    font-size: 0.75rem;
+    line-height: 1.75;
+    max-width: 280px;
+    margin: 15px 0;
+}
+
+.button-circle-icon {
+    padding: 0;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-circle-icon.left {
+    top: 50%;
+    transform: translate(10px, -50%);
+}
+
+.button-circle-icon.right {
+    top: 50%;
+    right: 0;
+    transform: translate(-10px, -50%);
+}
+
+.button-circle-icon.right svg {
+    transform: rotate(-180deg);
+}
+
+
+/* Banner Hero */
+.hero-home,
 .hero-missoes,
 .hero-academy,
 .hero-programa {
@@ -858,6 +928,13 @@ footer.footer-login .logos {
     background: url('../assets/images/banner-programa.png') no-repeat center top;
     background-size: cover;
     max-height: 500px;
+}
+
+.hero-home {
+    background: url('../assets/images/banner-home.jpg') no-repeat center top;
+    background-size: cover;
+    position: relative;
+    max-height: 460px;
 }
 
 .hero-missoes {
@@ -917,11 +994,12 @@ footer.footer-login .logos {
     width: 80%;
 }
 
-
+[class^='hero'] .grid {
+    overflow: unset;
+}
 
 /* Master Menu */
 .header-menu {
-    z-index: 5;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -1038,12 +1116,17 @@ footer.footer-login .logos {
     display: inline-table;
 }
 
+.header-menu .box-badges,
 .header-menu .box-notification {
     right: 0;
     width: 320px;
     display: none;
     background-color: var(--white);
     box-shadow: 0 0 .25rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-menu .box-badges {
+
 }
 
 .header-menu .box-notification .item {
@@ -1080,9 +1163,10 @@ footer.footer-login .logos {
     color: var(--wild-watermelon);
 }
 
+.header-menu .box-badges.active,
 .header-menu .box-notification.active {
     right: 0;
-    z-index: 9;
+    z-index: 10;
     display: flex;
     position: absolute;
     flex-direction: column;
