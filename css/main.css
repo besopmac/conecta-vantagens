@@ -1179,6 +1179,7 @@ footer.footer-login .logos {
 
 .content .grid-content {
     z-index: 2;
+    overflow: unset;
     position: relative;
     transform: translateY(-50px);
     background-color: var(--light);
@@ -1469,33 +1470,61 @@ footer.footer-login .logos {
 
 /* Home */
 .home-main-menu {
-    /* padding: 40px; */
     display: flex;
+    position: relative;
+    padding: 20px 40px;
     justify-content: space-evenly;
+}
+.home-main-menu:before {
+    content: '';
+    height: 92%;
+    width: 102.5%;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid var(--rock-blue);
 }
 
 .home-main-menu .item {
     display: flex;
+    position: relative;
     text-decoration: none;
     flex-direction: column;
 }
 
+.home-main-menu .item:after {
+    top: 50%;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 60px;
+    position: absolute;
+    transform: translate(50px, -50%);
+    background-color: var(--spindle);
+}
+
+.home-main-menu .item:last-child:after {
+    display: none
+}
+
 .home-main-menu .item .icon-badge {
-    flex: 0;
-    border: 1px solid red;
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+    justify-content: center;
 }
 
-.home-main-menu .item .group-text {
-    flex: 1;
-    border: 1px solid green;
+.home-main-menu .item .icon-badge .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.home-main-menu .item h2 {
-    font-weight: 300;
-    color: var(--wild-watermelon);
-}
-
-.home-main-menu .item .badge {
+.home-main-menu .item .icon-badge .icon .badge {
+    right: 0;
+    top: 12px;
     z-index: 3;
     width: 25px;
     height: 25px;
@@ -1504,13 +1533,29 @@ footer.footer-login .logos {
     font-weight: bold;
     position: absolute;
     border-radius: 50%;
+    color: var(--white);
     align-items: center;
+    transform: translateX(3px);
     justify-content: center;
     background-color: var(--wild-watermelon);
-    color: var(--white);
 }
 
+
+.home-main-menu .item .group-text h2 {
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--wild-watermelon);
+}
+
+.home-main-menu .item .group-text small {
+    color: var(--rock-blue);
+}
+
+
+/* Conteúdo Home */
 .wrapper-blocks {
     padding: 20px;
-    border: 1px dashed red;
 }
