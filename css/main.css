@@ -1475,12 +1475,13 @@ footer.footer-login .logos {
     padding: 20px 40px;
     justify-content: space-evenly;
 }
+
 .home-main-menu:before {
     content: '';
-    height: 92%;
     width: 102.5%;
     position: absolute;
     border-radius: 10px;
+    height: calc(90% - 1px);
     border: 1px solid var(--rock-blue);
 }
 
@@ -1540,7 +1541,6 @@ footer.footer-login .logos {
     background-color: var(--wild-watermelon);
 }
 
-
 .home-main-menu .item .group-text h2 {
     margin: 0;
     line-height: 1;
@@ -1558,4 +1558,14 @@ footer.footer-login .logos {
 /* Conteúdo Home */
 .wrapper-blocks {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-blocks .two-cols-block {
+    display: flex;
+}
+
+.wrapper-blocks .two-cols-block .left-col {
+    flex: 0 0 360px;
 }
