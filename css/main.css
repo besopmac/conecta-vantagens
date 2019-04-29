@@ -657,11 +657,64 @@ footer.footer-login .logos {
 /* Tabs Pontos */
 .tabs.tabs-pontos {
     width: 100%;
-    max-width: 820px;
+    overflow: hidden;
+    max-width: 850px;
     border-radius: 6px;
-    margin: 0 auto 50px;
+    margin: 0 auto 70px;
     background-color: var(--white);
     box-shadow: 0 5px .5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.tabs.tabs-pontos .navigation {
+    border: none;
+    display: flex;
+    padding: 20px 100px 0;
+    justify-content: space-between;
+}
+
+.tabs.tabs-pontos .navigation:before {
+    left: 50%;
+    content: '';
+    width: 850px;
+    position: absolute;
+    transform: translate(-50%, 40px);
+    border-top: 1px solid var(--spindle);
+}
+
+.tabs.tabs-pontos .navigation .tab-label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 400;
+    align-items: center;
+    padding-bottom: 12px;
+    color: var(--spindle);
+    border-bottom: 4px solid transparent;
+}
+
+.tabs.tabs-pontos .tab-label span {
+    width: 24px;
+    height: 24px;
+    font-weight: 500;
+    /* line-height: 22px; */
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid var(--spindle);
+}
+
+.tabs.tabs-pontos .tab-label.complete span {
+    color: var(--summer-sky);
+    border: 1px solid var(--summer-sky);
+}
+
+.tabs.tabs-pontos .tab-input:checked+.tab-label {
+    color: var(--wild-watermelon);
+    border-bottom: 4px solid var(--wild-watermelon);
+}
+
+.tabs.tabs-pontos .tab-input:checked+.tab-label span {
+    border: 1px solid var(--wild-watermelon);
 }
 
 .tab-panel.tab-pontos {
@@ -683,7 +736,7 @@ footer.footer-login .logos {
 .tab-pontos .titulo {
     font-weight: 300;
     text-align: center;
-    margin: 20px 0 30px;
+    margin-bottom: 40px;
     letter-spacing: -1px;
     color: var(--rock-blue);
 }
@@ -696,29 +749,26 @@ footer.footer-login .logos {
 .tab-pontos .titulo.titulo-danger {
     color: var(--wild-watermelon);
     font: var(--sub-titulo);
-    margin: 20px 0 40px;
-    font-weight: 200;
 }
 
-
-.wrapper-cols {
+.tab-pontos .wrapper-cols {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.wrapper-cols .card-col {
+.tab-pontos .wrapper-cols .card-col {
     display: flex;
     align-items: center;
     flex-direction: column; 
     justify-content: space-between;
 }
 
-.wrapper-cols .card-col .button {
-    margin: 20px 0; 
+.tab-pontos .wrapper-cols .card-col .button {
+    margin: 20px 0;
 }
 
-.wrapper-form {
+.tab-pontos .wrapper-form {
     display: flex;
     align-items: center;
     flex-direction: column;
