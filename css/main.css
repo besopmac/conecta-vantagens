@@ -1737,26 +1737,104 @@ footer.footer-login .logos {
 }
 
 
-/* Timeline */
-.timeline {
-    
-}
-
-
-
-.performance .accordeon-title {
+/* Timeline + Conquistas */
+.timeline .header,
+.conquistas .header {
     height: 40px;
     display: flex;
     padding: 0 20px;
+    position: relative;
     color: var(--white);
-    background-color: var(--wild-watermelon);
+    align-items: center;
+    background-color: var(--rock-blue);
 }
 
-.performance .accordeon-title .info {
+.conquistas .header {
+    background-color: var(--summer-sky);
+}
+
+.timeline .header .titulo,
+.conquistas .header .titulo {
     display: flex;
-    flex: 0 0 300px;
-    min-width: 300px;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 10px;
+    align-items: baseline;
+}
+
+.timeline .header .titulo span {
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+
+.timeline .header .badge {
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: .85rem;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 50%;
     align-items: center;
-    padding-right: 15px;
+    justify-content: center;
+    color: var(--wild-watermelon);
+    background-color: var(--light);
+}
+
+.timeline .content,
+.conquistas .content {
+    padding: 20px;
+    background-color: var(--white);
+}
+
+
+/* Card Home */
+.card-home {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.card-home .image {
+    overflow: hidden;
     position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-home .image::before {
+    content: "";
+    display: block;
+    padding-top: 52.5%;
+}
+
+.card-home .image .icon-play {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.card-home .content {
+    padding: 20px;
+    color: var(--rock-blue);
+}
+
+.card-home .content small {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.card-home .content .titulo {
+    max-width: 90%;
+    margin: 10px 0 20px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.card-home .content .text {
+    color: var(--bright-grey);
 }
