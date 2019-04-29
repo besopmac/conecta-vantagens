@@ -149,32 +149,61 @@
     <main class="content">
         <div class="grid grid-content">
             <div class="promo-cards">
-                <h3 class="titulo">Em andamento</h3>
+                <p class="text">Siga o passo-a-passo para inserir os pontos das suas vendas.<br>Você pode inserir diversos códigos de uma só vez.</p>
             </div>
 
-            <div class="tabs">
+            <div class="tabs tabs-pontos">
                 <nav class="navigation">
                     <input name="tabs" type="radio" id="tab-1" checked="checked" class="tab-input" />
-                    <label for="tab-1" class="tab-label"><span>1</span>One</label>
+                    <label for="tab-1" class="tab-label"><span>1</span>Tipo de Certificado</label>
                     
                     <input name="tabs" type="radio" id="tab-2" class="tab-input" />
-                    <label for="tab-2" class="tab-label complete"><span>2</span>Two</label>
+                    <label for="tab-2" class="tab-label complete"><span>2</span>Inserir Código</label>
                     
                     <input name="tabs" type="radio" id="tab-3" class="tab-input" />
-                    <label for="tab-3" class="tab-label"><span>3</span>Three</label>
+                    <label for="tab-3" class="tab-label"><span>3</span>Confirmação</label>
                 </nav>
                 
-                <!-- 1. -->
-                <div id="content-1" class="tab-panel">
-                    [ 1 ]
+                <!-- 1. Tipo de Certificado -->
+                <div id="content-1" class="tab-panel tab-pontos active">
+                    <h2 class="titulo">Total de Códigos: <span>01</span></h2>
+
+                    <div class="wrapper-cols">
+                        <div class="card-col">
+                            <img src="assets/images/image-certificado-cartao.jpg" alt="">
+                            <a href="#" class="button button-outlined">Certificados de Cartão</a>    
+                        </div>
+
+                        <div class="card-col">
+                            <img src="assets/images/image-certificado-papel.jpg" alt="">
+                            <a href="#" class="button button-outlined">Certificados de Papel</a>   
+                        </div>
+
+                        <div class="card-col">
+                            <img src="assets/images/image-certificado-codigo.jpg" alt="">
+                            <a href="#" class="button button-outlined">Certificados de Papel Código Único</a>   
+                        </div>
+                    </div>
+
+                    <div class="wrapper-form">
+                        <div class="input-group">
+                            <label>RG*</label>
+                            <input type="text" maxlength="" required />
+                            <p class="message">
+                                <span>Campo Obrigatório</span>
+                            </p>
+                        </div>
+                        
+                        <a href="#" class="button button-primary">Concluir</a>
+                    </div>
                 </div>
 
-                <!-- 2.  -->
+                <!-- 2. Inserir Códigos -->
                 <div id="content-2" class="tab-panel">
                     [ 2 ]
                 </div>
                 
-                <!-- 3. -->
+                <!-- 3. Confirmação -->
                 <div id="content-3" class="tab-panel">
                     [ 3 ]
                 </div>
