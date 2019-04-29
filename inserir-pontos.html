@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-lite.min.css">
     <link rel="stylesheet" href="css/simplegrid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tabs.css">
     <title>Conecta Vantagens</title>
 </head>
 <body>
@@ -152,7 +153,7 @@
                 <p class="text">Siga o passo-a-passo para inserir os pontos das suas vendas.<br>Você pode inserir diversos códigos de uma só vez.</p>
             </div>
 
-            <div class="tabs-pontos">
+            <div class="tabs tabs-pontos">
                 <nav class="navigation">
                     <input name="tabs" type="radio" id="tab-1" checked="checked" class="tab-input" />
                     <label for="tab-1" class="tab-label"><span>1</span>Tipo de Certificado</label>
@@ -166,9 +167,7 @@
                 
                 <!-- 1. Tipo de Certificado -->
                 <div id="content-1" class="tab-panel tab-pontos active">
-                    <!-- 
                     <h2 class="titulo titulo-danger">Clique na imagem do certificado que você<br>deseja cadastrar seus pontos.</h2>
-
                     <div class="wrapper-cols">
                         <div class="card-col">
                             <img src="assets/images/image-certificado-cartao.jpg" alt="">
@@ -185,12 +184,11 @@
                             <a href="#" class="button button-outlined">Certificados de Papel Código Único</a>   
                         </div>
                     </div>
-                    -->
                 </div>
 
                 <!-- 2. Inserir Códigos -->
                 <div id="content-2" class="tab-panel tab-pontos">
-                    <!-- <h2 class="titulo">Total de Códigos: <span>01</span></h2>
+                    <h2 class="titulo">Total de Códigos: <span>01</span></h2>
 
                     <div class="wrapper-cols">
                         <div class="card-col">
@@ -218,13 +216,50 @@
                         </div>
 
                         <a href="#" class="button button-primary">Concluir</a>
-                    </div> -->
+                    </div>
                 </div>
                 
                 <!-- 3. Confirmação -->
                 <div id="content-3" class="tab-panel tab-pontos">
-                    <!-- [ 3 ] -->
+                    <h2 class="titulo">Total de Códigos: <span>01</span></h2>
                 </div>
+            </div>
+
+            <!-- pure css tabs -->
+            <div class="wrapper-tabs" style="display: none;">
+                <input id="tab1" type="radio" name="pontos" checked />
+                <input id="tab2" type="radio" name="pontos" />
+                <input id="tab3" type="radio" name="pontos" /> 
+
+                <nav>
+                    <ul>
+                        <li class="navtab">
+                            <label for="tab1"><span>1</span> Tipo de Certificado</label>
+                        </li>
+                        <li class="navtab">
+                            <label for="tab2"><span>2</span> Inserir Códigos</label>
+                        </li>
+                        <li class="navtab">
+                            <label for="tab3"><span>3</span> Confirmação</label>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section>
+                    <div class="tab1 panel">
+                        [ xfchgvjhbkjnlkm;l ]
+                    </div>
+
+                    <div class="tab2 panel">
+                        <h2>Second</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, suscipit nemo et repellendus, reiciendis officiis nostrum deserunt veniam nisi quam error, facilis ullam distinctio expedita amet ratione? Suscipit, qui voluptatibus, quisquam ad cum temporibus voluptas sequi corporis quae, repudiandae similique harum tenetur! Vel, ut autem minima exercitationem labore asperiores impedit ducimus odit vero quod, iure sapiente ipsa maxime! Maiores nobis deleniti voluptate vel repudiandae omnis, corrupti quia rerum sed molestias cum similique, iure voluptatibus! Iste, nulla repellendus quia ut sit ratione, impedit, architecto provident cum saepe quas magnam officiis enim odio at fugit iusto blanditiis. Autem est obcaecati assumenda soluta!</p>    
+                    </div>
+
+                    <div class="tab3 panel">
+                        <h2>Third</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officia eligendi, facilis aperiam ipsum repudiandae. Impedit neque exercitationem eaque sequi inventore, aliquid similique necessitatibus beatae reprehenderit numquam ratione optio repudiandae ullam, consectetur quidem, eos aspernatur explicabo ab eveniet excepturi maiores?</p>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
