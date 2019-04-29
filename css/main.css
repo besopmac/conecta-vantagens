@@ -1550,6 +1550,12 @@ footer.footer-login .logos {
     margin: 50px auto;
 }
 
+.fale-conosco-form.centered {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .fale-conosco-form .titulo {
     margin-bottom: 20px;
     letter-spacing: -1px;
@@ -1560,6 +1566,18 @@ footer.footer-login .logos {
 .fale-conosco-form .text {
     color: var(--rock-blue);
 }
+
+.fale-conosco-form.centered .text {
+    font-size: 1rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.fale-conosco-form.centered .icon-check {
+    margin: 50px auto;
+}
+
+    
 
 
 /* Home */
