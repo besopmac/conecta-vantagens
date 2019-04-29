@@ -86,6 +86,11 @@ img {
     border: 1px solid var(--rock-blue);
 }
 
+.button-outlined:hover {
+    color: var(--summer-sky);
+    border: 1px solid var(--summer-sky);
+}
+
 .button-outlined .icon {
     width: 28px;
     margin-right: 10px;
@@ -681,12 +686,18 @@ footer.footer-login .logos {
     color: var(--summer-sky);
 }
 
+.tab-pontos .titulo.titulo-danger {
+    color: var(--wild-watermelon);
+    font: var(--sub-titulo);
+    margin: 20px 0 40px;
+    font-weight: 200;
+}
+
 
 .wrapper-cols {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid red;
 }
 
 .wrapper-cols .card-col {
