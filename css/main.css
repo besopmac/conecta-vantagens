@@ -1242,6 +1242,7 @@ footer.footer-login .logos {
 .group-cards .wrapper-cards {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .group-cards .wrapper-cards .card {
@@ -1254,6 +1255,10 @@ footer.footer-login .logos {
 }
 
 .group-cards .wrapper-cards .card .card-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
 }
 
