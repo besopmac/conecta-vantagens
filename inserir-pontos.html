@@ -171,17 +171,17 @@
                     <div class="wrapper-cols">
                         <div class="card-col">
                             <img src="assets/images/image-certificado-cartao.jpg" alt="">
-                            <a href="#" class="button button-outlined">Certificados de Cartão</a>    
+                            <a href="#" class="button button-outlined button-small">Certificados de Cartão</a>    
                         </div>
 
                         <div class="card-col">
                             <img src="assets/images/image-certificado-papel.jpg" alt="">
-                            <a href="#" class="button button-outlined">Certificados de Papel</a>   
+                            <a href="#" class="button button-outlined button-small">Certificados de Papel</a>   
                         </div>
 
                         <div class="card-col">
                             <img src="assets/images/image-certificado-codigo.jpg" alt="">
-                            <a href="#" class="button button-outlined">Certificados de Papel Código Único</a>   
+                            <a href="#" class="button button-outlined button-small">Certificados de Papel Código Único</a>   
                         </div>
                     </div>
                 </div>
@@ -193,23 +193,24 @@
                     <div class="wrapper-cols">
                         <div class="card-col">
                             <img src="assets/images/image-certificado-cartao.jpg" alt="">
-                            <a href="#" class="button button-outlined">Certificados de Cartão</a>    
+                            <a href="#" class="button button-outlined button-small">Certificados de Cartão</a>    
                         </div>
 
                         <div class="card-col">
                             <img src="assets/images/image-certificado-papel.jpg" alt="">
-                            <a href="#" class="button button-outlined">Certificados de Papel</a>   
+                            <a href="#" class="button button-outlined button-small">Certificados de Papel</a>   
                         </div>
 
                         <div class="card-col">
                             <img src="assets/images/image-certificado-codigo.jpg" alt="">
-                            <a href="#" class="button button-outlined">Certificados de Papel Código Único</a>   
+                            <a href="#" class="button button-outlined button-small">Certificados de Papel Código Único</a>   
                         </div>
                     </div>
 
-                    <div class="wrapper-form">
-                        <div class="input-group">
-                            <input type="text" maxlength="" />
+                    <!-- Form: Certificado de Cartão -->
+                    <div class="wrapper-form" style="display: none;">
+                        <div class="input-group info half">
+                            <input type="text" maxlength="" value="1234" />
                             <p class="message">
                                 <span>Campo Obrigatório</span>
                             </p>
@@ -217,11 +218,54 @@
 
                         <a href="#" class="button button-primary">Concluir</a>
                     </div>
+
+                    <!-- Form: Certificado de Papel -->
+                    <div class="wrapper-form" style="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group info">
+                                    <input type="text" maxlength="" value="1234" />
+                                    <p class="message">
+                                        <span></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group error">
+                                    <input type="text" maxlength="" value="1234" />
+                                    <p class="message">
+                                        <span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="button button-primary">Concluir</a>
+
+                        <p class="message-error">Código inválido. Tente novamente.</p>   
+                    </div>
                 </div>
                 
                 <!-- 3. Confirmação -->
                 <div id="content-3" class="tab-panel tab-pontos">
-                    <h2 class="titulo">Total de Códigos: <span>01</span></h2>
+                    <h2 class="titulo titulo-danger">Código inserido com sucesso!<span>Veja o resumo abaixo:</span></h2>
+                    
+                    <div class="wrapper-content">    
+                        <table class="table-pontos">
+                            <tr>
+                                <th>Tipo de Certificado</th>
+                                <th>Código do Certificado</th> 
+                                <th>Total de Pontos Ganhos</th>
+                            </tr>
+                            <tr>
+                                <td>Certificado de Papel</td>
+                                <td>11676535</td> 
+                                <td class="total-pontos">1.100</td>
+                            </tr>
+                        </table>
+                        <a href="#" class="button button-primary">Extrato de Pontos</a>
+                    </div>
                 </div>
             </div>
         </div>
