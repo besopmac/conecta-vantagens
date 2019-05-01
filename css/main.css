@@ -2419,25 +2419,6 @@ footer.footer-login .logos {
     max-width: 820px;
 }
 
-.wrapper-cards .list-cards {
-    list-style: none;
-}
-
-.wrapper-cards .list-cards .item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.wrapper-cards .list-cards .item .card {
-    cursor: pointer;
-    margin-bottom: 20px;
-    width: calc(50% - 10px);
-    color: var(--rock-blue);
-    box-shadow: var(--shadow);
-    background-color: var(--white);
-}
-
 
 /* Academy: Card Full */
 .wrapper-cards .card-full {
@@ -2472,12 +2453,27 @@ footer.footer-login .logos {
 
 
 /* Academy: Card Default */
-.wrapper-cards .list-cards .item .card.default {
+.wrapper-cards .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper-cards .cards .card {
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+    color: var(--rock-blue);
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+}
+
+.wrapper-cards .cards .card.default {
     display: flex;
     flex-direction: column;
 }
 
-.wrapper-cards .list-cards .item .card.default .image {
+.wrapper-cards .cards .card.default .image {
     background-color: var(--light);
     background-position: top center;
     background-repeat: no-repeat;
@@ -2485,32 +2481,32 @@ footer.footer-login .logos {
     position: relative;
 }
 
-.wrapper-cards .list-cards .item .card.default .image::before {
+.wrapper-cards .cards .card.default .image::before {
     content: "";
     display: block;
     padding-top: 56.25%;
 }
 
-.wrapper-cards .list-cards .item .card.default .image .icon-play {
+.wrapper-cards .cards .card.default .image .icon-play {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
 }
 
-.wrapper-cards .list-cards .item .card.default .content {
+.wrapper-cards .cards .card.default .content {
     padding: 30px 30px 60px;
     position: relative;
     height: 100%;
 }
 
-.wrapper-cards .list-cards .item .card.default .content .title {
+.wrapper-cards .cards .card.default .content .title {
     margin: 10px 0 30px;
     font: var(--sub-titulo);
     color: var(--wild-watermelon);
 }
 
-.wrapper-cards .list-cards .item .card.default .content .icon {
+.wrapper-cards .cards .card.default .content .icon {
     right: 30px;
     bottom: 30px;
     position: absolute;
@@ -2518,7 +2514,7 @@ footer.footer-login .logos {
 
 
 /* Academy: Card Alternative */
-.wrapper-cards .list-cards .item .card.alternative {   
+.wrapper-cards .cards .card.alternative {   
     background-color: var(--light);
     background-position: top center;
     background-repeat: no-repeat;
@@ -2526,7 +2522,7 @@ footer.footer-login .logos {
     position: relative;
 }
 
-.wrapper-cards .list-cards .item .card.alternative .content {
+.wrapper-cards .cards .card.alternative .content {
     z-index: 1;
     height: 100%;
     display: flex;
@@ -2537,12 +2533,12 @@ footer.footer-login .logos {
     justify-content: space-between;
 }
 
-.wrapper-cards .list-cards .item .card.alternative .content .text {
+.wrapper-cards .cards .card.alternative .content .text {
     flex: 1;
     padding-top: 10px;
 }
 
-.wrapper-cards .list-cards .item .card.alternative .content .text .title  {
+.wrapper-cards .cards .card.alternative .content .text .title  {
     margin: 10px 0;
     max-width: 80%;
     line-height: 1.2;
@@ -2550,16 +2546,18 @@ footer.footer-login .logos {
     font-size: 2.3rem;
 }
 
-.wrapper-cards .list-cards .item .card.alternative .content .icon-play svg {
+.wrapper-cards .cards .card.alternative .content .icon-play svg {
     max-width: 80px;
 }
 
-.wrapper-cards .list-cards .item .card.alternative .content .icon {
+.wrapper-cards .cards .card.alternative .content .icon {
     right: 30px;
     bottom: 30px;
     position: absolute;
 }
 
+
+/* Academ: Loading More */
 .loading-more {
     width: 100%;
     margin: 0 auto;
