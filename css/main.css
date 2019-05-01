@@ -2473,7 +2473,8 @@ footer.footer-login .logos {
 
 /* Academy: Card Default */
 .wrapper-cards .list-cards .item .card.default {
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper-cards .list-cards .item .card.default .image {
@@ -2481,10 +2482,38 @@ footer.footer-login .logos {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.wrapper-cards .list-cards .item .card.default .image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.wrapper-cards .list-cards .item .card.default .image .icon-play {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .wrapper-cards .list-cards .item .card.default .content {
-    padding: 30px;
+    padding: 30px 30px 60px;
+    position: relative;
+    height: 100%;
+}
+
+.wrapper-cards .list-cards .item .card.default .content .title {
+    margin: 10px 0 30px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.wrapper-cards .list-cards .item .card.default .content .icon {
+    right: 30px;
+    bottom: 30px;
+    position: absolute;
 }
 
 
@@ -2497,22 +2526,38 @@ footer.footer-login .logos {
     position: relative;
 }
 
-/* .wrapper-cards .list-cards .item .card.alternative::after {
-    top: 0;
-    left: 0;
-    z-index: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-} */
-
 .wrapper-cards .list-cards .item .card.alternative .content {
     z-index: 1;
-    padding: 30px;
-    /* position: absolute; */
+    height: 100%;
+    display: flex;
+    position: relative;
     color: var(--white);
+    padding: 50px 30px 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper-cards .list-cards .item .card.alternative .content .text {
+    flex: 1;
+    padding-top: 10px;
+}
+
+.wrapper-cards .list-cards .item .card.alternative .content .text .title  {
+    margin: 10px 0;
+    max-width: 80%;
+    line-height: 1.2;
+    font-weight: 200;
+    font-size: 2.3rem;
+}
+
+.wrapper-cards .list-cards .item .card.alternative .content .icon-play svg {
+    max-width: 80px;
+}
+
+.wrapper-cards .list-cards .item .card.alternative .content .icon {
+    right: 30px;
+    bottom: 30px;
+    position: absolute;
 }
 
 .loading-more {
