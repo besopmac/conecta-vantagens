@@ -2419,12 +2419,6 @@ footer.footer-login .logos {
     max-width: 820px;
 }
 
-.wrapper-cards .card-full {
-    margin-bottom: 20px;
-    box-shadow: var(--shadow);
-    background-color: var(--white);
-}
-
 .wrapper-cards .list-cards {
     list-style: none;
 }
@@ -2436,16 +2430,70 @@ footer.footer-login .logos {
 }
 
 .wrapper-cards .list-cards .item .card {
+    cursor: pointer;
+    margin-bottom: 20px;
     width: calc(50% - 10px);
+    color: var(--rock-blue);
     box-shadow: var(--shadow);
     background-color: var(--white);
 }
 
+
+/* Academy: Card Full */
+.wrapper-cards .card-full {
+    display: flex;
+    cursor: pointer;
+    max-height: 300px;
+    margin-bottom: 20px;
+    color: var(--rock-blue);
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+}
+
+.wrapper-cards .card-full .content {
+    flex: 1;
+    padding: 30px;
+    text-align: right;
+}
+
+.wrapper-cards .card-full .content .title {
+    margin: 10px 0 30px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+}
+
+.wrapper-cards .card-full .image {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    flex: 0 1 65%;
+}
+
+
+/* Academy: Card Default */
 .wrapper-cards .list-cards .item .card.default {
     
 }
 
+.wrapper-cards .list-cards .item .card.default .image {
+    background-color: var(--light);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper-cards .list-cards .item .card.default .content {
+    padding: 30px;
+}
+
+
+/* Academy: Card Alternative */
 .wrapper-cards .list-cards .item .card.alternative {   
+    background-color: var(--light);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
