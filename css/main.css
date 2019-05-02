@@ -1694,6 +1694,15 @@ footer.footer-login .logos {
     margin: 50px auto;
 }
 
+.fale-conosco-form section.box-form {
+    margin: 30px auto 0;
+}
+
+.fale-conosco-form section.box-form .actions {
+    display: flex;
+    justify-content: center;
+}
+
 .fale-conosco-form.centered {
     display: flex;
     align-items: center;
