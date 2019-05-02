@@ -2740,3 +2740,157 @@ footer.footer-login .logos {
     font-size: 1.25rem;
     line-height: 1;
 }
+
+
+/* Missões */
+.tipos-missoes {
+    display: flex;
+    padding: 15px 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    background-color: var(--solitude);
+}
+
+.tipos-missoes .item {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.tipos-missoes .item::after {
+    top: 50%;
+    content: "";
+    width: 1px;
+    height: 40px;
+    right: -60px;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: #BACDDC;
+}
+
+.tipos-missoes .item h3 {
+    color: var(--wild-watermelon);
+    font: var(--sub-titulo);
+    letter-spacing: -1px;
+    margin-right: 10px;
+    font-size: 2.5rem;
+}
+
+.tipos-missoes .item p {
+    line-height: 1;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.tipos-missoes .item.disabled h3,
+.tipos-missoes .item.disabled p {
+    color: var(--rock-blue);
+}
+
+.tipos-missoes .item:last-child::after {
+    display: none;
+}
+
+.wrapper-cards.missoes {
+    margin-bottom: 60px;
+}
+
+.wrapper-cards.missoes .cards .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-cards.missoes .cards .card .mission-content {
+    flex: 1;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px 15px;
+    justify-content: space-between;
+}
+
+.wrapper-cards.missoes .cards .card .mission-content h3 {
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: -1px;
+    color: var(--wild-watermelon);
+    font: var(--titulo);
+    font-size: 2.25rem;
+}
+
+.wrapper-cards.missoes .cards .card .mission-content p.text {
+    flex: 1;
+    width: 90%;
+    margin: 0 0 20px;
+    font: var(--text);
+    text-align: center;
+    color: var(--bright-grey);
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .validade {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--rock-blue);
+}
+
+.wrapper-cards.missoes .cards .card .button-card-primary {
+    display: block;
+    padding: 15px 0;
+    font-weight: 500;
+    border-radius: 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--white);
+    background-color: var(--summer-sky);
+}
+
+.wrapper-cards.missoes .cards .card.disabled {
+    color: var(--white);
+    background-color: var(--rock-blue);
+}
+
+.wrapper-cards.missoes .cards .card.disabled .mission-content p,
+.wrapper-cards.missoes .cards .card.disabled .mission-content h3 {
+    color: var(--white);
+}
+
+.wrapper-cards.missoes .cards .card.disabled .mission-content .button-label-danger {
+    font-weight: 500;
+    color: var(--wild-watermelon);
+    background-color: var(--white);
+}
+
+.wrapper-cards.missoes .cards .card.disabled .button-card-primary {
+    display: none;
+}
+
+.wrapper-cards.missoes .cards .card.disabled .loading {
+    display: flex;
+    padding: 0 0 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper-cards.missoes .cards .card.disabled .loading .bar {
+    width: 85%;
+    height: 5px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper-cards.missoes .cards .card.disabled .loading .bar .fill {
+    left: 0;
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--white);
+}
+
+.wrapper-cards.missoes .cards .card.disabled .loading span {
+    font-size: 1rem;
+    font-weight: bold;
+}
