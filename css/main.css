@@ -71,7 +71,9 @@ img {
     background: var(--rock-blue);
 }
 
-.button:hover {
+.button:hover,
+.button:focus,
+.button:active {
     color: var(--white);
     text-decoration: none;
 }
@@ -85,6 +87,7 @@ img {
 }
 
 .button-outlined,
+.button-outlined:focus,
 .button-outlined:hover {
     font: var(--menu);
     align-items: center;
@@ -121,6 +124,7 @@ img {
 }
 
 .button-small,
+.button-small:focus,
 .button-small:hover {
     display: table;
     padding: 12px 20px;
@@ -143,6 +147,7 @@ img {
 }
 
 .button-text,
+.button-text:focus,
 .button-text:hover {
     padding: 12px 0;
     line-height: 1.5;
@@ -156,6 +161,7 @@ img {
 }
 
 .button-text-danger,
+.button-text-danger:focus,
 .button-text-danger:hover {
     color: var(--wild-watermelon);
 }
@@ -1396,7 +1402,8 @@ footer.footer-login .logos {
     position: relative;
 }
 
-.content .grid-content {
+.content .grid-content,
+.content .grid-minha-conta {
     z-index: 2;
     position: relative;
     transform: translateY(-50px);
@@ -3012,6 +3019,7 @@ footer.footer-login .logos {
 }
 
 
+
 /* Modal */
 body.has-modal-open {
     /* Utilizar essa classe quando o usuário abrir um modal,
@@ -3162,3 +3170,42 @@ body.has-modal-open {
     color: var(--rock-blue);
 }
 
+
+/* Minha Conta */
+.grid-minha-conta .tabs .navigation {
+    padding-top: 30px;
+    border-top: 1px solid transparent;
+}
+
+.grid-minha-conta .tabs .tab-panel {
+    padding-top: 50px;
+}
+
+.grid-minha-conta .tabs .tab-panel .form-buttons {
+    justify-content: flex-end;
+}
+
+.grid-minha-conta .tabs .tab-panel .form-buttons.start {
+    justify-content: flex-start;
+}
+
+.grid-minha-conta .tabs .tab-success {
+    display: none;
+    align-items: center;
+    padding: 50px 0 80px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-minha-conta .tabs .tab-success.active {
+    display: flex;
+}
+
+.grid-minha-conta .tabs .tab-success .sub-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+    line-height: 1.25;
+}
