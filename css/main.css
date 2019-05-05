@@ -100,7 +100,8 @@ img {
     margin-right: 10px;
 }
 
-.button-outlined-danger {
+.button-outlined-danger,
+.button-outlined-danger-active {
     color: var(--wild-watermelon);
     border: 1px solid var(--wild-watermelon);
 }
@@ -1414,6 +1415,10 @@ footer.footer-login .logos {
     max-width: 820px;
     padding: 30px 0 50px;
     justify-content: center;
+}
+
+.content .grid-content .actions a.button {
+    margin: 0 15px;
 }
 
 .content .grid-content .instructions {
@@ -2906,7 +2911,19 @@ footer.footer-login .logos {
 
 
 /* Selos */
+.wrapper-selos {
+    width: 100%;
+    display: flex;
+    max-width: 820px;
+    padding: 30px 90px;
+    margin: 0 auto 80px;
+    flex-direction: column;
+    background-color: var(--white);
+}
 
+.wrapper-selos .box-selos {
+    
+}
 
 
 /* Modal */
@@ -2938,3 +2955,87 @@ body.has-modal-open {
     box-shadow: var(--shadow);
     background-color: var(--white);
 }
+
+.modal .modal-container .content {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal .modal-container .content .titulo {
+    color: var(--wild-watermelon);
+    font: var(--sub-titulo);
+    letter-spacing: -1px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 20px 0;
+    
+}
+
+.modal .modal-container .content .text {
+    font: var(--texto-pequeno);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.modal .modal-container .steps {
+    display: flex;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--spindle);
+    border-bottom: 1px solid var(--spindle);
+}
+
+.modal .modal-container .steps .item {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.modal .modal-container .steps .item h3 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex: 0 0 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font: var(--sub-titulo);
+    color: var(--wild-watermelon);
+    border: 1px solid var(--wild-watermelon);
+}
+
+.modal .modal-container .steps .item p {
+    flex: 1;
+    font-size: .8rem;
+    color: var(--rock-blue);
+}
+
+.modal .modal-container .sub-titulo {
+    font-weight: 500;
+    text-align: center;
+    padding: 35px 0 15px;
+    color: var(--rock-blue);
+}
+
+.modal .modal-container .review {
+    width: 92.5%;
+    height: 400px;
+    padding: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: .75rem;
+    margin: 0 auto 20px;
+    color: var(--bright-grey);
+    border: 1px solid var(--spindle);
+}
+
+.modal .modal-container .review p {
+    margin-bottom: 20px;
+}
+
