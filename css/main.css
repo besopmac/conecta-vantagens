@@ -80,6 +80,10 @@ img {
     background: var(--summer-sky);
 }
 
+.button-danger {
+    background: var(--wild-watermelon);
+}
+
 .button-outlined,
 .button-outlined:hover {
     font: var(--menu);
@@ -2958,9 +2962,12 @@ body.has-modal-open {
 
 .modal .modal-container .content {
     display: flex;
-    padding: 30px;
     align-items: center;
     flex-direction: column;
+}
+
+.modal .modal-container .content:first-child {
+    padding: 30px;
 }
 
 .modal .modal-container .content .titulo {
@@ -2969,15 +2976,28 @@ body.has-modal-open {
     letter-spacing: -1px;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 400;
+    line-height: 1.1;
     margin: 20px 0;
-    
 }
 
 .modal .modal-container .content .text {
     font: var(--texto-pequeno);
     text-align: center;
     line-height: 1.5;
+}
+
+.modal .modal-container .content .input-radio {
+    color: var(--rock-blue);    
+    font-weight: 300;
+}
+
+.modal .modal-container .content .actions {
+    display: flex;
+    padding: 15px 0 30px;
+}
+
+.modal .modal-container .content .actions a.button {
+    margin: 0 10px;
 }
 
 .modal .modal-container .steps {
@@ -3037,5 +3057,26 @@ body.has-modal-open {
 
 .modal .modal-container .review p {
     margin-bottom: 20px;
+}
+
+
+/* Modal: Card */
+.modal .modal-container.card {
+    max-width: 400px;
+}
+
+.modal .modal-container.card .content .titulo {
+    margin: 20px 0;
+}
+
+.modal .modal-container.card .content .text {
+    margin-bottom: 30px;
+}
+
+.modal .modal-container.card .content .message {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: .75rem;
+    color: var(--rock-blue);
 }
 
