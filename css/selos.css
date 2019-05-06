@@ -35,3 +35,118 @@ figure.selo.active .splash {
 }
 */
 
+/* Icons: Home */
+.icon-selo.selo-bemvindo {
+    background: url('../assets/selos/selo-bem-vindo.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-conectado {
+    background: url('../assets/selos/selo-conectado.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-comprador {
+    background: url('../assets/selos/selo-comprador.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-sabetudo {
+    background: url('../assets/selos/selo-sabe-tudo.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-social {
+    background: url('../assets/selos/selo-social.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-papapontos {
+    background: url('../assets/selos/selo-papa-pontos.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-veterano {
+    background: url('../assets/selos/selo-veterano.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-007 {
+    background: url('../assets/selos/selo-007.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-applicado {
+    background: url('../assets/selos/selo-applicado.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-interativo {
+    background: url('../assets/selos/selo-interativo.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-proativo {
+    background: url('../assets/selos/selo-pro-ativo.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-namosca {
+    background: url('../assets/selos/selo-na-mosca.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-alpinista {
+    background: url('../assets/selos/selo-alpinista.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-ocara {
+    background: url('../assets/selos/selo-o-cara.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-parabens {
+    background: url('../assets/selos/selo-aniversariante.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-onfire {
+    background: url('../assets/selos/selo-on-fire.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-mae {
+    background: url('../assets/selos/selo-mae-e-mae.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-namorados {
+    background: url('../assets/selos/selo-namorados.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-paizao {
+    background: url('../assets/selos/selo-paizao.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-doceinfancia {
+    background: url('../assets/selos/selo-doce-infancia.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-natal {
+    background: url('../assets/selos/selo-natal.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-genio {
+    background: url('../assets/selos/selo-genio.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.icon-selo.selo-foliao {
+    background: url('../assets/selos/selo-foliao.svg') no-repeat center center;
+    background-size: contain;
+}

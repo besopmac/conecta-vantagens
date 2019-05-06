@@ -1,3 +1,6 @@
+/* Import Selos */
+@import 'selos.css';
+
 /* CSS Variables */
 :root {
     /* colors */
@@ -1393,15 +1396,57 @@ footer.footer-login .logos {
 }
 
 .header-menu .box-badges.active {
+    padding: 0;
     display: flex;
+    padding: 20px 15px;
     align-items: flex-end;
     flex-direction: column;
-    padding: 20px 15px;
 }
 
 .header-menu .box-badges.active .grid-selos {
     width: 100%;
-    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Home: Icons */
+.header-menu .box-badges.active .grid-selos .icon-selo {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header-menu .box-badges.active .grid-selos .icon-selo .badge-counter,
+.header-menu .box-badges.active .grid-selos .icon-selo .badge-counter.is2x {
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    font-weight: bold;
+    font-size: 0.7rem;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    border: 2px solid transparent;
+    color: var(--wild-watermelon);
+    background-color: var(--white);
+    transform: translate(10px, -50%);
+}
+
+.header-menu .box-badges.active .grid-selos .icon-selo .badge-counter.is3x {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--wild-watermelon);
+}
+
+.header-menu .box-badges.active .grid-selos .icon-selo .badge-counter.none {
+    display: none;
 }
 
 
@@ -3000,7 +3045,6 @@ footer.footer-login .logos {
 }
 
 .wrapper-selos .box-selos .item {
-    /* flex: 0; */
     display: flex;
     margin: 0 15px 30px;
     align-items: center;
