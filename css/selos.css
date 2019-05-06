@@ -1,0 +1,37 @@
+figure.selo {
+    width: 110px;
+    height: 110px;
+    position: relative;    
+}
+
+figure.selo.selo-bem-vindo {
+    background: url('../assets/selos/selo-bem-vindo-off.svg') no-repeat center center;
+    background-position: center center;
+    background-size: contain;
+}
+
+figure.selo.selo-bem-vindo.active {
+    background: url('../assets/selos/selo-bem-vindo.svg') no-repeat center center;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+/* Splash Animation */
+/*
+figure.selo .splash {
+    left: 50%;
+    z-index: 0;
+    opacity: 0;
+    bottom: -50px;
+    position: absolute;
+    transition: all .5ms ease-out;
+    transform: translateX(-50%) scale(0.2);
+}
+
+figure.selo.active .splash {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+*/
+

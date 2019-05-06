@@ -1393,7 +1393,15 @@ footer.footer-login .logos {
 }
 
 .header-menu .box-badges.active {
-    display: grid;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+
+.header-menu .box-badges.active .grid-selos {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 
@@ -3168,6 +3176,37 @@ body.has-modal-open {
     font-weight: bold;
     font-size: .75rem;
     color: var(--rock-blue);
+}
+
+
+/* Modal: Card Selo */
+.modal .modal-container.card .content-selo .label {
+    font-weight: bold;
+    margin: 15px auto 10px;
+    color: var(--summer-sky);
+}
+
+.modal .modal-container.card .content-selo .titulo {
+    margin: 0 auto 20px;
+}
+
+.modal .modal-container.card .content-selo .text {
+    padding: 0 30px;
+    line-height: 1.75;
+}
+
+.modal .modal-container.card .content-selo .greeting {
+    color: var(--wild-watermelon);
+    font: var(--sub-titulo);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.modal .modal-container.card .content-selo .message {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: .75rem; 
 }
 
 
