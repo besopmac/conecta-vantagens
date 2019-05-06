@@ -2356,13 +2356,15 @@ footer.footer-login .logos {
 
 /* Form Message */
 .timeline .box-message {
-    padding: 25px 20px 40px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
     background-color: var(--white);
 }
 
 .timeline .box-message .avatar-input {
     display: flex;
     align-items: center;
+    padding-bottom: 4px;
 }
 
 .timeline .box-message .avatar-input .timeline-textarea {
@@ -2387,6 +2389,38 @@ footer.footer-login .logos {
 
 
 /* Post w/ Image */
+.post-image .box-user {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.post-image .box-user .avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.post-image .box-user .avatar img {
+    object-fit: fill;
+}
+
+.post-image .box-user .info {
+    color: var(--wild-watermelon);
+    font: var(--sub-titulo);
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.post-image .box-user .info span {
+    color: var(--rock-blue);
+    font: var(--text);
+    margin-top: 5px;
+    line-height: 1;
+    display: block;
+}
+
 .post-image .image {
     overflow: hidden;
     position: relative;
