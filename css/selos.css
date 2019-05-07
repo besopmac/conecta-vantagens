@@ -4,36 +4,298 @@ figure.selo {
     position: relative;    
 }
 
-figure.selo.selo-bem-vindo {
+/* selo: bem-vindo */
+figure.selo.selo-bemvindo {
     background: url('../assets/selos/selo-bem-vindo-off.svg') no-repeat center center;
-    background-position: center center;
     background-size: contain;
 }
 
-figure.selo.selo-bem-vindo.active {
+figure.selo.selo-bemvindo.active {
     background: url('../assets/selos/selo-bem-vindo.svg') no-repeat center center;
-    background-position: center center;
+}
+
+/* selo: conectado */
+figure.selo.selo-conectado {
+    background: url('../assets/selos/selo-conectado-off.svg') no-repeat center center;
     background-size: contain;
+}
+
+figure.selo.selo-conectado.active {
+    background: url('../assets/selos/selo-conectado.svg') no-repeat center center;
+}
+
+/* selo: papapontos */
+figure.selo.selo-papapontos {
+    background: url('../assets/selos/selo-papa-pontos-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-papapontos.active {
+    background: url('../assets/selos/selo-papa-pontos.svg') no-repeat center center;
+}
+
+/* selo: comprador */
+figure.selo.selo-comprador {
+    background: url('../assets/selos/selo-comprador-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-comprador.active {
+    background: url('../assets/selos/selo-comprador.svg') no-repeat center center;
+}
+
+/* selo: sabe tudo */
+figure.selo.selo-sabetudo {
+    background: url('../assets/selos/selo-sabe-tudo-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-sabetudo.active {
+    background: url('../assets/selos/selo-sabe-tudo.svg') no-repeat center center;
+}
+
+/* selo: social */
+figure.selo.selo-social {
+    background: url('../assets/selos/selo-social-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-social.active {
+    background: url('../assets/selos/selo-social.svg') no-repeat center center;
+}
+
+/* selo: veterano */
+figure.selo.selo-veterano {
+    background: url('../assets/selos/selo-veterano-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-veterano.active {
+    background: url('../assets/selos/selo-veterano.svg') no-repeat center center;
+}
+
+/* selo: 007 */
+figure.selo.selo-007 {
+    background: url('../assets/selos/selo-007-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-007.active {
+    background: url('../assets/selos/selo-007.svg') no-repeat center center;
+}
+
+/* selo: applicado */
+figure.selo.selo-applicado {
+    background: url('../assets/selos/selo-applicado-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-applicado.active {
+    background: url('../assets/selos/selo-applicado.svg') no-repeat center center;
+}
+
+/* selo: interativo */
+figure.selo.selo-interativo {
+    background: url('../assets/selos/selo-interativo-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-interativo.active {
+    background: url('../assets/selos/selo-interativo.svg') no-repeat center center;
+}
+
+/* selo: proativo */
+figure.selo.selo-proativo {
+    background: url('../assets/selos/selo-pro-ativo-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-proativo.active {
+    background: url('../assets/selos/selo-pro-ativo.svg') no-repeat center center;
+}
+
+/* selo: namosca */
+figure.selo.selo-namosca {
+    background: url('../assets/selos/selo-na-mosca-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-namosca.active {
+    background: url('../assets/selos/selo-na-mosca.svg') no-repeat center center;
+}
+
+/* selo: alpinista */
+figure.selo.selo-alpinista {
+    background: url('../assets/selos/selo-alpinista-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-alpinista.active {
+    background: url('../assets/selos/selo-alpinista.svg') no-repeat center center;
+}
+
+/* selo: o cara */
+figure.selo.selo-ocara {
+    background: url('../assets/selos/selo-o-cara-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-ocara.active {
+    background: url('../assets/selos/selo-o-cara.svg') no-repeat center center;
+}
+
+/* selo: parabéns */
+figure.selo.selo-parabens {
+    background: url('../assets/selos/selo-aniversariante-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-parabens.active {
+    background: url('../assets/selos/selo-aniversariante.svg') no-repeat center center;
+}
+
+/* selo: onfire */
+figure.selo.selo-onfire {
+    background: url('../assets/selos/selo-on-fire-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-onfire.active {
+    background: url('../assets/selos/selo-on-fire.svg') no-repeat center center;
+}
+
+/* selo: mae */
+figure.selo.selo-mae {
+    background: url('../assets/selos/selo-mae-e-mae-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-mae.active {
+    background: url('../assets/selos/selo-mae-e-mae-off.svg') no-repeat center center;
+}
+
+/* selo: namorados */
+figure.selo.selo-namorados {
+    background: url('../assets/selos/selo-namorados-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-namorados.active {
+    background: url('../assets/selos/selo-namorados.svg') no-repeat center center;
+}
+
+/* selo: paizao */
+figure.selo.selo-paizao {
+    background: url('../assets/selos/selo-paizao-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-paizao.active {
+    background: url('../assets/selos/selo-paizao.svg') no-repeat center center;
+}
+
+/* selo: doce infancia */
+figure.selo.selo-doceinfancia {
+    background: url('../assets/selos/selo-doce-infancia-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-doceinfancia.active {
+    background: url('../assets/selos/selo-doce-infancia.svg') no-repeat center center;
+}
+
+/* selo: natal */
+figure.selo.selo-natal {
+    background: url('../assets/selos/selo-natal-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-natal.active {
+    background: url('../assets/selos/selo-natal.svg') no-repeat center center;
+}
+
+/* selo: genio */
+figure.selo.selo-genio {
+    background: url('../assets/selos/selo-genio-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-genio.active {
+    background: url('../assets/selos/selo-genio.svg') no-repeat center center;
+}
+
+/* selo: foliao */
+figure.selo.selo-foliao {
+    background: url('../assets/selos/selo-foliao-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+figure.selo.selo-foliao.active {
+    background: url('../assets/selos/selo-foliao.svg') no-repeat center center;
 }
 
 
 /* Splash Animation */
-/*
 figure.selo .splash {
     left: 50%;
+    bottom: 0;
     z-index: 0;
-    opacity: 0;
-    bottom: -50px;
     position: absolute;
-    transition: all .5ms ease-out;
+    transform-origin: 50% 100%;
     transform: translateX(-50%) scale(0.2);
 }
 
 figure.selo.active .splash {
-    opacity: 1;
-    transform: translateX(-50%) scale(1);
+    -webkit-animation: splash .4s ease-out forwards;
+            animation: splash .4s ease-out forwards;
 }
-*/
+
+@-webkit-keyframes splash {
+    0%    {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.3);
+    }
+    25%   {
+        opacity: .35;
+        transform: translateX(-50%) scale(0.4);
+    }
+    50%   {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.5);
+    }
+    75%   {
+        opacity: .35;
+        transform: translateX(-50%) scale(0.6);
+    }
+    100%  {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.7);
+    }
+}
+  
+@keyframes splash {
+    0%    {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.3);
+    }
+    25%   {
+        opacity: .35;
+        transform: translateX(-50%) scale(0.4);
+    }
+    50%   {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.5);
+    }
+    75%   {
+        opacity: .35;
+        transform: translateX(-50%) scale(0.6);
+    }
+    100%  {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.7);
+    }
+}
+
 
 /* Icons: Home */
 .icon-selo.selo-bemvindo {
