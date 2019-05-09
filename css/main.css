@@ -134,21 +134,6 @@ img {
     font-size: 0.75rem;
 }
 
-.button-silver {
-    color: var(--silver);
-    border: 1px solid var(--silver);
-}
-
-.button-gold {
-    color: var(--gold);
-    border: 1px solid var(--gold);
-}
-
-.button-diamond {
-    color: var(--diamond);
-    border: 1px solid var(--diamond);
-}
-
 .button-text,
 .button-text:focus,
 .button-text:hover {
@@ -1559,9 +1544,72 @@ footer.footer-login .logos {
     justify-content: space-evenly;
 }
 
+.nav-tabela .button-icon {
+    color: var(--spindle);
+    border: 1px solid var(--spindle);
+}
+
+.nav-tabela .button-icon i.icon {
+    width: 30px;
+    height: 28px;
+    background: url('../assets/images/icon-silver-off.svg') no-repeat center center;
+    background-size: cover;
+}
+
+.nav-tabela .button-icon.button-gold i.icon {
+    background: url('../assets/images/icon-gold-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.nav-tabela .button-icon.button-diamond i.icon {
+    background: url('../assets/images/icon-diamond-off.svg') no-repeat center center;
+    background-size: contain;
+}
+
+
+/* Button Silver */
+.nav-tabela .button-icon.button-silver.active {
+    color: var(--silver);
+    border: 1px solid var(--silver);
+}
+
+.nav-tabela .button-icon.button-silver.active i.icon {
+    background: url('../assets/images/icon-silver.svg') no-repeat center center;
+    background-size: contain;
+}
+
+
+/* Button Gold */
+.nav-tabela .button-icon.button-gold.active {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+}
+
+.nav-tabela .button-icon.button-gold.active i.icon {
+    background: url('../assets/images/icon-gold.svg') no-repeat center center;
+    background-size: contain;
+}
+
+
+/* Button Diamond */
+.nav-tabela .button-icon.button-diamond.active {
+    color: var(--diamond);
+    border: 1px solid var(--diamond);
+}
+
+.nav-tabela .button-icon.button-diamond.active i.icon {
+    background: url('../assets/images/icon-diamond.svg') no-repeat center center;
+    background-size: contain;
+}
+
+
 .group-cards {
     max-width: 800px;
     margin: 50px auto;
+}
+
+.group-cards.has-table {
+    max-width: 100%;
 }
 
 .group-cards .titulo {
@@ -1620,6 +1668,62 @@ footer.footer-login .logos {
 .group-cards .wrapper-cards .card .card-footer.is-diamond {
     background-color: var(--diamond);
 }
+
+
+/* Tabela Programa 2.0 */
+.table-gold,
+.table-silver,
+.table-diamond {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.table-gold thead tr,
+.table-silver thead tr,
+.table-diamond thead tr {
+    vertical-align: text-top;
+}
+
+.table-gold th,
+.table-silver th,
+.table-diamond th {
+    width: 20%;
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--white);
+    font: var(--texto-menu);
+    background-color: var(--gold);
+}
+
+.table-silver th {
+    background-color: var(--silver);
+}
+
+.table-diamond th {
+    background-color: var(--diamond);
+}
+
+.table-gold tbody td.sub-titulo,
+.table-silver tbody td.sub-titulo,
+.table-diamond tbody td.sub-titulo {
+    font-weight: bold;
+    background-color: #E2EAF4;
+}
+
+.table-gold tbody td,
+.table-silver tbody td,
+.table-diamond tbody td {
+    font-size: .8rem;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.table-gold tbody td:first-child    ,
+.table-silver tbody td:first-child  ,
+.table-diamond tbody td:first-child  {
+    text-align: left;
+}
+
 
 .observacao {
     margin: auto;
