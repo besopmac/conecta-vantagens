@@ -3469,7 +3469,6 @@ body.has-modal-open {
 
 .modal .modal-container .content {
     display: flex;
-    position: relative;
     align-items: center;
     flex-direction: column;
 }
@@ -3494,9 +3493,56 @@ body.has-modal-open {
     line-height: 1.5;
 }
 
+.modal .modal-container .content.featured {
+    position: relative;
+}
+
+.modal .modal-container .content.featured .text,
+.modal .modal-container .content.featured .titulo {
+    z-index: 5;
+    position: relative;
+}
+
+.modal .modal-container .content.featured .special {
+    z-index: 1;
+    width: 100%;
+    min-height: 220px;
+    position: absolute;
+    transform: translateY(-60px);
+    background: url('../assets/images/mission-valentines.png') no-repeat center center;
+    background-size: contain;
+}
+
 .modal .modal-container .content .input-radio {
     color: var(--rock-blue);    
     font-weight: 300;
+}
+
+.modal .modal-container .content .form-options .button {
+    margin: 0 15px;
+}
+
+.modal .modal-container .content .form-options .button.active {
+    cursor: default;
+    color: var(--summer-sky);
+    border: 1px solid var(--summer-sky);
+}
+
+.modal .modal-container .content .form-action {
+    width: 80%;
+    display: none;
+    position: relative;
+    margin: 35px auto 0;
+}
+
+.modal .modal-container .content .form-action.active {
+    display: block;
+}
+
+.modal .modal-container .content .form-action .upload-photo-button {
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
 }
 
 .modal .modal-container .content .actions {
