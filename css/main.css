@@ -3185,14 +3185,48 @@ footer.footer-login .logos {
     flex-direction: column;
 }
 
+.wrapper-cards.missoes .cards .card. {
+    display: flex;
+    flex-direction: column;
+}
+
 .wrapper-cards.missoes .cards .card .mission-content {
     flex: 1;
     display: flex;
+    min-height: 350px;
+    padding: 30px 20px;
     position: relative;
     align-items: center;
     flex-direction: column;
-    padding: 30px 30px 15px;
     justify-content: space-between;
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .label {
+    display: table;
+    line-height: 2;
+    padding: 12px 32px;
+    font: var(--button);
+    color: var(--white);
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: var(--rock-blue);
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .label.primary {
+    background-color: var(--summer-sky);
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .label.danger {
+    background-color: var(--wild-watermelon);
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .label.danger.inverted {
+    color: var(--wild-watermelon);
+    background-color: var(--white);
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .label.disabled {
+    background-color: var(--rock-blue);
 }
 
 .wrapper-cards.missoes .cards .card .mission-content h3 {
@@ -3219,7 +3253,9 @@ footer.footer-login .logos {
     color: var(--rock-blue);
 }
 
-.wrapper-cards.missoes .cards .card .button-card-primary {
+.wrapper-cards.missoes .cards .card .button-card-danger,
+.wrapper-cards.missoes .cards .card .button-card-primary,
+.wrapper-cards.missoes .cards .card .button-card-disabled {
     display: block;
     padding: 15px 0;
     font-weight: 500;
@@ -3230,34 +3266,48 @@ footer.footer-login .logos {
     background-color: var(--summer-sky);
 }
 
-.wrapper-cards.missoes .cards .card.disabled {
+.wrapper-cards.missoes .cards .card .button-card-danger,
+.wrapper-cards.missoes .cards .card .button-card-danger.disabled {
+    background-color: var(--wild-watermelon);
+}
+
+.wrapper-cards.missoes .cards .card .button-card-danger.disabled {
+    cursor: default;
+}
+
+.wrapper-cards.missoes .cards .card .button-card-disabled {
+    background-color: var(--spindle);
+}
+
+/* CARD: Durante */
+.wrapper-cards.missoes .cards .card.during {
     color: var(--white);
     background-color: var(--rock-blue);
 }
 
-.wrapper-cards.missoes .cards .card.disabled .mission-content p,
-.wrapper-cards.missoes .cards .card.disabled .mission-content h3 {
+.wrapper-cards.missoes .cards .card.during .mission-content p,
+.wrapper-cards.missoes .cards .card.during .mission-content h3 {
     color: var(--white);
 }
 
-.wrapper-cards.missoes .cards .card.disabled .mission-content .button-label-danger {
+.wrapper-cards.missoes .cards .card.during .mission-content .button-label-danger {
     font-weight: 500;
     color: var(--wild-watermelon);
     background-color: var(--white);
 }
 
-.wrapper-cards.missoes .cards .card.disabled .button-card-primary {
+.wrapper-cards.missoes .cards .card.during .button-card-primary {
     display: none;
 }
 
-.wrapper-cards.missoes .cards .card.disabled .loading {
+.wrapper-cards.missoes .cards .card.during .loading {
     display: flex;
     padding: 0 0 10px;
     align-items: center;
     flex-direction: column;
 }
 
-.wrapper-cards.missoes .cards .card.disabled .loading .bar {
+.wrapper-cards.missoes .cards .card.during .loading .bar {
     width: 85%;
     height: 5px;
     display: block;
@@ -3267,7 +3317,7 @@ footer.footer-login .logos {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.wrapper-cards.missoes .cards .card.disabled .loading .bar .fill {
+.wrapper-cards.missoes .cards .card.during .loading .bar .fill {
     left: 0;
     width: 50%;
     height: 5px;
@@ -3275,9 +3325,44 @@ footer.footer-login .logos {
     background-color: var(--white);
 }
 
-.wrapper-cards.missoes .cards .card.disabled .loading span {
+.wrapper-cards.missoes .cards .card.during .loading span {
     font-size: 1rem;
     font-weight: bold;
+}
+
+/* CARD: After */
+.wrapper-cards.missoes .cards .card.after {
+    cursor: default;
+}
+
+.wrapper-cards.missoes .cards .card.after .mission-content p {
+    color: var(--spindle);
+}
+
+.wrapper-cards.missoes .cards .card.after .button-card-primary {
+    display: none;
+}
+
+.wrapper-cards.missoes .cards .card.after .button-card-danger {
+    cursor: default;
+}
+
+/* CARD: Disabled */
+.wrapper-cards.missoes .cards .card.disabled {
+    cursor: default;
+}
+
+.wrapper-cards.missoes .cards .card.disabled .mission-content p,
+.wrapper-cards.missoes .cards .card.disabled .mission-content h3 {
+    color: var(--spindle);
+}
+
+.wrapper-cards.missoes .cards .card.disabled .button-card-disabled {
+    cursor: default;
+}
+
+.wrapper-cards.missoes .cards .card .mission-content .label.disabled {
+    background-color: var(--spindle);
 }
 
 
