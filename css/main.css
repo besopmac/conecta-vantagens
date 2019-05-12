@@ -405,6 +405,48 @@ input:-moz-placeholder {
     margin-top: 30px;
 }
 
+/* Header Mobile */
+.header-mobile {
+    width: 100%;
+    padding: 15px;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    max-height: 200px;
+    background-color: var(--light);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header-mobile .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-mobile .navbar .brand-logo-conecta {
+    max-width: 200px;
+    height: auto;
+}
+
+.header-mobile .navbar button {
+    all: unset;
+    width: 25px;
+    height: 25px;
+}
+
+.header-mobile .navbar button.nav-menu {    
+    background: url('../assets/images/icon-nav-menu.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.header-mobile .navbar button.nav-notification {    
+    width: 30px;
+    height: 30px;
+    background: url('../assets/images/icon-nav-notification.svg') no-repeat center center;
+    background-size: contain;
+}
+
 
 /* Header: Login */
 .grid-header {
@@ -3745,4 +3787,52 @@ body.has-modal-open {
     font: var(--sub-titulo);
     color: var(--wild-watermelon);
     line-height: 1.25;
+}
+
+
+/* Splash Screen */
+@media screen and (max-width: 1024px) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: inherit;
+    }
+
+    .wrapper-splash {
+        height: 100vh;
+        position: relative;
+        background: url('../assets/images/bg-mobile.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .wrapper-splash .logo-conecta {
+        top: 180px;
+        left: 80px;
+        max-width: 630px;
+        position: absolute;
+    }
+
+    .wrapper-splash .logo-essilor {
+        left: 80px;
+        bottom: 80px;
+        max-width: 160px;
+        position: absolute;
+    }
+}
+
+/* Default Media Queries */
+@media screen and (max-width: 1024px) {
+    footer,
+    header.header-full,
+    section.hero-default {
+        display: none;
+    }
+
+    /* Show Elements */
+    .header-mobile {
+        display: flex;
+        align-items: center;
+    }
 }
