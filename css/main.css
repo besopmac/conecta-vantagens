@@ -499,6 +499,15 @@ input:-moz-placeholder {
     position: relative;
 }
 
+.grid-form .logo-conecta,
+.grid-form .pergunta-cadastro {
+    display: none;
+}
+
+.grid-form .buttons-group.buttons-group-return {
+    display: none;
+}
+
 .grid-form::after {
     right: 0;
     z-index: 3;
@@ -3235,11 +3244,6 @@ footer.footer-login .logos {
     flex-direction: column;
 }
 
-.wrapper-cards.missoes .cards .card. {
-    display: flex;
-    flex-direction: column;
-}
-
 .wrapper-cards.missoes .cards .card .mission-content {
     flex: 1;
     display: flex;
@@ -3797,6 +3801,7 @@ body.has-modal-open {
     line-height: 1.25;
 }
 
+
 /* Splash Screen */
 @media screen and (max-width: 1024px) {
     html {
@@ -3890,6 +3895,7 @@ body.has-modal-open {
         padding: 0;
     }
 
+    .wrapper .grid-header,
     .wrapper .grid-header-cadastro {
         display: none;
     }
@@ -3899,8 +3905,143 @@ body.has-modal-open {
         margin-bottom: 0;
     }
 
+    
+    /* Login */
+    .wrapper .grid-form {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        background: url('../assets/images/bg-login-mobile.jpg') no-repeat center center;
+        background-size: cover;
+    }
 
-    /* Banner Hero: Default */
+    .wrapper .grid-form .main-area {
+        margin: 0;
+        padding: 20px;
+        background-color: transparent;
+    }
+
+    .wrapper .grid-form .main-area .logo-conecta {
+        width: 100%;
+        display: block;
+        max-width: 180px;
+        margin-bottom: 30px;
+    }
+
+    .wrapper .grid-form .main-area .titulo {
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: var(--white);
+    }
+
+    .wrapper .grid-form .main-area .titulo span {
+        display: block;
+    }
+    
+    .wrapper .grid-form .login-form {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .wrapper .grid-form .login-form .input-group {
+        width: 100%;
+        display: flex;
+        font: var(--label);
+        color: var(--white);
+        align-items: center;
+    }
+
+    .wrapper .grid-form .login-form .input-group input[type=text],
+    .wrapper .grid-form .login-form .input-group input[type=password] {
+        text-align: center;
+        color: var(--white);
+        border: 1px solid var(--white);
+        background-color: transparent;
+    }
+
+    
+    .wrapper .grid-form .login-form .input-group.error input {
+        color: var(--red);
+        border: 1px solid var(--red);
+        background-color: transparent;
+    }
+
+    .wrapper .grid-form .login-form .input-group input::-webkit-input-placeholder {
+        color: transparent;
+    }
+    
+    .wrapper .grid-form .login-form .input-group input::-moz-placeholder {
+        color: transparent;
+    }
+    
+    .wrapper .grid-form .login-form .input-group input:-ms-input-placeholder {
+        color: transparent;
+    }
+    
+    .wrapper .grid-form .login-form .input-group input:-moz-placeholder {
+        color: transparent;
+    }
+
+    .wrapper .grid-form .login-form.new-password .input-group input {
+        max-width: 100%;
+    }
+
+    .wrapper .grid-form .login-form .input-group .message .small-link {
+        color: var(--white);
+    }
+
+    .wrapper .grid-form .login-form .buttons-group {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .wrapper .grid-form .login-form .input-group .tip {
+        display: flex;
+        text-align: center;
+        margin: 3px 0 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper .grid-form .login-form .text {
+        max-width: 80%;
+        color: var(--white);
+    }
+
+    .wrapper .grid-form .buttons-group.buttons-group-return {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .wrapper .grid-form .buttons-group.buttons-group-return .button,
+    .wrapper .grid-form .login-form .buttons-group .button {
+        font-size: .8rem;
+        font-weight: 400;
+        border: 1px solid var(--white);
+        background-color: transparent;
+    }
+
+    .wrapper .grid-form .login-form .pergunta-cadastro {
+        display: block;
+        font-size: .8rem;
+        margin-top: 20px;
+        text-align: center;
+        color: var(--white);
+    }
+
+    .wrapper .grid-form .login-form .pergunta-cadastro a.link-text {
+        color: var(--white);
+    }
+
+    .wrapper .disclaimer,
+    .wrapper .grid-form::after {
+        display: none;
+    }
+
+
+    /* Hero: Default */
     .hero-default .grid {
         margin: 0;
         padding: 0;
@@ -3932,14 +4073,28 @@ body.has-modal-open {
     }
 
 
+    /* Hero: Image */
+    .hero-default .featured.featured-special {
+        min-height: 200px;
+        background: url('../assets/images/hero-featured.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .hero-default .featured.featured-special .titulo {
+        font-size: 2.5rem;
+    }
+
+
     /* Content Grid */
-    .content .grid-content,
-    .content .grid-minha-conta {
+    .content.suspended {
+        transform: translateY(-50px);
+    }
+
+    .content .grid-content {
         z-index: 2;
         transform: none;
-        padding: 20px 15px;
-        position: relative;
-        background-color: var(--light);
+        padding: 20px 15px 0;
+        background-color: transparent;
     }
 
 
@@ -3970,6 +4125,16 @@ body.has-modal-open {
         margin-bottom: 20px;
     }
 
+
+    /* Promoções */
+    .promo-cards .titulo {
+        display: none;
+    }
+
+    .promo-cards {
+        margin: 0 auto;
+        position: relative;
+    }
 
     /* Cadastro */
     .main-area.full-height {
@@ -4150,5 +4315,71 @@ body.has-modal-open {
 
     .tab-panel .review-text p {
         padding: 10px;
+    }
+
+    
+    /* Login */
+    .wrapper .grid-form .main-area .titulo {
+        font-weight: 400;
+        font-size: 1.15rem;
+        color: var(--white);
+    }
+
+    .wrapper .grid-form .login-form .buttons-group {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .wrapper .grid-form .login-form .buttons-group .button {
+        min-width: 140px;
+        text-align: center;
+        margin: 15px auto 0;
+    }
+
+
+    /* Hero: Image */
+    .hero-default .featured.featured-special .titulo {
+        font-size: 1.65rem;
+    }
+
+
+    /* Promoções */
+    .promo-cards .wrapper-cards .card {
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 25px;
+        flex-direction: column;
+        box-shadow: 0 0 .75em 0 rgba(0, 0, 0, 0.1);
+    }
+    
+    .promo-cards .wrapper-cards .card .image {
+        background-position: center center;
+        background-size: cover;
+        flex: 0;
+    }
+    
+    .promo-cards .wrapper-cards .card .content {
+        flex: 1;
+        padding: 20px;
+        align-items: flex-start;
+    }
+    
+    .promo-cards .wrapper-cards .card .content h2 {
+        overflow: hidden;
+        font-size: 1.15rem;
+        text-overflow: ellipsis;
+        color: var(--wild-watermelon);
+    }
+    
+    .promo-cards .wrapper-cards .card .content h2 small {
+        display: block;
+        font-weight: 500;
+        font-size: .75rem;
+        color: var(--summer-sky);
+    }
+
+    .promo-cards .wrapper-cards .card .content h2 small.finished {
+        color: var(--wild-watermelon);
     }
 }
