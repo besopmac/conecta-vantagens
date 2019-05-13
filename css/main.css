@@ -3883,6 +3883,7 @@ body.has-modal-open {
     /* Cadastro */
     .wrapper {
         display: flex;
+        flex-direction: column;
     }
 
     .wrapper .grid {
