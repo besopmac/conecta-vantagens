@@ -3880,7 +3880,6 @@ body.has-modal-open {
     /* Cadastro */
     .wrapper {
         display: flex;
-        border: 5px solid red;
     }
 
     .wrapper .grid {
@@ -3895,7 +3894,6 @@ body.has-modal-open {
         padding-top: 0;
         margin-bottom: 0;
     }
-
 
 
 
@@ -3989,9 +3987,7 @@ body.has-modal-open {
     }
 
     /* Cadastro */
-    .wrapper .grid-cadastro .main-area {
-        border: 2px solid orange;
-    }
+    .wrapper .grid-cadastro .main-area {}
 
     .wrapper .grid-cadastro .main-area .hero {
         padding: 20px;
@@ -4005,5 +4001,79 @@ body.has-modal-open {
 
     .wrapper .grid-cadastro .main-area .hero .text a {
         color: var(--wild-watermelon);
+    }
+
+    .tabs {
+        padding: 20px;
+    }
+
+    .tabs .navigation {
+        padding: 0;
+        display: flex;       
+        margin: 0 auto;
+        width: 100%;
+        max-width: 280px;
+        border-top: none;
+        flex-direction: column;
+        box-shadow: var(--shadow);
+    }
+
+    .tabs .navigation:before {
+        display: none;
+    }
+
+    .tab-label {
+        padding: 10px 0;
+        align-items: center;
+        color: var(--spindle);
+        justify-content: center;
+        border-bottom: 1px solid var(--solitude);
+    }
+
+    .tab-label:last-child {
+        border-bottom: none;
+    }
+
+    .tab-label span {
+        width: auto;
+        display: inline;
+        border-radius: 0;
+        font-weight: bold;
+        line-height: auto;
+        margin-right: 5px;
+        border: none;
+    }
+
+    .tab-label span:before {
+        content: '0';
+    }
+
+    .tab-label.complete span {
+        border: none;
+        color: var(--summer-sky);
+    }
+
+    .tab-input:checked+.tab-label {
+        color: var(--white);
+        background-color: var(--summer-sky);
+        border-bottom: 1px solid var(--solitude);
+    }
+
+    .tab-input:checked+.tab-label span {
+        border: none;
+    }
+
+    .tab-panel,
+    .tab-panel .row,
+    .tab-panel .row [class^='col-'] {
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-image-upload {
+        left: 50%;
+        margin: 30px auto;
+        position: relative;
+        transform: translateX(-50%);
     }
 }
