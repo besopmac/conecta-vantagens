@@ -3812,16 +3812,40 @@ body.has-modal-open {
     }
 
     .wrapper-splash .logo-conecta {
-        top: 180px;
-        left: 80px;
-        max-width: 630px;
+        top: 30px;
+        left: 30px;
+        width: 100%;
+        z-index: 10;
+        max-width: 300px;
         position: absolute;
     }
 
     .wrapper-splash .logo-essilor {
-        left: 80px;
-        bottom: 80px;
-        max-width: 160px;
+        left: 30px;
+        width: 100%;
+        z-index: 10;
+        bottom: 30px;
+        max-width: 100px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wrapper-splash .logo-conecta {
+        top: 30px;
+        left: 20px;
+        width: 100%;
+        z-index: 10;
+        max-width: 200px;
+        position: absolute;
+    }
+
+    .wrapper-splash .logo-essilor {
+        left: 20px;
+        width: 100%;
+        z-index: 10;
+        bottom: 20px;
+        max-width: 60px;
         position: absolute;
     }
 }
@@ -3829,6 +3853,10 @@ body.has-modal-open {
 
 /* Default Media Queries */
 @media screen and (max-width: 1024px) {
+    body {
+        background-color: var(--light);
+    }
+
     footer,
     header.header-full,
     section.hero-default .grid .header-menu {
@@ -3847,6 +3875,28 @@ body.has-modal-open {
         position: absolute;
         transform: translateY(50px);
     }
+
+
+    /* Cadastro */
+    .wrapper {
+        display: flex;
+        border: 5px solid red;
+    }
+
+    .wrapper .grid {
+        padding: 0;
+    }
+
+    .wrapper .grid-header-cadastro {
+        display: none;
+    }
+
+    .wrapper .grid-cadastro {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+
 
 
     /* Banner Hero: Default */
@@ -3893,16 +3943,31 @@ body.has-modal-open {
 
 
     /* Fale Conosco */
+    .hero-default .featured .titulo-fale {
+        display: none;
+    }
+
+    .hero-default .featured .titulo-mobile {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.65rem;
+        letter-spacing: -1px;
+        color: var(--wild-watermelon);
+    }
+
     .fale-conosco-form {
         margin: 0;
         max-width: 100%;
     }
-
-    .fale-conosco-form .titulo {
+    
+    .fale-conosco-form .titulo,
+    .fale-conosco-form .icon-check {
         display: none;
     }
 
-
+    .fale-conosco-form .text {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -3921,5 +3986,24 @@ body.has-modal-open {
         margin: 10px 0;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    /* Cadastro */
+    .wrapper .grid-cadastro .main-area {
+        border: 2px solid orange;
+    }
+
+    .wrapper .grid-cadastro .main-area .hero {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .wrapper .grid-cadastro .main-area .hero .titulo {
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+
+    .wrapper .grid-cadastro .main-area .hero .text a {
+        color: var(--wild-watermelon);
     }
 }
