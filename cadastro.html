@@ -31,11 +31,11 @@
                 
                 <div class="tabs">
                     <nav class="navigation">
-                        <input name="tabs" type="radio" id="tab-1" checked="checked" class="tab-input" />
+                        <input name="tabs" type="radio" id="tab-1" class="tab-input" />
                         <label for="tab-1" class="tab-label"><span>1</span>Informações Pessoais</label>
                         
                         <input name="tabs" type="radio" id="tab-2" class="tab-input" />
-                        <label for="tab-2" class="tab-label complete"><span>2</span>Endereço</label>
+                        <label for="tab-2" class="tab-label"><span>2</span>Endereço</label>
                         
                         <input name="tabs" type="radio" id="tab-3" class="tab-input" />
                         <label for="tab-3" class="tab-label"><span>3</span>Dados Comerciais</label>
@@ -43,12 +43,12 @@
                         <input name="tabs" type="radio" id="tab-4" class="tab-input" />
                         <label for="tab-4" class="tab-label"><span>4</span>Senha</label>
                         
-                        <input name="tabs" type="radio" id="tab-5" class="tab-input" />
+                        <input name="tabs" type="radio" id="tab-5" checked="checked" class="tab-input" />
                         <label for="tab-5" class="tab-label"><span>5</span>Regulamento</label>
                     </nav>
                     
                     <!-- 1. Informações Pessoais -->
-                    <div id="content-1" class="tab-panel active">
+                    <div id="content-1" class="tab-panel">
                         <div class="row">
                             <div class="col-md-3 col-xs-12">
                                 <img src="assets/images/upload-foto.png" class="input-image-upload" alt="">
@@ -166,7 +166,7 @@
                     <!-- 2. Endereço -->
                     <div id="content-2" class="tab-panel">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>CEP (Somente Números)*</label>
                                     <input type="text" maxlength="9" required />
@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Logradouro*</label>
                                     <input type="text" required />
@@ -187,7 +187,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Número*</label>
                                     <input type="text" required />
@@ -199,7 +199,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Complemento</label>
                                     <input type="text" />
@@ -208,7 +208,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Bairro*</label>
                                     <input type="text" required />
@@ -220,7 +220,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Cidade*</label>
                                     <input type="text" required />
@@ -229,7 +229,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Estado*</label>
                                     <input type="text" required />
@@ -241,7 +241,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Ponto de Referência</label>
                                     <input type="text" />
@@ -250,7 +250,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <p class="form-message">*Campos Obrigatórios</p>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                     <!-- 3. Dados Comerciais -->
                     <div id="content-3" class="tab-panel">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-xs-12">
                                 <div class="input-group">
                                     <label>Insira o CNPJ da Ótica</label>
                                     <input type="text" maxlength="" required />
@@ -273,7 +273,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-xs-12">
                                 <div class="input-group input-button">
                                     <a href="#" class="button button-primary">Buscar Ótica</a>
                                 </div>
@@ -281,7 +281,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 col-xs-12">
                                 <div class="input-group">
                                     <label>CNPJ</label>
                                     <input type="text" maxlength="" />
@@ -293,7 +293,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-12">
                                 <div class="input-group">
                                     <label>Razão Social</label>
                                     <input type="text" />
@@ -303,7 +303,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-xs-12">
                                 <div class="input-group">
                                     <label>Nome Fantasia</label>
                                     <input type="text" />
@@ -315,7 +315,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Logradouro</label>
                                     <input type="text" />
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Número</label>
                                     <input type="text" />
@@ -337,7 +337,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Complemento</label>
                                     <input type="text" />
@@ -347,7 +347,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Bairro</label>
                                     <input type="text" />
@@ -359,7 +359,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Cidade</label>
                                     <input type="text" />
@@ -369,7 +369,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Estado</label>
                                     <select name="estado">
@@ -384,7 +384,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-xs-12">
                                 <div class="input-group">
                                     <label>Ponto de Referência</label>
                                     <input type="text" />
@@ -393,7 +393,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <p class="form-message">*Campos Obrigatórios</p>
                             </div>
                         </div>
@@ -407,7 +407,7 @@
                     <!-- 4. Senha -->
                     <div id="content-4" class="tab-panel">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Nova Senha*</label>
                                     <input type="password" maxlength="" required />
@@ -419,7 +419,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <div class="input-group">
                                     <label>Confirmar Nova Senha*</label>
                                     <input type="password" maxlength="" required />
@@ -431,13 +431,16 @@
                         </div>
 
                         <div class="form-buttons">
+                            <a href="#" class="button">Voltar para o Login</a>
                             <a href="#" class="button button-primary">Avançar</a>
                         </div>
                     </div>
                     
                     <!-- 5. Regulamento -->
-                    <div id="content-5" class="tab-panel">
+                    <div id="content-5" class="tab-panel active">
                         <h3 class="titulo">Regulamento</h3>
+                        <h3 class="subtitulo">Leia a aceite o regulamento abaixo:</h3>
+
                         <div class="row">
                             <div class="col-md-12 review-text">
                                 <p>
@@ -663,8 +666,8 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="row regulamento-aceite">
+                            <div class="col-md-12 col-xs-12">
                                 <div class="input-radio">
                                     <input type="radio" id="reg-0" name="name-0" />
                                     <label for="reg-0">
@@ -676,7 +679,7 @@
                         </div>
                         
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 col-xs-12">
                                 <div class="input-radio">
                                     <input type="radio" id="reg-1" name="name-1" checked />
                                     <label for="reg-1">
@@ -689,7 +692,7 @@
 
                         <div class="form-buttons">
                             <a href="#" class="button">Voltar para o Login</a>
-                            <a href="#" class="button button-primary">Ok</a>
+                            <a href="#" class="button button-primary">Avançar</a>
                         </div>
                     </div>
                 </div>
