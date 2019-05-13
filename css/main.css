@@ -2081,6 +2081,10 @@ footer.footer-login .logos {
     margin-bottom: 20px;
 }
 
+.promo-cards .wrapper-cards .card .content h2 small {
+    display: none;
+}
+
 .promo-cards .wrapper-cards .card .content p {
     color: var(--rock-blue);
     font: var(--texto-menu);
