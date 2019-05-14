@@ -2912,6 +2912,11 @@ footer.footer-login .logos {
     flex: 0 1 65%;
 }
 
+.wrapper-cards .cards-mobile,
+.wrapper-cards .card-full-mobile {
+    display: none;
+}
+
 
 /* Academy: Card Default */
 .wrapper-cards .cards {
@@ -4372,10 +4377,9 @@ body.has-modal-open {
 
     
     /* Cards Academy */
-    .hero-academy ~ .content .grid.grid-content {
-        border: 1px solid red;
+    .hero-academy ~ .content .grid .wrapper-cards {
+        margin: 30px auto;
     }
-
 
     .hero-academy ~ .content .grid .loading-more {
         width: 100%;
@@ -4821,4 +4825,123 @@ body.has-modal-open {
         font-size: 1.25rem;
         font-weight: 500;
     }
+
+
+    /* Cards Academy */
+    .hero-academy ~ .content .grid .wrapper-cards {
+        margin: 30px auto;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards,
+    .hero-academy ~ .content .grid .wrapper-cards .card-full {
+        display: none;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .card-full-mobile {
+        display: block;
+        margin: 0 auto 20px;
+        width: calc(100% - 30px);
+        box-shadow: var(--shadow);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .card-full-mobile .image {
+        flex: 0;
+        min-height: 160px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .card-full-mobile .content {
+        flex: 1;
+        padding: 15px;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: var(--white);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .card-full-mobile .content p {
+        font-weight: 300;
+        margin-bottom: 10px; 
+        color: var(--rock-blue);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .card-full-mobile .content p.data {
+        font-size: 0.75rem;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .card-full-mobile .content p.title {
+        line-height: 1.25;
+        font-size: 1.25rem;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .image {
+        background-color: var(--light);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        flex: 0 0 120px;
+    }
+    
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .image .icon-play {
+        top: 50%;
+        left: 50%;
+        max-width: 60%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .content {
+        flex: 1;
+        padding: 15px;
+        position: relative;
+        align-items: flex-start;
+        background-color: var(--white);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .content .title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .content .data {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .content .data span:first-child {
+        margin: 0;
+        padding: 0;
+        font-size: .75rem;
+        color: var(--rock-blue);
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .content .data span.icon {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards .cards-mobile .card .content .data span.icon svg {
+        margin: 0;
+        max-width: 65%;
+    }
 }
+
