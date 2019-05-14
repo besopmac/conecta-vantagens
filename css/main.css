@@ -3897,6 +3897,7 @@ body.has-modal-open {
     header.header-full,
     section.hero-selos .grid .header-menu,
     section.hero-default .grid .header-menu,
+    section.hero-academy .grid .header-menu,
     section.hero-missoes .grid .header-menu {
         display: none;
     }
@@ -4078,6 +4079,7 @@ body.has-modal-open {
     /* Hero: Default */
     .hero-selos .grid,
     .hero-default .grid,
+    .hero-academy .grid,
     .hero-missoes .grid {
         margin: 0;
         padding: 0;
@@ -4141,6 +4143,12 @@ body.has-modal-open {
     .hero-selos .featured.featured-special {
         min-height: 180px;
         background: url('../assets/images/hero-featured-selos.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .hero-academy .featured.featured-special {
+        min-height: 100px;
+        background: url('../assets/images/hero-default-mobile.jpg') no-repeat center center;
         background-size: cover;
     }
 
@@ -4258,6 +4266,27 @@ body.has-modal-open {
         transform: none;
     }
 
+    .hero-selos ~ .content.suspended .grid-selos .content {
+        max-width: 100%;
+        padding: 0 20px 30px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .hero-selos ~ .content.suspended .grid-selos .content .data,
+    .hero-selos ~ .content.suspended .grid-selos .content .titulo {
+        display: none;
+    }
+
+    .hero-selos ~ .content.suspended .grid-selos .content p.text {
+        margin: 0 0 20px;
+        text-align: left;
+    }
+
+    .hero-selos ~ .content.suspended .grid-selos .content p.text.danger {
+        color: var(--wild-watermelon);
+    }
+
     .hero-selos ~ .content.suspended .grid-selos .tabs-selos,
     .hero-selos ~ .content.suspended .grid-selos .wrapper-selos {
         padding: 0;
@@ -4311,6 +4340,49 @@ body.has-modal-open {
 
     .hero-selos ~ .content.suspended .grid-selos .wrapper-selos .box-selos .item small {
         font-size: .6rem;
+    }
+
+
+    /* Academy */
+    .hero-academy .featured.centered {
+        padding: 25px;
+    }
+
+    .hero-academy ~ .content .grid {
+        padding: 0;
+    }
+
+    .hero-academy ~ .content .grid .instructions {
+        padding: 20px;
+        text-align: left;
+        background-color: var(--white);
+    }
+
+    .hero-academy ~ .content .grid .instructions .titulo {
+        line-height: 1;
+        font-weight: 400;
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-academy ~ .content .grid .instructions p {
+        line-height: 1.75;
+        margin-bottom: 15px;
+    }
+
+    .hero-academy ~ .content .grid .wrapper-cards {
+        padding: 20px 20px 10px;
+    }
+
+    /* Cards Academy */
+    
+
+    .hero-academy ~ .content .grid .loading-more {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 0 30px;
+        text-align: center;
     }
 }
 
