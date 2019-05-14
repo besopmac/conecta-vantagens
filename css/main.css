@@ -4370,12 +4370,12 @@ body.has-modal-open {
         margin-bottom: 15px;
     }
 
-    .hero-academy ~ .content .grid .wrapper-cards {
-        padding: 20px 20px 10px;
+    
+    /* Cards Academy */
+    .hero-academy ~ .content .grid.grid-content {
+        border: 1px solid red;
     }
 
-    /* Cards Academy */
-    
 
     .hero-academy ~ .content .grid .loading-more {
         width: 100%;
