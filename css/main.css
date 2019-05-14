@@ -3224,10 +3224,14 @@ footer.footer-login .logos {
     font-size: 2.5rem;
 }
 
-.tipos-missoes .item p {
+.tipos-missoes .item p.desktop {
     line-height: 1;
     font-weight: 400;
     font-size: 0.75rem;
+}
+
+.tipos-missoes .item p.mobile {
+    display: none;
 }
 
 .tipos-missoes .item.disabled h3,
@@ -3421,6 +3425,10 @@ footer.footer-login .logos {
 
 .wrapper-cards.missoes .cards .card .mission-content .label.disabled {
     background-color: var(--spindle);
+}
+
+.missoes-explain-mobile {
+    display: none;
 }
 
 
@@ -3871,7 +3879,8 @@ body.has-modal-open {
 
     footer,
     header.header-full,
-    section.hero-default .grid .header-menu {
+    section.hero-default .grid .header-menu,
+    section.hero-missoes .grid .header-menu {
         display: none;
     }
 
@@ -4046,7 +4055,8 @@ body.has-modal-open {
 
 
     /* Hero: Default */
-    .hero-default .grid {
+    .hero-default .grid,
+    .hero-missoes .grid {
         margin: 0;
         padding: 0;
     }
@@ -4062,7 +4072,8 @@ body.has-modal-open {
         justify-content: flex-start;
     }
 
-    .hero-default .featured .titulo {
+    .hero-default .featured .titulo,
+    .hero-missoes .featured .titulo {
         margin: 0;
         font-weight: 400;
         font-size: 1.65rem;
@@ -4070,30 +4081,40 @@ body.has-modal-open {
         color: var(--wild-watermelon);
     }
 
-    .hero-default .featured .titulo span {
+    .hero-default .featured .titulo span,
+    .hero-missoes .featured .titulo span {
         display: block;
         font-size: 1.15rem;
         color: var(--bright-grey);
     }
 
+    .hero-missoes .featured .text,
+    .hero-missoes .featured .categoria {
+        display: none;
+    }
+
+    .hero-home, .hero-selos, .hero-missoes, .hero-academy, .hero-programa {
+        z-index: -1;
+        background: none;
+        position: relative;
+    }
+
 
     /* Hero: Image */
-    .hero-default .featured.featured-special {
+    .hero-default .featured.featured-special,
+    .hero-missoes .featured.featured-special {
         min-height: 200px;
         background: url('../assets/images/hero-featured.jpg') no-repeat center center;
         background-size: cover;
     }
 
-    .hero-default .featured.featured-special .titulo {
+    .hero-default .featured.featured-special .titulo,
+    .hero-missoes .featured.featured-special .titulo {
         font-size: 2.5rem;
     }
 
 
     /* Content Grid */
-    .content.suspended {
-        transform: translateY(-50px);
-    }
-
     .content .grid-content {
         z-index: 2;
         transform: none;
@@ -4140,10 +4161,19 @@ body.has-modal-open {
         position: relative;
     }
 
+
     /* Cadastro */
     .main-area.full-height {
         margin: 0;
         height: 100vh;
+    }
+
+
+    /* Missões */
+    .hero-missoes .featured {
+        max-width: 100%;
+        padding: 20px 15px;
+        box-sizing: content-box;
     }
 }
 
@@ -4163,6 +4193,12 @@ body.has-modal-open {
         margin: 10px 0;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    
+    /* Content */
+    .content.suspended {
+        transform: translateY(-50px);
     }
 
 
@@ -4343,7 +4379,8 @@ body.has-modal-open {
 
 
     /* Hero: Image */
-    .hero-default .featured.featured-special .titulo {
+    .hero-default .featured.featured-special .titulo,
+    .hero-missoes .featured.featured-special .titulo {
         font-size: 1.65rem;
     }
 
@@ -4385,5 +4422,81 @@ body.has-modal-open {
 
     .promo-cards .wrapper-cards .card .content h2 small.finished {
         color: var(--wild-watermelon);
+    }
+
+
+    /* Missões */
+    .hero-missoes .featured.featured-special .titulo {
+        max-width: 60%;
+    }
+
+    .tipos-missoes {
+        padding: 0;
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        box-shadow: var(--shadow);
+        background-color: var(--white);
+    }
+    
+    .tipos-missoes .item {
+        padding: 10px 0;
+        align-items: center;
+        justify-content: center;
+        color: var(--summer-sky);
+        background-color: var(--white);
+        border-bottom: 1px solid var(--solitude);
+    }
+    
+    .tipos-missoes .item::after {
+        display: none;
+    }
+    
+    .tipos-missoes .item h3 {
+        font-weight: 500;
+        margin-right: 6px;
+        font-size: 0.75rem;
+        color: var(--wild-watermelon);
+    }
+
+    .tipos-missoes .item p.mobile {
+        line-height: 1;
+        display: inline;
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+
+    .tipos-missoes .item p.desktop {
+        display: none;
+    }
+    
+    .tipos-missoes .item.disabled h3,
+    .tipos-missoes .item.disabled p {
+        color: var(--rock-blue);
+    }
+    
+    .tipos-missoes .item:last-child::after {
+        display: none;
+    }
+
+    .missoes-explain-mobile {
+        display: block;
+    }
+
+    .missoes-explain-mobile p.text {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        color: var(--rock-blue);
+    }
+
+    .wrapper-cards {
+        margin: 0;
+    }
+
+    .wrapper-cards .cards .card {
+        width: calc(100%);
+        color: var(--rock-blue);
+        box-shadow: var(--shadow);
+        background-color: var(--white);
     }
 }
