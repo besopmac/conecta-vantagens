@@ -3214,6 +3214,7 @@ footer.footer-login .logos {
     position: absolute;
     transform: translateY(-50%);
     background-color: var(--spindle);
+    display: none;
 }
 
 .tipos-missoes .item h3 {
@@ -3392,6 +3393,16 @@ footer.footer-login .logos {
     font-weight: bold;
 }
 
+.wrapper-cards.missoes.desktop {
+    display: block;
+}
+
+.grid-explicacao,
+.wrapper-cards.missoes.mobile {
+    display: none;
+}
+
+
 /* CARD: After */
 .wrapper-cards.missoes .cards .card.after {
     cursor: default;
@@ -3427,6 +3438,7 @@ footer.footer-login .logos {
     background-color: var(--spindle);
 }
 
+.grid-missoes,
 .missoes-explain-mobile {
     display: none;
 }
@@ -4489,14 +4501,40 @@ body.has-modal-open {
         color: var(--rock-blue);
     }
 
-    .wrapper-cards {
-        margin: 0;
+    .wrapper-cards.missoes.desktop {
+        display: none;
     }
 
-    .wrapper-cards .cards .card {
+    .wrapper-cards.missoes.mobile {
+        margin: 0;
+        display: block;
+    }
+
+    .wrapper-cards.missoes .cards .card {
         width: calc(100%);
         color: var(--rock-blue);
         box-shadow: var(--shadow);
         background-color: var(--white);
+    }
+
+    .grid-explicacao {
+        display: block;
+        position: relative;
+    }
+
+    .grid-explicacao p.info {
+        z-index: 5;
+        position: relative;
+        color: var(--white);
+        padding: 20px 15px 40px;
+        background-color: var(--wild-watermelon);
+    }
+
+    .grid-explicacao .wrapper-cards.missoes.mobile {
+        z-index: 10;
+        margin: 0 auto;
+        position: relative;
+        width: calc(100% - 30px);
+        transform: translateY(-20px);
     }
 }
