@@ -4452,7 +4452,7 @@ body.has-modal-open {
     }
     
     .tipos-missoes .item {
-        padding: 10px 0;
+        padding: 15px 0;
         align-items: center;
         justify-content: center;
         color: var(--summer-sky);
@@ -4468,6 +4468,7 @@ body.has-modal-open {
         font-weight: 500;
         margin-right: 6px;
         font-size: 0.75rem;
+        letter-spacing: normal;
         color: var(--wild-watermelon);
     }
 
@@ -4475,7 +4476,7 @@ body.has-modal-open {
         line-height: 1;
         display: inline;
         font-weight: 400;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     .tipos-missoes .item p.desktop {
@@ -4536,5 +4537,80 @@ body.has-modal-open {
         position: relative;
         width: calc(100% - 30px);
         transform: translateY(-20px);
+    }
+
+
+    /* Modal Card */
+    .modal {
+        padding: 20px 0;
+    }
+    .modal .modal-container,
+    .modal .modal-container.card {
+        max-width: calc(100% - 30px);
+    }
+
+    .modal .modal-container .content:first-child {
+        padding: 30px 15px 20px;
+    }
+
+    .modal .modal-container .steps {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: none;
+        border-top: none;
+    }
+    
+    .modal .modal-container .steps .item {
+        width: 150px;
+        margin-bottom: 25px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .modal .modal-container .steps .item h3 {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .modal .modal-container .steps .item p {
+        text-align: center;
+        color: var(--summer-sky);
+    }
+    
+    /* Modal Item Active */ 
+    .modal .modal-container .steps .item.active {
+        cursor: default;
+    }
+    
+    .modal .modal-container .steps .item.active h3 {
+        color: var(--wild-watermelon);
+        border: 1px solid var(--wild-watermelon);
+    }
+    
+    .modal .modal-container .steps .item.active p {
+        color: var(--wild-watermelon);
+    }
+
+    .modal .modal-container .steps-content .content .text {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .modal .modal-container .content .actions {
+        display: flex;
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    .modal .modal-container .content .actions a.button {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .modal .modal-container .sub-titulo {
+        padding: 15px;
     }
 }
