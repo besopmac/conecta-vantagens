@@ -3857,6 +3857,12 @@ body.has-modal-open {
 }
 
 
+/* Fique Atento */
+.fique-atento {
+    display: none;
+}
+
+
 /* Splash Screen */
 @media screen and (max-width: 1024px) {
     html {
@@ -4022,6 +4028,133 @@ body.has-modal-open {
         color: var(--white);
     }
 
+
+    /* Fique Atento */
+    .fique-atento {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1100;
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .fique-atento.open {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        -webkit-animation: show .4s ease-out forwards;
+                animation: show .4s ease-out forwards;
+    }
+
+    .fique-atento .navigation {
+        width: 85%;
+        display: flex;
+        color: var(--white);
+        align-items: center;
+        padding: 30px 15px 10px;
+        justify-content: space-between;
+        background-color: var(--wild-watermelon);
+    }
+
+    .fique-atento .navigation .label {
+        font-weight: 300;
+        font-size: 1.15rem;
+    }
+
+    .fique-atento .navigation button {
+        all: unset;
+        width: 16px;
+        height: 16px;
+    }
+
+    .fique-atento .navigation button.close {    
+        background: url('../assets/images/icon-close-menu.svg') no-repeat center center;
+        background-size: contain;
+    }
+
+    .fique-atento .navigation button.notification {
+        background: url('../assets/images/icon-nav-notification-white.svg') no-repeat center center;
+        background-size: contain;
+        height: 25px;
+        width: 25px;
+    }
+
+    .fique-atento .navigation button.notification span.badge {
+        width: 20px;
+        height: 20px;
+        display: none;
+        font-size: .75rem;
+        font-weight: bold;
+        position: absolute;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: var(--wild-watermelon);
+        background-color: var(--white);
+        transform: translate(16px, -22px);
+    }
+
+    .fique-atento .navigation button.notification span.badge.active {
+        display: flex;
+    }
+
+    .fique-atento .notification {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--light);
+    }
+
+    .fique-atento .notification .item {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        color: var(--rock-blue);
+        font: var(--texto-pequeno);
+        background-color: var(--white);
+    }
+    
+    .fique-atento .notification .item.new {
+        color: var(--bright-grey);
+        background-color: var(--light);
+    }
+    
+    .fique-atento .notification .item .avatar {
+        flex: 0 auto;
+    }
+    
+    .fique-atento .notification .item .mensagem {
+        flex: 1;
+        font-size: .8rem;
+        line-height: 1.15;
+        padding-left: 20px;
+    }
+    
+    .fique-atento .notification .item .mensagem a,
+    .fique-atento .notification .item .mensagem a:hover {
+        color: var(--wild-watermelon);
+        text-decoration: underline;
+    }
+
+    .fique-atento .notification .item .mensagem small {
+        font: var(--text);
+        font-weight: bold;
+        color: var(--wild-watermelon);
+    }
+
+
+    @-webkit-keyframes show {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+      
+    @keyframes show {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
 
     /* Home */
     section.hero-home,
