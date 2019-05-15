@@ -2146,6 +2146,13 @@ footer.footer-login .logos {
 }
 
 
+/* Hidden Mobile */
+.header-home-mobile,
+.content .grid-home-mobile {
+    display: none;
+}
+
+
 .home-main-menu {
     display: flex;
     position: relative;
@@ -3907,11 +3914,22 @@ body.has-modal-open {
 
     footer,
     header.header-full,
+    section.hero-home .grid .header-menu,
     section.hero-selos .grid .header-menu,
     section.hero-default .grid .header-menu,
     section.hero-academy .grid .header-menu,
     section.hero-missoes .grid .header-menu {
         display: none;
+    }
+
+    section.hero-home,
+    .content .grid-home {
+        display: none;
+    }
+
+    .content .grid-home-mobile {
+        display: flex;
+        background-color: var(--white);
     }
 
     .content-selos-desktop {
@@ -3930,6 +3948,146 @@ body.has-modal-open {
         position: absolute;
         transform: translateY(50px);
     }
+
+    
+    /* Header Mobile Home */
+    .header-home-mobile {
+        display: block;
+        min-height: 200px;
+        position: relative;
+        background: url('../assets/images/bg-mobile-home.jpg') no-repeat top center;
+        background-color: var(--white);
+        background-size: cover;
+    }
+
+
+    /* Home: Navbar */
+    .header-home-mobile .navbar {
+        border: 0;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-home-mobile .navbar .brand-logo-conecta {
+        max-width: 200px;
+        height: auto;
+    }
+    
+    .header-home-mobile .navbar button {
+        all: unset;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .header-home-mobile .navbar button.nav-menu {    
+        background: url('../assets/images/icon-nav-menu-white.svg') no-repeat center center;
+        background-size: contain;
+    }
+    
+    .header-home-mobile .navbar button.nav-notification {    
+        width: 30px;
+        height: 30px;
+        background: url('../assets/images/icon-nav-notification-white.svg') no-repeat center center;
+        background-size: contain;
+    }
+
+
+    /* Home: Avatar */
+    .header-home-mobile .user-avatar {
+        left: 50%;
+        z-index: 10;
+        display: flex;
+        position: absolute;
+        transform: translate(-50%, 20px);
+    }
+
+    .header-home-mobile .user-avatar img {
+        z-index: 2;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    .header-home-mobile .user-avatar .user-progress {
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        width: 128px;
+        height: 128px;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: var(--shadow);
+        transform: translate(-50%, -50%);
+        background-color: var(--wild-watermelon);
+    }
+
+    .header-home-mobile .user-avatar .status-badge {
+        right: 0;
+        z-index: 3;
+        padding: 5px;
+        display: block;
+        line-height: 2.75;
+        font-size: 0.65rem;
+        position: absolute;
+        border-radius: 50%;
+        color: var(--white);
+        transform: translate(15px, 15px);
+        background: var(--wild-watermelon);
+    }
+
+    
+    /* Home: Info */
+    .grid-home-mobile {
+        display: flex;
+        align-items: center;
+        padding: 80px 0 10px;
+        flex-direction: column;
+    }
+
+    .grid-home-mobile .user-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-home-mobile .user-info .greetings {
+        margin: 0;
+        font-weight: 300;
+        color: var(--wild-watermelon);
+    }
+
+    .grid-home-mobile .user-info .local {
+        font-weight: 400;
+        text-align: center;
+        color: var(--rock-blue);
+    }
+
+    .grid-home-mobile .user-category {
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-home-mobile .user-category h3 {
+        font-weight: bold;
+        color: var(--wild-watermelon);
+    }
+
+    .grid-home-mobile .user-category h3 span {
+        font-weight: 400;
+        font-size: .75rem;
+        color: var(--rock-blue);
+    }
+
+    .grid-home-mobile .user-category .icon-category {
+        margin: 0 10px;
+        max-width: 30px;
+    }
+
+
 
 
     /* Cadastro */
@@ -5179,6 +5337,26 @@ body.has-modal-open {
         margin: 20px auto 0;
         max-width: calc(100% - 35px);
         background-color: var(--white);
+    }
+
+    /* Header Mobile Home */
+    .header-home-mobile {
+        display: block;
+        min-height: 250px;
+        position: relative;
+        background: url('../assets/images/bg-mobile-home.jpg') no-repeat top center;
+        background-color: var(--white);
+        background-size: cover;
+    }
+
+    .header-home-mobile .navbar .brand-logo-conecta {
+        max-width: 140px;
+        height: auto;
+    }
+
+    /* Home: Info */
+    .grid-home-mobile {
+        padding: 0 0 10px;
     }
 }
 
