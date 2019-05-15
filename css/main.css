@@ -3850,6 +3850,13 @@ body.has-modal-open {
 }
 
 
+/* Menu Offset */
+.menu-offset {
+    opacity: 1;
+    display: none;
+}
+
+
 /* Splash Screen */
 @media screen and (max-width: 1024px) {
     html {
@@ -3885,6 +3892,7 @@ body.has-modal-open {
         position: absolute;
     }
 }
+
 
 @media screen and (max-width: 420px) {
     .wrapper-splash .logo-conecta {
@@ -3923,6 +3931,99 @@ body.has-modal-open {
         display: none;
     }
 
+
+    /* Menu Offset */
+    .menu-offset {
+        width: 90%;
+        opacity: 1;
+        height: 100vh;
+        z-index: 1100;
+        display: flex;
+        position: fixed;
+        color: var(--white);
+        flex-direction: column;
+        transition: all .5s ease-in;
+        transform: translateX(-100%);
+        background-color: #4F6561;
+    }
+
+    .menu-offset.open {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+    /* Menu Offset: Controls */
+    .menu-offset .menu-control {
+        display: flex;
+        padding: 30px 20px;
+        align-items: flex-start;
+    }
+
+    .menu-offset .menu-control button {
+        all: unset;
+        width: 25px;
+        height: 25px;
+        margin-top: 4px; 
+    }
+    
+    .menu-offset .menu-control button.close {    
+        background: url('../assets/images/icon-close-menu.svg') no-repeat center center;
+        background-size: contain;
+    }
+
+    .menu-offset .menu-control .menu {
+        flex: 1;
+        display: flex;
+        list-style: none;
+        padding-left: 30px;
+        flex-direction: column;
+    }
+
+    .menu-offset .menu-control .menu li {
+        margin-bottom: 20px;
+    }
+
+    .menu-offset .menu-control .menu li a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+
+    /* Menu Offset: Avatar */
+    .menu-offset .user-info {
+        opacity: 1;
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        background-color: var(--bright-grey);
+    }
+
+    .menu-offset .user-info .user-avatar {
+        width: 70px;
+        height: 70px;
+        margin: 0 15px 0 55px;
+    }
+
+    .menu-offset .user-info .user-avatar img {
+        border-radius: 50%;
+    }
+    
+    .menu-offset .user-info .options {
+        list-style: none;
+    }
+
+    .menu-offset .user-info .options li {
+        margin: 10px 0;
+    }
+
+    .menu-offset .user-info .options li a {
+        font-size: .8rem;
+        color: var(--white);
+    }
+
+
+    /* Home */
     section.hero-home,
     .content .grid-home {
         display: none;
@@ -3936,6 +4037,7 @@ body.has-modal-open {
     .content-selos-desktop {
         display: none;
     }
+
 
     /* Show Elements */
     .header-mobile {
@@ -3957,6 +4059,12 @@ body.has-modal-open {
         min-height: 200px;
         position: relative;
         background: url('../assets/images/bg-mobile-home.jpg') no-repeat top center;
+        background-color: var(--white);
+        background-size: cover;
+    }
+
+    .header-home-mobile.solid-background {
+        background: url('../assets/images/header-solid-background.svg') no-repeat top center;
         background-color: var(--white);
         background-size: cover;
     }
@@ -4012,6 +4120,20 @@ body.has-modal-open {
 
     .header-home-mobile .navbar button.nav-notification span.badge.active {
         display: flex;
+    }
+
+    .header-home-mobile.solid-background .brand-logo-conecta path.text-vantagens {
+        fill: var(--bright-grey);
+    }
+
+    .header-home-mobile.solid-background .navbar button.nav-menu {
+        background: url('../assets/images/icon-nav-menu.svg') no-repeat center center;
+        background-size: contain;
+    }
+
+    .header-home-mobile.solid-background .navbar button.nav-notification {
+        background: url('../assets/images/icon-nav-notification.svg') no-repeat center center;
+        background-size: contain;
     }
 
 
@@ -4161,7 +4283,7 @@ body.has-modal-open {
         padding-left: 10px;
         color: var(--white);
         justify-content: flex-start;
-        background-color: var(--spindle);
+        background-color: var(--wild-watermelon);
     }
     
     .content .sub-nav li.active .menu-badge {
@@ -4225,6 +4347,49 @@ body.has-modal-open {
 
     .content .timeline .comments {
         padding: 20px 15px;
+    }
+
+
+    /* Home: Notification */
+    .content .notification .item {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        color: var(--rock-blue);
+        font: var(--texto-pequeno);
+        background-color: var(--white);
+        border: 1px solid var(--light);
+    }
+
+    .content .notification .item.new {
+        color: var(--bright-grey);
+        background-color: var(--light);
+    }
+
+    .content .notification .item .mensagem {
+        flex: 1;
+        padding: 0;
+        font-size: .8rem;
+        line-height: 1.15;
+        
+    }
+
+    .content .notification .item .mensagem a,
+    .content .notification .item .mensagem a:hover {
+        color: var(--wild-watermelon);
+        text-decoration: underline;
+    }
+    
+    .content .notification .item .mensagem span {
+        font-weight: 500;
+        color: var(--wild-watermelon);
+    }
+
+    .content .notification .item .mensagem small {
+        font: var(--text);
+        font-weight: bold;
+        margin-right: 5px;
+        color: var(--wild-watermelon);
     }
 
 
