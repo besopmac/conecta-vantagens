@@ -5487,6 +5487,10 @@ body.has-modal-open {
         background-size: cover;
     }
 
+    .header-home-mobile.notification {
+        border: 1px solid red;
+    }
+
     .header-home-mobile .navbar .brand-logo-conecta {
         max-width: 140px;
         height: auto;
