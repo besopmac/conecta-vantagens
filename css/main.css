@@ -3989,8 +3989,28 @@ body.has-modal-open {
     .header-home-mobile .navbar button.nav-notification {    
         width: 30px;
         height: 30px;
+        position: relative;
         background: url('../assets/images/icon-nav-notification-white.svg') no-repeat center center;
         background-size: contain;
+    }
+
+    .header-home-mobile .navbar button.nav-notification span.badge {
+        width: 20px;
+        height: 20px;
+        display: none;
+        font-size: .75rem;
+        font-weight: bold;
+        position: absolute;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        color: var(--wild-watermelon);
+        background-color: var(--white);
+        transform: translate(20px, -22px);
+    }
+
+    .header-home-mobile .navbar button.nav-notification span.badge.active {
+        display: flex;
     }
 
 
@@ -4083,8 +4103,8 @@ body.has-modal-open {
     }
 
     .grid-home-mobile .user-category .icon-category {
-        margin: 0 10px;
-        max-width: 30px;
+        margin: 0 10px 15px;
+        width: 30px;
     }
 
 
