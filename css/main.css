@@ -5986,5 +5986,26 @@ body.has-modal-open {
         border: 1px solid red;
     }
     
+    .hero-programa ~ .content.suspended .grid-content .seus-pontos {
+        padding: 20px;
+    }
+
+    .hero-programa ~ .content.suspended .grid-content .seus-pontos .info {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .hero-programa ~ .content.suspended .grid-content .seus-pontos .info h3 {
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: .95rem;
+        color: var(--bright-grey);
+    }
+
+    .hero-programa ~ .content.suspended .grid-content .seus-pontos .info a.button-text  {
+        font-weight: 500;
+    }
+
+    }
 }
 
