@@ -3892,6 +3892,12 @@ table.mobile,
 }
 
 
+/* Inserir Pontos */
+.hero-default.inserir-pontos ~ .content .grid-content.mobile {
+    display: none;
+}
+
+
 
 /* Splash Screen */
 @media screen and (max-width: 1024px) {
@@ -5369,8 +5375,16 @@ table.mobile,
     .hero-default.tabela ~ .content.suspended .grid-content .instructions {
         display: none;
     }
+
+
+    /* Inserir Pontos */
+    .hero-default.inserir-pontos ~ .content .grid-content .promo-cards .text {
+        margin-bottom: 20px;
+    }
 }
 
+
+/* Mobile: < 800 */
 @media screen and (max-width: 800px) {
     .header-mobile .navbar {
         width: 100%;
@@ -6451,6 +6465,171 @@ table.mobile,
     .content .grid-content .review {
         margin: 0;
         font: var(--text);
+    }
+
+
+    /* Inserir Pontos */
+    .hero-default.inserir-pontos .featured {
+        padding: 20px 15px;
+        background-color: var(--light);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content {
+        display: none;
+    }
+    
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content {
+        padding: 15px;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .breadcrumb {
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .breadcrumb::before {
+        top: 50%;
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        transform: translateY(-50%);
+        border-bottom: 1px solid var(--spindle);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .breadcrumb .item {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        font-weight: bold;
+        font-size: 1.1rem;
+        position: relative;
+        border-radius: 50%;
+        align-items: center;
+        color: var(--spindle);
+        justify-content: center;
+        background-color: var(--white);
+        border: 1px solid var(--spindle);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .breadcrumb .item.active {
+        color: var(--wild-watermelon);
+        border-color: var(--wild-watermelon);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content p.text {
+        margin: 0;
+        text-align: left;
+        font-size: .8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content p.text.danger {
+        width: 100%;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .menu-tabs {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .menu-tabs a.item {
+        display: block;
+        font-size: .8rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 10px 0 8px;
+        color: var(--spindle);
+        border: 1px solid var(--spindle);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .menu-tabs a.item.active {
+        color: var(--summer-sky);
+        border: 1px solid var(--summer-sky);
+    }
+    
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .tabs-content {
+        display: none;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .content .tabs-content.active {
+        display: block;
+        text-align: center;
+        padding: 10px 40px;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .list-results {
+        padding: 20px 15px 0;
+        background-color: var(--light);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .list-results .results {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .list-results .results .item {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .list-results .results .item small {
+        font-size: .7rem;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .list-results .results .item span {
+        color: var(--summer-sky);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .list-results .results .item.total span {
+        color: var(--wild-watermelon);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions {
+        display: flex;
+        padding: 30px 15px;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--light);
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions .form-type {
+        width: 100%;
+        display: flex;
+        padding: 0 0 15px;
+        justify-content: space-between;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions .form-type .input-group input {
+        font-size: .8rem;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions .form-type .input-group.half {
+        max-width: 47.5%;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions .form-type .input-group .message {
+        margin: 0 0 5px;
+    }
+
+    .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions .button.disabled {
+        background-color: var(--spindle);
     }
 }
 
