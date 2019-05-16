@@ -3884,6 +3884,8 @@ body.has-modal-open {
 
 
 /* Fique Atento */
+div.legend,
+table.mobile,
 .fique-atento,
 .content .grid-content .observacao a.button {
     display: none;
@@ -6444,6 +6446,11 @@ body.has-modal-open {
 
     .hero-default.tabela ~ .content.suspended .grid-content .observacao p {
         display: none;
+    }
+
+    .content .grid-content .review {
+        margin: 0;
+        font: var(--text);
     }
 }
 
