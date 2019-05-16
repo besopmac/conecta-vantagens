@@ -6735,6 +6735,24 @@ table.mobile,
         margin: 20px auto 0;
         display: none;
     }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .review {
+        width: 100%;
+        border: none;
+        height: 300px;
+        padding: 20px;
+        margin: 0 auto;
+        line-height: 1.5;
+        overflow: hidden;
+        overflow-y: auto;
+        font-size: .7rem;
+        color: var(--bright-grey);
+        background-color: var(--white);
+    }
+    
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .review p {
+        margin-bottom: 15px;
+    }
 }
 
 
