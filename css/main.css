@@ -5408,10 +5408,14 @@ table.mobile,
         background-color: var(--white);
     }
 
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .button {
+        margin: 15px auto 40px;
+    }
+
     .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel.tab-success.active {
         display: flex;
-        align-items: center;
         padding: 40px 0;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
     }
@@ -6701,6 +6705,14 @@ table.mobile,
         margin: 0 auto;
         position: relative;
         transform: translateY(-30px);
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .row {
+        padding: 0 20px;
+    }
+    
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .row .col-xs-12 .row {
+        padding: 0;
     }
 
     .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel.tab-success.active {
