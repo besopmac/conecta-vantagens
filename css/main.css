@@ -3884,9 +3884,11 @@ body.has-modal-open {
 
 
 /* Fique Atento */
-.fique-atento {
+.fique-atento,
+.content .grid-content .observacao a.button {
     display: none;
 }
+
 
 
 /* Splash Screen */
@@ -3956,6 +3958,7 @@ body.has-modal-open {
     header.header-full,
     section.hero-home .grid .header-menu,
     section.hero-selos .grid .header-menu,
+    section.hero-tabela .grid .header-menu,
     section.hero-default .grid .header-menu,
     section.hero-academy .grid .header-menu,
     section.hero-missoes .grid .header-menu,
@@ -4710,6 +4713,7 @@ body.has-modal-open {
 
     /* Hero: Default */
     .hero-selos .grid,
+    .hero-tabela .grid,
     .hero-default .grid,
     .hero-academy .grid,
     .hero-missoes .grid,
@@ -4730,6 +4734,7 @@ body.has-modal-open {
     }
 
     .hero-selos .featured .titulo,
+    .hero-tabela .featured .titulo,
     .hero-default .featured .titulo,
     .hero-missoes .featured .titulo,
     .hero-programa .featured .titulo {
@@ -4741,6 +4746,7 @@ body.has-modal-open {
     }
 
     .hero-selos .featured .titulo span,
+    .hero-tabela .featured .titulo span,
     .hero-default .featured .titulo span,
     .hero-missoes .featured .titulo span,
     .hero-programa .featured .titulo span {
@@ -4797,6 +4803,12 @@ body.has-modal-open {
     .hero-programa .featured.featured-special {
         min-height: 250px;
         background: url('../assets/images/hero-programa-mobile.jpg') no-repeat top center;
+        background-size: cover;
+    }
+    
+    .hero-default.tabela .featured.featured-special {
+        min-height: 160px;
+        background: url('../assets/images/hero-default-mobile.jpg') no-repeat top center;
         background-size: cover;
     }
 
@@ -5307,6 +5319,52 @@ body.has-modal-open {
     }
 
     .hero-programa ~ .content .grid .mobile-hidden {
+        display: none;
+    }
+
+
+    /* Programa Tabela */
+    .hero-default .featured.featured-special {
+        min-height: 180px;
+        background: url('../assets/images/hero-programa-mobile.jpg') no-repeat top center;
+        background-size: cover;
+    }
+
+    .hero-default ~ .content.suspended .card-message {
+        display: block;
+        padding: 20px;
+        margin: 0 auto;
+        position: relative;
+        width: calc(100% - 30px);
+        box-shadow: var(--shadow);
+        transform: translateY(-30px);
+        background-color: var(--white);
+    }
+
+    .hero-default ~ .content.suspended .card-message .titulo {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-default ~ .content.suspended .card-message p {
+        font: var(--texto-menu);
+        font-weight: 300;
+    }
+
+    .hero-default ~ .content.suspended .card-message a.button {
+        margin: 40px auto 0;
+    }
+
+
+    /* Tabela */
+    .hero-default.tabela ~ .content.suspended .card-message p {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .instructions {
         display: none;
     }
 }
@@ -6271,5 +6329,93 @@ body.has-modal-open {
         padding: 0 5px 10px;
         font-size: .75rem;
     }
+
+
+    /* Tabela */
+    .hero-default.tabela ~ .content.suspended .grid-content {
+        padding: 0;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .nav-tabela {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        margin: 0 auto 20px;
+        justify-content: space-around;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .nav-tabela .button {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        border: none;
+        display: flex;
+        line-height: auto;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .nav-tabela .button i.icon {
+        margin: auto;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards .titulo {
+        margin: 0;
+        padding: 10px 0;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-align: center;
+        letter-spacing: -1px;
+        color: var(--wild-watermelon);
+        background-color: #E2EAF4;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards [class^='table-'] {
+        display: none;   
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards .legend {
+        padding: 15px;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards .legend p {
+        font-weight: 500;
+        font-size: .75rem;
+        margin-bottom: 5px;
+        color: var(--bright-grey);
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards .legend p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards .legend span {
+        font-weight: bold;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards .legend p.total {
+        font-weight: 600;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .observacao {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .observacao a.button {
+        display: block;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .observacao p {
+        display: none;
+    }
 }
+
 
