@@ -3864,6 +3864,12 @@ body.has-modal-open {
 }
 
 
+/* Minha Conta (mobile only) */
+.hero-default.minha-conta ~ .content-mobile {
+    display: none;
+}
+
+
 /* Card Message (mobile only) */
 .content.suspended .card-message {
     display: none;
@@ -5381,6 +5387,28 @@ table.mobile,
     .hero-default.inserir-pontos ~ .content .grid-content .promo-cards .text {
         margin-bottom: 20px;
     }
+
+
+    /* Minha Conta */
+    .hero-default.minha-conta .featured,
+    .hero-default.minha-conta ~ .content {
+        display: none;
+    }
+
+    .hero-default.minha-conta ~ .content-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-home-mobile.minha-conta {
+        z-index: 1;
+        width: 100%;
+        position: relative;
+        padding-bottom: 30px;
+        background-color: var(--white);
+    }
+
+    /* Tabs */
 }
 
 
@@ -6630,6 +6658,30 @@ table.mobile,
 
     .hero-default.inserir-pontos ~ .content .grid-content.mobile .actions .button.disabled {
         background-color: var(--spindle);
+    }
+
+
+    /* Minha Conta */
+    .hero-default.minha-conta ~ .content-mobile  {
+        padding: 0;
+    }
+
+    .grid-home-mobile.minha-conta {
+        padding-bottom: 50px;
+        background-color: var(--white);
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs {
+        padding: 0;
+        max-width: 100%;
+        position: relative;
+        border: 1px solid red;
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .navigation {
+        z-index: 5;
+        position: relative;
+        transform: translateY(-30px);
     }
 }
 
