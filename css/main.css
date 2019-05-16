@@ -5408,7 +5408,26 @@ table.mobile,
         background-color: var(--white);
     }
 
-    /* Tabs */
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel.tab-success.active {
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .sub-titulo {
+        font-weight: 400;
+        line-height: 1.2;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .icon-success {
+        margin: 20px auto 0;
+        display: inline-block;
+    }
 }
 
 
@@ -6675,13 +6694,34 @@ table.mobile,
         padding: 0;
         max-width: 100%;
         position: relative;
-        border: 1px solid red;
     }
 
     .hero-default.minha-conta ~ .content-mobile .tabs .navigation {
         z-index: 5;
+        margin: 0 auto;
         position: relative;
         transform: translateY(-30px);
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel.tab-success.active {
+        display: flex;
+        align-items: center;
+        padding: 0 40px 40px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .sub-titulo {
+        font-weight: 400;
+        line-height: 1.2;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--wild-watermelon);
+    }
+
+    .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .icon-success {
+        margin: 20px auto 0;
+        display: none;
     }
 }
 
