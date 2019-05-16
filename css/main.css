@@ -6340,7 +6340,7 @@ body.has-modal-open {
         width: 100%;
         display: flex;
         align-self: center;
-        margin: 0 auto 20px;
+        margin: 0 auto 30px;
         justify-content: space-around;
     }
 
@@ -6402,6 +6402,35 @@ body.has-modal-open {
 
     .hero-default.tabela ~ .content.suspended .grid-content .group-cards .legend p.total {
         font-weight: 600;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards table.mobile {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards table.mobile th {
+        padding: 6px 0;
+        font-size: .7rem;
+        text-align: center;
+        color: var(--wild-watermelon);
+        background-color: #E2EAF4;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards table.mobile th:first-of-type {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards table.mobile td {
+        font-size: .65rem;
+        text-align: center;
+        padding: 8px 4px 0;
+    }
+
+    .hero-default.tabela ~ .content.suspended .grid-content .group-cards table.mobile td:first-of-type {
+        text-align: left;
+        padding-left: 10px;
     }
 
     .hero-default.tabela ~ .content.suspended .grid-content .observacao {
