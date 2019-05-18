@@ -6753,6 +6753,62 @@ table.mobile,
     .hero-default.minha-conta ~ .content-mobile .tabs .tab-panel .review p {
         margin-bottom: 15px;
     }
+
+
+    /* Modal: Namorados */
+    .modal .modal-container .steps {
+        display: flex;
+        padding: 20px 0;
+        position: relative;
+        align-items: center;
+        flex-direction: row;
+        background-color: var(--light);
+        justify-content: space-between;
+    }
+
+    .modal .modal-container .steps::before {
+        top: 50%;
+        left: 50%;
+        height: 0;
+        width: 80%;
+        z-index: 0;
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-bottom: 1px solid var(--rock-blue);
+    }
+
+    .modal .modal-container .steps .item h3 {
+        z-index: 5;
+        background-color: var(--light);
+    }
+
+    .modal .modal-container .steps .item,
+    .modal .modal-container .steps .item h3 {
+        margin-bottom: 0;
+    }
+
+    .modal .modal-container .steps .item p,
+    .modal .modal-container .content.featured .special {
+        display: none;
+    }
+
+    .modal .modal-container .content:first-child {
+        padding: 20px;
+    }
+
+    .modal .modal-container .content .form-action {
+        width: 100%;
+        display: none;
+        position: relative;
+        margin: 35px auto 0;
+    }
+
+    .modal .modal-container .content .form-action .upload-photo-button {
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
+    }
 }
 
 
