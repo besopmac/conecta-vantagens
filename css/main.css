@@ -5003,6 +5003,19 @@ table.mobile,
         margin: 20px auto 0;
     }
 
+    .hero-selos ~ .content.suspended .grid-selos .wrapper-selos .titulo small {
+        margin: auto;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--wild-watermelon);
+    }
+
     .hero-selos ~ .content.suspended .grid-selos .wrapper-selos .titulo span {
         display: block;
         font-size: 1.5rem;
@@ -5273,7 +5286,7 @@ table.mobile,
     }
 
     .hero-programa .featured.featured-special {
-        min-height: 180px;
+        min-height: 175px;
         background: url('../assets/images/hero-programa-mobile.jpg') no-repeat top center;
         background-size: cover;
     }
