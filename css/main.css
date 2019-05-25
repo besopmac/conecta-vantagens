@@ -289,8 +289,16 @@ input:-moz-placeholder {
     justify-content: space-between;
 }
 
-.input-image-upload {
+.label-image-upload {
+    width: 145px;
+    height: 145px;
     cursor: pointer;
+    background: url('../assets/images/upload-foto.png') no-repeat center center;
+    background-size: cover;
+}
+
+.input-image-upload {
+    opacity: 0;
 }
 
 .input-button {
@@ -5579,9 +5587,9 @@ table.mobile,
         margin: 30px 0 10px;
     }
 
-    .tab-panel .input-image-upload {
+    .tab-panel .label-image-upload {
         left: 50%;
-        margin: 30px auto;
+        margin: 20px auto;
         position: relative;
         transform: translateX(-50%);
     }
