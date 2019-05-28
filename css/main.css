@@ -293,8 +293,25 @@ input:-moz-placeholder {
     width: 145px;
     height: 145px;
     cursor: pointer;
-    background: url('../assets/images/upload-foto.png') no-repeat center center;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    background: url('../assets/images/avatar-empty.jpg') no-repeat center center;
     background-size: cover;
+}
+
+.label-image-upload::before {
+    bottom: 0;
+    width: 100%;
+    max-width: 145px;
+    font-weight: 500;
+    font-size: .65rem;
+    position: absolute;
+    text-align: center;
+    padding: 8px 0 12px;
+    color: var(--white);
+    content: 'carregar foto';
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .input-image-upload {
@@ -5591,6 +5608,7 @@ table.mobile,
         left: 50%;
         margin: 20px auto;
         position: relative;
+        border-radius: 50%;
         transform: translateX(-50%);
     }
 
